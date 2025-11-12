@@ -40,34 +40,243 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">DLP Implementation Resources</h2>
-            <p class="text-lg text-gray-700 mb-8">Comprehensive collection of templates, patterns, tools, and guides to accelerate your DLP deployment.</p>
+            <p class="text-lg text-gray-700 mb-6">
+                Welcome to the OpenDLP-LK resource center. Here you'll find everything you need to implement 
+                a comprehensive Data Loss Prevention (DLP) solution that's compliant with Sri Lanka's Personal 
+                Data Protection Act (PDPA) No. 9 of 2022.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <h3 class="font-bold text-xl text-gray-900">PDPA Compliant</h3>
+                    </div>
+                    <p class="text-gray-700">All resources align with Sri Lankan data protection regulations</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-6 border-l-4 border-green-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-code text-3xl text-green-600 mr-3"></i>
+                        <h3 class="font-bold text-xl text-gray-900">Open Source</h3>
+                    </div>
+                    <p class="text-gray-700">Free and openly available for community collaboration</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-6 border-l-4 border-purple-600">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-users text-3xl text-purple-600 mr-3"></i>
+                        <h3 class="font-bold text-xl text-gray-900">Community Driven</h3>
+                    </div>
+                    <p class="text-gray-700">Contributed by experts from Sri Lankan enterprises</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Start Guide -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white mb-8">
+            <h2 class="text-3xl font-bold mb-4">Quick Start Guide</h2>
+            <p class="text-blue-100 mb-6">New to DLP? Follow these steps to get started:</p>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur">
+                    <div class="text-2xl font-bold mb-2">1</div>
+                    <h4 class="font-semibold mb-2">Understand Requirements</h4>
+                    <p class="text-sm text-blue-100">Review PDPA compliance requirements</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur">
+                    <div class="text-2xl font-bold mb-2">2</div>
+                    <h4 class="font-semibold mb-2">Identify Data Types</h4>
+                    <p class="text-sm text-blue-100">Use our Data Patterns to classify sensitive data</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur">
+                    <div class="text-2xl font-bold mb-2">3</div>
+                    <h4 class="font-semibold mb-2">Select Tools</h4>
+                    <p class="text-sm text-blue-100">Choose appropriate DLP solutions for your needs</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur">
+                    <div class="text-2xl font-bold mb-2">4</div>
+                    <h4 class="font-semibold mb-2">Implement Policies</h4>
+                    <p class="text-sm text-blue-100">Deploy using our templates and best practices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Resources -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Featured Resources</h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="/resources/templates.html" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-file-alt text-blue-600 text-4xl mb-4"></i>
-                    <h3 class="font-bold text-xl mb-3">Policy Templates</h3>
-                    <p class="text-gray-700 text-sm">Ready-to-use DLP policies, procedures, and documentation templates.</p>
-                </a>
-                
-                <a href="/resources/patterns.html" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="/resources/patterns.html" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition hover:border-purple-400">
                     <i class="fas fa-fingerprint text-purple-600 text-4xl mb-4"></i>
                     <h3 class="font-bold text-xl mb-3">Data Patterns</h3>
-                    <p class="text-gray-700 text-sm">Sri Lankan data patterns: NIC, passports, bank accounts, and more.</p>
+                    <p class="text-gray-700 text-sm mb-3">Sri Lankan data patterns: NIC, passports, bank accounts, and more.</p>
+                    <span class="inline-flex items-center text-purple-600 font-semibold text-sm">
+                        Explore Patterns <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
                 </a>
                 
-                <a href="/resources/tools.html" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition">
+                <a href="/resources/templates.html" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition hover:border-blue-400">
+                    <i class="fas fa-file-alt text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Policy Templates</h3>
+                    <p class="text-gray-700 text-sm mb-3">Ready-to-use DLP policies, procedures, and documentation templates.</p>
+                    <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
+                        View Templates <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="/resources/tools.html" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition hover:border-green-400">
                     <i class="fas fa-wrench text-green-600 text-4xl mb-4"></i>
                     <h3 class="font-bold text-xl mb-3">DLP Tools</h3>
-                    <p class="text-gray-700 text-sm">Open-source and commercial DLP solutions evaluation guide.</p>
+                    <p class="text-gray-700 text-sm mb-3">Open-source and commercial DLP solutions evaluation guide.</p>
+                    <span class="inline-flex items-center text-green-600 font-semibold text-sm">
+                        Browse Tools <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
                 </a>
                 
-                <a href="/resources/case-studies.html" class="border border-pink-200 rounded-lg p-6 hover:shadow-xl transition">
+                <a href="/resources/case-studies.html" class="border border-pink-200 rounded-lg p-6 hover:shadow-xl transition hover:border-pink-400">
                     <i class="fas fa-book-open text-pink-600 text-4xl mb-4"></i>
                     <h3 class="font-bold text-xl mb-3">Case Studies</h3>
-                    <p class="text-gray-700 text-sm">Real-world DLP implementation stories from Sri Lankan enterprises.</p>
+                    <p class="text-gray-700 text-sm mb-3">Real-world DLP implementation stories from Sri Lankan enterprises.</p>
+                    <span class="inline-flex items-center text-pink-600 font-semibold text-sm">
+                        Read Stories <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
                 </a>
+            </div>
+        </section>
+
+        <!-- Popular Patterns Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Popular Data Patterns</h2>
+                    <p class="text-gray-600">Most commonly used patterns for Sri Lankan data detection</p>
+                </div>
+                <a href="/resources/patterns.html" class="hidden md:inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">
+                    View All Patterns <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- NIC Pattern -->
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-id-card text-3xl text-blue-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-1">National Identity Card (NIC)</h3>
+                            <p class="text-sm text-gray-600">Old and new NIC formats</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 mb-3">
+                        <p class="text-xs text-gray-600 mb-1">Combined Pattern:</p>
+                        <code class="text-sm font-mono text-green-600">^(\d{9}[VvXx]|\d{12})$</code>
+                    </div>
+                    <p class="text-sm text-gray-700">Detects both old format (9 digits + V/X) and new format (12 digits)</p>
+                </div>
+
+                <!-- Mobile Number Pattern -->
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-mobile-alt text-3xl text-indigo-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-1">Mobile Numbers</h3>
+                            <p class="text-sm text-gray-600">Sri Lankan mobile phone numbers</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 mb-3">
+                        <p class="text-xs text-gray-600 mb-1">Standard Format:</p>
+                        <code class="text-sm font-mono text-green-600">^0[7][0-9]{8}$</code>
+                    </div>
+                    <p class="text-sm text-gray-700">Matches Sri Lankan mobile numbers starting with 07X</p>
+                </div>
+
+                <!-- Passport Pattern -->
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-passport text-3xl text-green-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-1">Passport Numbers</h3>
+                            <p class="text-sm text-gray-600">Sri Lankan passport format</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 mb-3">
+                        <p class="text-xs text-gray-600 mb-1">Pattern:</p>
+                        <code class="text-sm font-mono text-green-600">^[A-Z]\d{7}$</code>
+                    </div>
+                    <p class="text-sm text-gray-700">One letter followed by 7 digits (e.g., N1234567)</p>
+                </div>
+
+                <!-- Bank Account Pattern -->
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-university text-3xl text-yellow-600 mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-1">Bank Account Numbers</h3>
+                            <p class="text-sm text-gray-600">Standard account format</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 mb-3">
+                        <p class="text-xs text-gray-600 mb-1">Pattern:</p>
+                        <code class="text-sm font-mono text-green-600">^\d{10,16}$</code>
+                    </div>
+                    <p class="text-sm text-gray-700">10-16 digits (varies by bank)</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center md:hidden">
+                <a href="/resources/patterns.html" class="inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">
+                    View All Patterns <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Additional Resources</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/implementation/" class="flex items-start p-4 border border-gray-200 rounded-lg hover:shadow-lg transition hover:border-blue-400">
+                    <i class="fas fa-tasks text-2xl text-blue-600 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Implementation Guide</h3>
+                        <p class="text-gray-700 text-sm">Step-by-step guide for DLP deployment</p>
+                    </div>
+                </a>
+                <a href="/pdpa-compliance/" class="flex items-start p-4 border border-gray-200 rounded-lg hover:shadow-lg transition hover:border-purple-400">
+                    <i class="fas fa-gavel text-2xl text-purple-600 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">PDPA Compliance</h3>
+                        <p class="text-gray-700 text-sm">Legal requirements and compliance checklist</p>
+                    </div>
+                </a>
+                <a href="/community/" class="flex items-start p-4 border border-gray-200 rounded-lg hover:shadow-lg transition hover:border-green-400">
+                    <i class="fas fa-comments text-2xl text-green-600 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Community Forums</h3>
+                        <p class="text-gray-700 text-sm">Connect with other DLP practitioners</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contribution Section -->
+        <section class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl shadow-lg p-8 text-white">
+            <div class="text-center">
+                <i class="fas fa-code-branch text-5xl mb-4"></i>
+                <h2 class="text-3xl font-bold mb-4">Contribute to OpenDLP-LK</h2>
+                <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+                    Help us improve these resources! Share your patterns, templates, or experiences to benefit 
+                    the Sri Lankan DLP community.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io" target="_blank" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                    <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/issues" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <i class="fas fa-bug mr-2"></i> Report an Issue
+                    </a>
+                    <a href="/community/contribute.html" class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                        <i class="fas fa-hands-helping mr-2"></i> Contribute
+                    </a>
+                </div>
             </div>
         </section>
 
