@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About OpenDLP-LK - Learn about our mission, community, and commitment to data protection in Sri Lanka">
+    <title>About - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation (Same as index.html) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700 hover:text-blue-600 transition">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-blue-600 font-semibold">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4">About OpenDLP-LK</h1>
+            <p class="text-xl text-blue-100">Building Sri Lanka's open-source data protection ecosystem</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Mission -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                OpenDLP-LK exists to democratize enterprise data protection for Sri Lankan organizations. 
+                We believe every business—regardless of size or budget—deserves access to world-class 
+                Data Loss Prevention guidance and tools.
+            </p>
+            <p class="text-lg text-gray-700">
+                By creating open-source, PDPA-aligned resources, we're building a foundation for 
+                data security excellence across Sri Lanka's digital economy.
+            </p>
+        </section>
+
+        <!-- Why We Exist -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Why We Exist</h2>
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Growing Threat Landscape</h3>
+                        <p class="text-gray-700">72% of data breaches involve cloud assets. Sri Lankan enterprises face increasing cyber threats but lack localized DLP guidance.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-balance-scale text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">PDPA Compliance Mandate</h3>
+                        <p class="text-gray-700">Sri Lanka's Personal Data Protection Act (No. 9 of 2022) requires robust data protection measures. Non-compliance carries penalties up to LKR 10 million.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-dollar-sign text-yellow-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Cost Barrier</h3>
+                        <p class="text-gray-700">Commercial DLP consultancy can cost USD 50,000-500,000. Many SMEs can't afford this, leaving critical data exposed.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-globe-asia text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Lack of Local Context</h3>
+                        <p class="text-gray-700">Generic DLP guides don't address Sri Lankan data patterns (NIC formats, banking standards) or Sinhala/Tamil language support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Provide -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">What We Provide</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                    <i class="fas fa-book text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Implementation Guide</h3>
+                    <p class="text-sm text-gray-700">5-phase roadmap covering planning, discovery, policy, pilot, and monitoring</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                    <i class="fas fa-file-alt text-purple-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Policy Templates</h3>
+                    <p class="text-sm text-gray-700">Ready-to-customize templates for DLP policies, incident response, and governance</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-lg">
+                    <i class="fas fa-fingerprint text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Data Patterns</h3>
+                    <p class="text-sm text-gray-700">Sri Lankan NIC formats, banking patterns, mobile numbers, and language detection</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                    <i class="fas fa-users text-green-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Champions Program</h3>
+                    <p class="text-sm text-gray-700">Training materials and certification for department-level data protection leaders</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg">
+                    <i class="fas fa-balance-scale text-yellow-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">PDPA Toolkit</h3>
+                    <p class="text-sm text-gray-700">Gap analysis tools, compliance checklists, and regulatory mapping</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg">
+                    <i class="fas fa-code text-indigo-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Tools & Scripts</h3>
+                    <p class="text-sm text-gray-700">Open-source automation scripts and data discovery utilities</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Community-Driven</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                OpenDLP-LK is built by security professionals, data protection officers, legal experts, 
+                and developers across Sri Lanka. We welcome contributions from:
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-user-shield text-blue-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Security Professionals</h4>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-gavel text-purple-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Legal Advisors</h4>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-code text-green-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Developers</h4>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-building text-pink-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Enterprise IT</h4>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-graduation-cap text-yellow-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Academics</h4>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-lg">
+                    <i class="fas fa-clipboard-check text-indigo-600 text-3xl mb-2"></i>
+                    <h4 class="font-bold">Compliance Officers</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principles -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Principles</h2>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Open & Accessible</h4>
+                        <p class="text-gray-700">All resources are free, open-source, and available to everyone</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Practical & Actionable</h4>
+                        <p class="text-gray-700">Focus on implementable solutions, not theoretical concepts</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Locally Relevant</h4>
+                        <p class="text-gray-700">Built for Sri Lankan context, regulations, and data patterns</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4">4</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Community First</h4>
+                        <p class="text-gray-700">Driven by collective expertise, not commercial interests</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold mr-4">5</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Continuously Evolving</h4>
+                        <p class="text-gray-700">Updated regularly with new threats, regulations, and best practices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get Involved</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join us in building Sri Lanka's data protection future
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/community/contribute.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition">
+                    <i class="fas fa-code-branch mr-2"></i>Contribute
+                </a>
+                <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="/community/events.html" class="hover:text-white transition">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
