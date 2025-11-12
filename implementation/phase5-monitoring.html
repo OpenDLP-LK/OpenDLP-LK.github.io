@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phase 5: Continuous Monitoring - Ongoing DLP operations and continuous improvement">
-    <title>Phase 5: Monitoring - OpenDLP-LK</title>
+    <meta name="description" content="Phase 5: Continuous Monitoring - Establish ongoing monitoring and improvement processes">
+    <title>Phase 5: Continuous Monitoring - OpenDLP-LK</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="bg-gray-50">
+    
+    <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -22,6 +24,7 @@
                         </div>
                     </a>
                 </div>
+                
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
                     <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
@@ -33,10 +36,12 @@
                         <i class="fab fa-github mr-2"></i>GitHub
                     </a>
                 </div>
+                
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
+            
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
                     <a href="/" class="text-gray-700">Home</a>
@@ -50,346 +55,411 @@
         </div>
     </nav>
 
-    <section class="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-16">
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center mb-4">
-                <a href="/implementation/" class="text-indigo-200 hover:text-white transition">
+            <div class="flex items-center justify-between mb-6">
+                <a href="/implementation/" class="text-indigo-100 hover:text-white transition">
                     <i class="fas fa-arrow-left mr-2"></i>Back to Implementation Guide
                 </a>
+                <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-semibold">Phase 5 of 5</span>
             </div>
-            <div class="flex items-center mb-6">
-                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-indigo-600 font-bold text-3xl mr-6">5</div>
-                <div>
-                    <h1 class="text-5xl font-bold mb-2">Phase 5: Continuous Monitoring</h1>
-                    <p class="text-xl text-indigo-100">Operations & Improvement | Ongoing</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Phase 5: Continuous Monitoring</h1>
+            <p class="text-xl text-indigo-100 mb-6">
+                Establish ongoing monitoring, incident response, compliance reporting, and continuous improvement processes
+            </p>
+            <div class="flex items-center gap-6 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-infinity mr-2"></i>
+                    <span>Duration: Ongoing</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-users mr-2"></i>
+                    <span>Team: 4-6 members (operational)</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+    <!-- Content -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Overview -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Overview</h2>
-            <p class="text-lg text-gray-700 mb-6">
-                Phase 5 establishes ongoing DLP operations. This continuous phase focuses on 24/7 monitoring, 
-                incident response, compliance reporting, regular audits, and continuous improvement. Your DLP 
-                program evolves with changing threats, business needs, and PDPA requirements.
+            <p class="text-lg text-gray-700 mb-4">
+                The Continuous Monitoring phase transforms your DLP implementation from a project into an ongoing operational 
+                capability. This phase establishes 24/7 monitoring, incident response procedures, compliance reporting, 
+                regular audits, and a framework for continuous improvement to maintain effective data protection.
             </p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200">
-                    <i class="fas fa-infinity text-indigo-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Duration</h3>
-                    <p class="text-gray-700">Ongoing / Permanent</p>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-indigo-50 p-6 rounded-lg">
+                    <i class="fas fa-eye text-indigo-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Key Objective</h3>
+                    <p class="text-sm text-gray-700">Maintain vigilant protection through continuous monitoring and improvement</p>
                 </div>
-                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200">
-                    <i class="fas fa-users text-indigo-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Key Stakeholders</h3>
-                    <p class="text-gray-700">SOC Team, DPO, IT Security, Compliance</p>
-                </div>
-                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200">
-                    <i class="fas fa-check-circle text-indigo-600 text-3xl mb-3"></i>
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <i class="fas fa-sync text-purple-600 text-3xl mb-3"></i>
                     <h3 class="font-bold text-lg mb-2">Success Criteria</h3>
-                    <p class="text-gray-700">Zero breaches, PDPA compliance, continuous improvement</p>
+                    <p class="text-sm text-gray-700">24/7 monitoring active, <2h incident response time, 100% PDPA compliance</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <i class="fas fa-chart-bar text-blue-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Deliverables</h3>
+                    <p class="text-sm text-gray-700">Monitoring dashboards, incident reports, compliance reports, improvement plans</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Activities</h2>
-            <div class="space-y-6">
-                <div class="border-l-4 border-indigo-600 bg-indigo-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <i class="fas fa-desktop text-indigo-600 mr-3"></i>
-                        24/7 Monitoring & Alerting
-                    </h3>
-                    <p class="text-gray-700 mb-3">Continuous surveillance of DLP events, automated alerting, and real-time incident detection.</p>
-                    <ul class="space-y-2 text-sm text-gray-700">
-                        <li class="flex items-start"><i class="fas fa-check text-indigo-600 mr-2 mt-1"></i>Monitor dashboards for policy violations and anomalies</li>
-                        <li class="flex items-start"><i class="fas fa-check text-indigo-600 mr-2 mt-1"></i>Configure SIEM integration for centralized logging</li>
-                        <li class="flex items-start"><i class="fas fa-check text-indigo-600 mr-2 mt-1"></i>Establish on-call rotation for critical alerts</li>
-                        <li class="flex items-start"><i class="fas fa-check text-indigo-600 mr-2 mt-1"></i>Define escalation paths for different severity levels</li>
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <i class="fas fa-ambulance text-blue-600 mr-3"></i>
-                        Incident Response
-                    </h3>
-                    <p class="text-gray-700 mb-3">Swift, coordinated response to data loss incidents per PDPA Section 11 requirements.</p>
-                    <ul class="space-y-2 text-sm text-gray-700">
-                        <li class="flex items-start"><i class="fas fa-check text-blue-600 mr-2 mt-1"></i>Investigate alerts within 1 hour of detection</li>
-                        <li class="flex items-start"><i class="fas fa-check text-blue-600 mr-2 mt-1"></i>Document all incidents in ticketing system</li>
-                        <li class="flex items-start"><i class="fas fa-check text-blue-600 mr-2 mt-1"></i>Notify PDPA Authority within 72 hours if breach confirmed</li>
-                        <li class="flex items-start"><i class="fas fa-check text-blue-600 mr-2 mt-1"></i>Conduct post-incident reviews and corrective actions</li>
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <i class="fas fa-chart-line text-green-600 mr-3"></i>
-                        Reporting & Analytics
-                    </h3>
-                    <p class="text-gray-700 mb-3">Regular reporting to stakeholders on DLP performance, trends, and compliance status.</p>
-                    <ul class="space-y-2 text-sm text-gray-700">
-                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i>Weekly security reports to CISO</li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i>Monthly compliance reports to Data Protection Officer</li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i>Quarterly executive dashboards with KPIs</li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-2 mt-1"></i>Annual PDPA compliance attestation</li>
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <i class="fas fa-sync text-purple-600 mr-3"></i>
-                        Continuous Improvement
-                    </h3>
-                    <p class="text-gray-700 mb-3">Regular policy reviews, technology updates, and process optimization based on learnings.</p>
-                    <ul class="space-y-2 text-sm text-gray-700">
-                        <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i>Quarterly policy reviews and updates</li>
-                        <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i>Annual risk assessments and gap analyses</li>
-                        <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i>Technology refresh cycles (every 2-3 years)</li>
-                        <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-2 mt-1"></i>Training refresher programs</li>
+        <!-- Key Activities -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Key Activities</h2>
+            
+            <!-- Activity 1 -->
+            <div class="border-l-4 border-indigo-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">1. Establish 24/7 Monitoring</h3>
+                <p class="text-gray-700 mb-4">
+                    Set up continuous monitoring of DLP alerts and data protection events.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Configure real-time alerting for high-severity incidents</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Create monitoring dashboards for security operations team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Establish monitoring shifts and on-call rotations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Integrate DLP alerts with SIEM for centralized monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Set up automated alert triage and prioritization</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </section>
 
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <!-- Activity 2 -->
+            <div class="border-l-4 border-purple-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">2. Manage Incidents</h3>
+                <p class="text-gray-700 mb-4">
+                    Execute incident response procedures for DLP violations and data breaches.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Investigate and triage all DLP incidents within SLA timeframes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Document incident details and response actions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Coordinate with legal/compliance for PDPA breach notifications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Conduct post-incident reviews and lessons learned</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Track incident trends and recurring issues</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="border-l-4 border-blue-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">3. Generate Compliance Reports</h3>
+                <p class="text-gray-700 mb-4">
+                    Produce regular reports demonstrating PDPA compliance and data protection effectiveness.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Create monthly executive dashboards on DLP effectiveness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Generate quarterly PDPA compliance reports</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Document data protection metrics and KPIs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Prepare audit evidence and documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Track and report on key risk indicators</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        <strong class="text-blue-900">Compliance Guide:</strong> Use our 
+                        <a href="/pdpa-compliance/reporting.html" class="text-blue-600 hover:underline">Compliance Reporting Guide</a> 
+                        for report templates and best practices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 4 -->
+            <div class="border-l-4 border-green-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">4. Conduct Regular Audits</h3>
+                <p class="text-gray-700 mb-4">
+                    Perform periodic reviews to ensure DLP solution remains effective.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Conduct quarterly policy effectiveness reviews</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Audit DLP agent deployment and health status</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Review and validate data classification accuracy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Test incident response procedures annually</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Verify user training completion and refresher needs</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 5 -->
+            <div class="border-l-4 border-pink-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">5. Continuous Improvement</h3>
+                <p class="text-gray-700 mb-4">
+                    Regularly enhance DLP capabilities based on evolving threats and business needs.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Review and update policies based on business changes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Add new data patterns for emerging data types</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Expand DLP coverage to new systems and applications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Incorporate threat intelligence into DLP rules</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Leverage machine learning for improved detection</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 6 -->
+            <div class="border-l-4 border-orange-600 pl-6 pb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">6. User Education & Awareness</h3>
+                <p class="text-gray-700 mb-4">
+                    Maintain ongoing user awareness and training programs.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Conduct annual refresher training for all users</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Send regular security awareness communications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Share anonymized incident examples as learning opportunities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Maintain and expand Data Champions network</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Conduct simulated DLP incident exercises</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Performance Indicators -->
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Performance Indicators (KPIs)</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
-                    <i class="fas fa-shield-alt text-blue-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Policy Violations</h3>
-                    <p class="text-3xl font-bold text-blue-600 mb-2">Target: &lt;10/month</p>
-                    <p class="text-sm text-gray-700">Per 1000 users after stabilization</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-indigo-200">
+                    <i class="fas fa-clock text-indigo-600 text-3xl mb-3"></i>
+                    <div class="text-2xl font-bold text-indigo-600 mb-2">< 2 hours</div>
+                    <h3 class="font-bold text-sm mb-2">Incident Response Time</h3>
+                    <p class="text-xs text-gray-600">Average time to investigate and respond</p>
                 </div>
-                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
-                    <i class="fas fa-tachometer-alt text-green-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Detection Accuracy</h3>
-                    <p class="text-3xl font-bold text-green-600 mb-2">Target: &gt;95%</p>
-                    <p class="text-sm text-gray-700">True positives vs false positives</p>
+                <div class="bg-white p-6 rounded-lg border border-purple-200">
+                    <i class="fas fa-exclamation-triangle text-purple-600 text-3xl mb-3"></i>
+                    <div class="text-2xl font-bold text-purple-600 mb-2">< 3%</div>
+                    <h3 class="font-bold text-sm mb-2">False Positive Rate</h3>
+                    <p class="text-xs text-gray-600">Percentage of alerts that are false positives</p>
                 </div>
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
-                    <i class="fas fa-clock text-purple-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Incident Response Time</h3>
-                    <p class="text-3xl font-bold text-purple-600 mb-2">Target: &lt;1 hour</p>
-                    <p class="text-sm text-gray-700">From detection to initial investigation</p>
+                <div class="bg-white p-6 rounded-lg border border-blue-200">
+                    <i class="fas fa-shield-check text-blue-600 text-3xl mb-3"></i>
+                    <div class="text-2xl font-bold text-blue-600 mb-2">99.9%</div>
+                    <h3 class="font-bold text-sm mb-2">Detection Coverage</h3>
+                    <p class="text-xs text-gray-600">Percentage of endpoints with active DLP</p>
                 </div>
-                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-lg border border-pink-200">
-                    <i class="fas fa-user-shield text-pink-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">User Training</h3>
-                    <p class="text-3xl font-bold text-pink-600 mb-2">Target: 100%</p>
-                    <p class="text-sm text-gray-700">Annual refresher completion rate</p>
-                </div>
-                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg border border-yellow-200">
-                    <i class="fas fa-check-double text-yellow-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">PDPA Compliance</h3>
-                    <p class="text-3xl font-bold text-yellow-600 mb-2">Target: 100%</p>
-                    <p class="text-sm text-gray-700">All requirements met and documented</p>
-                </div>
-                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg border border-indigo-200">
-                    <i class="fas fa-database text-indigo-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Data Breach Prevention</h3>
-                    <p class="text-3xl font-bold text-indigo-600 mb-2">Target: 0</p>
-                    <p class="text-sm text-gray-700">Confirmed data breaches per year</p>
+                <div class="bg-white p-6 rounded-lg border border-green-200">
+                    <i class="fas fa-chart-line text-green-600 text-3xl mb-3"></i>
+                    <div class="text-2xl font-bold text-green-600 mb-2">-30%</div>
+                    <h3 class="font-bold text-sm mb-2">Incident Reduction</h3>
+                    <p class="text-xs text-gray-600">Year-over-year decrease in incidents</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl shadow-lg p-8 mb-12 border border-purple-200">
-            <div class="flex items-center mb-6">
-                <i class="fas fa-balance-scale text-purple-600 text-4xl mr-4"></i>
-                <h2 class="text-3xl font-bold text-gray-900">PDPA Ongoing Requirements</h2>
+        <!-- Deliverables -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Ongoing Deliverables</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-chart-pie text-indigo-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Monthly Monitoring Reports</h3>
+                            <p class="text-sm text-gray-700">Alert statistics, trends, and incident summaries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-balance-scale text-purple-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Quarterly Compliance Reports</h3>
+                            <p class="text-sm text-gray-700">PDPA compliance status and evidence documentation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-file-invoice text-blue-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Incident Response Documentation</h3>
+                            <p class="text-sm text-gray-700">Detailed records of all security incidents</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-clipboard-check text-green-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Audit Reports</h3>
+                            <p class="text-sm text-gray-700">Results of periodic DLP effectiveness audits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-sync text-pink-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Improvement Plans</h3>
+                            <p class="text-sm text-gray-700">Roadmap for enhancing DLP capabilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-graduation-cap text-orange-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Training Records</h3>
+                            <p class="text-sm text-gray-700">User training completion and refresher status</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="text-lg text-gray-700 mb-6">
-                Phase 5 ensures continuous PDPA compliance through these ongoing activities:
-            </p>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-white p-5 rounded-lg shadow">
-                    <h4 class="font-bold text-gray-900 mb-3 flex items-center">
-                        <i class="fas fa-file-alt text-purple-600 mr-2"></i>
-                        Records of Processing Activities (Section 13)
-                    </h4>
-                    <p class="text-sm text-gray-700">Maintain detailed logs of all data processing activities, DLP policy enforcement, and access controls.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow">
-                    <h4 class="font-bold text-gray-900 mb-3 flex items-center">
-                        <i class="fas fa-exclamation-circle text-purple-600 mr-2"></i>
-                        Data Breach Notification (Section 11)
-                    </h4>
-                    <p class="text-sm text-gray-700">Report breaches to PDPA Authority within 72 hours. Notify affected individuals without undue delay.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow">
-                    <h4 class="font-bold text-gray-900 mb-3 flex items-center">
-                        <i class="fas fa-clipboard-check text-purple-600 mr-2"></i>
-                        Regular Audits (Section 8)
-                    </h4>
-                    <p class="text-sm text-gray-700">Conduct annual internal audits of data protection practices. Engage external auditors every 2-3 years.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow">
-                    <h4 class="font-bold text-gray-900 mb-3 flex items-center">
-                        <i class="fas fa-graduation-cap text-purple-600 mr-2"></i>
-                        Training & Awareness (Section 4)
-                    </h4>
-                    <p class="text-sm text-gray-700">Provide annual data protection training to all employees. Specialized training for data handlers.</p>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Incident Response Workflow</h2>
-            <div class="space-y-4">
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0 text-sm">1</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg mb-2">Detection & Triage (0-15 min)</h3>
-                        <p class="text-gray-700">DLP alert generated → Security analyst reviews → Severity assessment → Initial classification</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0 text-sm">2</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg mb-2">Investigation (15-60 min)</h3>
-                        <p class="text-gray-700">Review logs → Interview involved users → Determine scope → Confirm if actual breach or false positive</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0 text-sm">3</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg mb-2">Containment (1-4 hours)</h3>
-                        <p class="text-gray-700">Block further data loss → Disable accounts → Revoke access → Quarantine affected systems</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0 text-sm">4</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg mb-2">Notification (within 72 hours)</h3>
-                        <p class="text-gray-700">Notify PDPA Authority if required → Inform affected data subjects → Report to management → Legal consultation</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0 text-sm">5</div>
-                    <div class="flex-1">
-                        <h3 class="font-bold text-lg mb-2">Recovery & Lessons Learned</h3>
-                        <p class="text-gray-700">Restore normal operations → Update policies → Conduct post-mortem → Implement preventive measures</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Continuous Improvement Cycle</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                        <i class="fas fa-chart-bar text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Measure</h3>
-                    <p class="text-sm text-gray-700">Collect metrics, analyze trends, benchmark against industry standards</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-purple-600 rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                        <i class="fas fa-search text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Analyze</h3>
-                    <p class="text-sm text-gray-700">Identify gaps, review incidents, assess emerging threats</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                        <i class="fas fa-lightbulb text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Improve</h3>
-                    <p class="text-sm text-gray-700">Update policies, enhance detection, optimize workflows</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center text-white mx-auto mb-4">
-                        <i class="fas fa-sync text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Repeat</h3>
-                    <p class="text-sm text-gray-700">Continuous cycle of measurement and improvement</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Practices</h2>
-            <div class="space-y-4">
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Automate Where Possible</h4>
-                        <p class="text-gray-700 text-sm">Use SOAR platforms to automate incident response, reporting, and routine tasks. Focus human effort on complex investigations.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Stay Current on Threats</h4>
-                        <p class="text-gray-700 text-sm">Subscribe to security bulletins, attend conferences, participate in industry forums. Update detection patterns for new attack vectors.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Document Everything</h4>
-                        <p class="text-gray-700 text-sm">Maintain comprehensive documentation for PDPA compliance audits. Record all policy changes, incidents, and reviews.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Foster Security Culture</h4>
-                        <p class="text-gray-700 text-sm">Celebrate employees who report suspicious activity. Make security awareness part of company culture, not just a compliance checkbox.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-8 mb-12">
-            <h2 class="text-3xl font-bold mb-6">Congratulations!</h2>
-            <p class="text-xl mb-6">
-                You've completed all 5 phases of DLP implementation. Your organization now has enterprise-grade 
-                data protection aligned with Sri Lanka's PDPA requirements.
-            </p>
+        <!-- Resources -->
+        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Resources & Templates</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
-                    <i class="fas fa-check-circle text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Phase 1-4 Complete</h3>
-                    <p class="text-sm">Planning, Discovery, Policy, and Pilot successfully deployed</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
-                    <i class="fas fa-shield-alt text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Ongoing Protection</h3>
-                    <p class="text-sm">24/7 monitoring and incident response active</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6">
-                    <i class="fas fa-balance-scale text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">PDPA Compliant</h3>
-                    <p class="text-sm">Meeting all requirements of Act No. 9 of 2022</p>
-                </div>
+                <a href="/pdpa-compliance/reporting.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-file-alt text-indigo-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Compliance Reporting</h3>
+                    <p class="text-sm text-gray-700">Templates for PDPA compliance reports</p>
+                </a>
+                <a href="/resources/templates.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-tachometer-alt text-purple-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Monitoring Dashboards</h3>
+                    <p class="text-sm text-gray-700">Sample dashboard configurations</p>
+                </a>
+                <a href="/data-champions/" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-users text-blue-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Champions Program</h3>
+                    <p class="text-sm text-gray-700">Maintain your Data Champions network</p>
+                </a>
             </div>
-        </section>
+        </div>
 
-        <section class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-sm text-gray-600 mb-2">Previous Phase</p>
-                    <a href="/implementation/phase4-pilot.html" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition">
-                        <i class="fas fa-arrow-left mr-2"></i>Phase 4: Pilot
+        <!-- Congratulations -->
+        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl p-8">
+            <div class="text-center">
+                <i class="fas fa-trophy text-6xl mb-6"></i>
+                <h2 class="text-3xl font-bold mb-6">Congratulations!</h2>
+                <p class="text-xl text-indigo-100 mb-8">
+                    You've completed all 5 phases of DLP implementation. Your organization now has enterprise-grade 
+                    data protection aligned with PDPA requirements. Continue monitoring, improving, and adapting your 
+                    DLP program to meet evolving threats and business needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/implementation/checklist.html" class="bg-white text-indigo-700 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition text-center">
+                        <i class="fas fa-clipboard-check mr-2"></i>Review Complete Checklist
+                    </a>
+                    <a href="/community/contribute.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                        <i class="fas fa-hands-helping mr-2"></i>Share Your Experience
                     </a>
                 </div>
-                <div class="text-right">
-                    <p class="text-sm text-gray-600 mb-2">Next Steps</p>
-                    <a href="/pdpa-compliance/" class="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700 transition">
-                        PDPA Compliance Guide <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>

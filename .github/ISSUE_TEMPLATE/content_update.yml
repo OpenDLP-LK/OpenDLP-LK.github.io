@@ -1,0 +1,60 @@
+name: Content Update
+description: Suggest updates or corrections to existing content
+title: "[Content]: "
+labels: ["content", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve our content!
+  
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page or section needs updating?
+      options:
+        - Home Page
+        - About Page
+        - Getting Started
+        - Phase 1 - Planning
+        - Phase 2 - Discovery
+        - Phase 3 - Policy
+        - Phase 4 - Pilot
+        - Phase 5 - Monitoring
+        - Implementation Checklist
+        - PDPA Compliance
+        - Resources/Templates
+        - Data Patterns
+        - Data Champions
+        - Community Pages
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's the issue?
+      description: Describe what needs to be updated or corrected
+      placeholder: |
+        - Outdated information
+        - Broken link
+        - Typo or grammatical error
+        - Missing information
+        - Incorrect technical details
+    validations:
+      required: true
+  
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Change
+      description: What should it say instead?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, references, or sources here.
