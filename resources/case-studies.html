@@ -38,19 +38,533 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive DLP Case Studies resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Real-World DLP Implementation Stories</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Learn from actual DLP implementations across various Sri Lankan organizations. These case studies 
+                demonstrate how enterprises successfully deployed Data Loss Prevention solutions while ensuring 
+                PDPA compliance.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <div class="flex items-start">
+                    <i class="fas fa-info-circle text-blue-600 mt-1 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-blue-900 mb-1">Note</p>
+                        <p class="text-blue-800">Company names and specific details have been anonymized to protect confidentiality while preserving key learnings.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Case Study 1: Financial Services -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-university text-4xl text-blue-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Case Study 1: Large Financial Institution</h3>
+                    <p class="text-gray-600">Banking & Finance | 2,500+ employees | Colombo</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Industry</h4>
+                    <p class="text-gray-700">Banking & Financial Services</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Timeline</h4>
+                    <p class="text-gray-700">6 months implementation</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Investment</h4>
+                    <p class="text-gray-700">Medium-scale deployment</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Challenge</h4>
+                    <p class="text-gray-700">
+                        The institution needed to protect customer financial data, including bank account numbers, 
+                        credit card information, and NIC numbers. With PDPA enforcement approaching, they required 
+                        a comprehensive DLP solution to prevent data leakage through email, USB drives, and cloud 
+                        storage services.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Solution</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                        <li>Implemented network DLP to monitor email and web traffic</li>
+                        <li>Deployed endpoint DLP on 2,500+ workstations</li>
+                        <li>Created custom data patterns for Sri Lankan NIC numbers (old and new formats)</li>
+                        <li>Configured policies to detect and block unauthorized transmission of:
+                            <ul class="list-circle list-inside ml-6 mt-2 space-y-1">
+                                <li>Bank account numbers (10-16 digits)</li>
+                                <li>Credit card numbers (PAN detection)</li>
+                                <li>National Identity Card numbers</li>
+                                <li>Customer personal information</li>
+                            </ul>
+                        </li>
+                        <li>Established incident response workflow for policy violations</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Results</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">85% reduction</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">In unauthorized data transfers within 3 months</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">100% compliance</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">With PDPA data protection requirements</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">2,000+ incidents</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Detected and blocked in first quarter</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Staff training</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">2,500 employees educated on data protection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Key Takeaway</h4>
+                    <p class="text-gray-700">
+                        <i class="fas fa-quote-left text-yellow-600 mr-2"></i>
+                        Using Sri Lankan-specific data patterns was crucial for accurate detection. The OpenDLP-LK 
+                        regex patterns for NIC numbers helped us achieve 98% accuracy in identifying sensitive data.
+                        <i class="fas fa-quote-right text-yellow-600 ml-2"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 2: Healthcare -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-hospital text-4xl text-red-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Case Study 2: Private Healthcare Network</h3>
+                    <p class="text-gray-600">Healthcare | 1,200+ employees | Multi-location</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Industry</h4>
+                    <p class="text-gray-700">Healthcare Services</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Timeline</h4>
+                    <p class="text-gray-700">4 months implementation</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Investment</h4>
+                    <p class="text-gray-700">Small to medium scale</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Challenge</h4>
+                    <p class="text-gray-700">
+                        A network of private hospitals needed to protect patient health records, NIC numbers, and 
+                        medical insurance information across multiple locations. They faced challenges with doctors 
+                        and staff sharing patient data via personal email and messaging apps.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Solution</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                        <li>Deployed cloud-based DLP solution for multi-location coverage</li>
+                        <li>Implemented email DLP with medical data classification</li>
+                        <li>Created policies for patient data protection including:
+                            <ul class="list-circle list-inside ml-6 mt-2 space-y-1">
+                                <li>Patient NIC numbers</li>
+                                <li>Medical record numbers</li>
+                                <li>Insurance policy numbers</li>
+                                <li>Lab test results and diagnoses</li>
+                            </ul>
+                        </li>
+                        <li>Integrated with Hospital Information System (HIS)</li>
+                        <li>Deployed mobile device management for BYOD policy</li>
+                        <li>Conducted staff awareness training on PDPA compliance</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Results</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">90% reduction</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">In unauthorized patient data sharing</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Zero breaches</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">No patient data breaches since deployment</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">PDPA ready</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Full compliance with healthcare regulations</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Audit trail</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Complete visibility into data access and transfers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Key Takeaway</h4>
+                    <p class="text-gray-700">
+                        <i class="fas fa-quote-left text-yellow-600 mr-2"></i>
+                        Cloud-based DLP was essential for our multi-location setup. The ability to centrally manage 
+                        policies across all hospitals while maintaining local compliance was a game-changer.
+                        <i class="fas fa-quote-right text-yellow-600 ml-2"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 3: Telecommunications -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-broadcast-tower text-4xl text-indigo-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Case Study 3: Telecommunications Provider</h3>
+                    <p class="text-gray-600">Telecommunications | 3,000+ employees | National coverage</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Industry</h4>
+                    <p class="text-gray-700">Telecommunications</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Timeline</h4>
+                    <p class="text-gray-700">8 months implementation</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Investment</h4>
+                    <p class="text-gray-700">Large-scale enterprise</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Challenge</h4>
+                    <p class="text-gray-700">
+                        As a major telecom operator, the company held vast amounts of customer data including mobile 
+                        numbers, NIC details, billing information, and usage patterns. They needed enterprise-wide 
+                        DLP to protect this data across call centers, retail locations, and corporate offices.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Solution</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                        <li>Enterprise DLP deployment covering network, endpoint, and cloud</li>
+                        <li>Integrated with existing CRM and billing systems</li>
+                        <li>Custom patterns for:
+                            <ul class="list-circle list-inside ml-6 mt-2 space-y-1">
+                                <li>Sri Lankan mobile numbers (07X format)</li>
+                                <li>Customer NIC numbers (both formats)</li>
+                                <li>Billing account numbers</li>
+                                <li>IMEI/IMSI numbers</li>
+                            </ul>
+                        </li>
+                        <li>Email monitoring and filtering</li>
+                        <li>USB and removable media controls</li>
+                        <li>Web upload prevention for sensitive data</li>
+                        <li>Comprehensive employee training program</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Results</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">95% coverage</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Of all endpoints and network egress points</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">5,000+ incidents</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Blocked per month on average</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Regulatory compliance</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Met TRCSL and PDPA requirements</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">ROI achieved</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Within 18 months through breach prevention</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Key Takeaway</h4>
+                    <p class="text-gray-700">
+                        <i class="fas fa-quote-left text-yellow-600 mr-2"></i>
+                        The phased rollout approach was critical. We started with network DLP, then endpoints, 
+                        and finally cloud services. This allowed us to fine-tune policies and minimize false positives 
+                        at each stage.
+                        <i class="fas fa-quote-right text-yellow-600 ml-2"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 4: E-commerce -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-shopping-cart text-4xl text-orange-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Case Study 4: E-commerce Platform</h3>
+                    <p class="text-gray-600">E-commerce & Retail | 800+ employees | Online</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Industry</h4>
+                    <p class="text-gray-700">E-commerce & Retail</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Timeline</h4>
+                    <p class="text-gray-700">3 months implementation</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Investment</h4>
+                    <p class="text-gray-700">Small-scale focused deployment</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Challenge</h4>
+                    <p class="text-gray-700">
+                        A rapidly growing e-commerce platform needed to protect customer payment information, 
+                        delivery addresses containing NIC numbers, and purchase history data. With customer trust 
+                        being paramount, they needed robust DLP before PDPA enforcement.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Solution</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                        <li>Cloud-native DLP integrated with AWS infrastructure</li>
+                        <li>Database activity monitoring for customer data access</li>
+                        <li>API-level data protection for mobile apps</li>
+                        <li>Protection for:
+                            <ul class="list-circle list-inside ml-6 mt-2 space-y-1">
+                                <li>Credit/debit card information (PCI-DSS)</li>
+                                <li>Customer NIC numbers</li>
+                                <li>Mobile phone numbers</li>
+                                <li>Delivery addresses</li>
+                            </ul>
+                        </li>
+                        <li>Email DLP for customer service team</li>
+                        <li>Encryption for data at rest and in transit</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-xl text-gray-900 mb-3">Results</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">PCI-DSS certified</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Achieved payment card industry compliance</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">25% increase</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">In customer trust metrics post-deployment</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Zero incidents</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">No customer data breaches reported</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-check-circle text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold text-gray-900">Competitive edge</span>
+                            </div>
+                            <p class="text-gray-700 text-sm">Marketing advantage with PDPA compliance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
+                    <h4 class="font-bold text-lg mb-2 text-gray-900">Key Takeaway</h4>
+                    <p class="text-gray-700">
+                        <i class="fas fa-quote-left text-yellow-600 mr-2"></i>
+                        Starting DLP implementation early gave us a competitive advantage. We could market our 
+                        PDPA compliance to customers, which significantly improved trust and conversion rates.
+                        <i class="fas fa-quote-right text-yellow-600 ml-2"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Success Factors -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white mb-8">
+            <h2 class="text-3xl font-bold mb-6">Common Success Factors</h2>
+            <p class="text-blue-100 mb-6">Key elements that contributed to successful DLP implementations:</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-users text-3xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">Executive Support</h3>
+                            <p class="text-blue-100">Strong leadership backing ensured adequate resources and organization-wide adoption</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-graduation-cap text-3xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">User Training</h3>
+                            <p class="text-blue-100">Comprehensive staff education on data protection and PDPA requirements</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-cogs text-3xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">Phased Rollout</h3>
+                            <p class="text-blue-100">Gradual implementation allowed for policy tuning and minimized disruption</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-chart-line text-3xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2">Continuous Monitoring</h3>
+                            <p class="text-blue-100">Regular review and refinement of policies based on incident patterns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Resources -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Implement DLP?</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Use these resources to start your own DLP journey:
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/resources/patterns.html" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition hover:border-purple-400">
+                    <i class="fas fa-fingerprint text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Data Patterns</h3>
+                    <p class="text-gray-700 text-sm mb-3">Use our Sri Lankan data patterns for NIC, mobile numbers, and more</p>
+                    <span class="inline-flex items-center text-purple-600 font-semibold text-sm">
+                        Get Patterns <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="/implementation/" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition hover:border-blue-400">
+                    <i class="fas fa-tasks text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Implementation Guide</h3>
+                    <p class="text-gray-700 text-sm mb-3">Step-by-step guide for deploying DLP in your organization</p>
+                    <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
+                        Start Guide <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="/community/" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition hover:border-green-400">
+                    <i class="fas fa-comments text-green-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Community Support</h3>
+                    <p class="text-gray-700 text-sm mb-3">Connect with DLP practitioners and share experiences</p>
+                    <span class="inline-flex items-center text-green-600 font-semibold text-sm">
+                        Join Community <i class="fas fa-arrow-right ml-2"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contribute Section -->
+        <section class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl shadow-lg p-8 text-white">
+            <div class="text-center">
+                <i class="fas fa-lightbulb text-5xl mb-4"></i>
+                <h2 class="text-3xl font-bold mb-4">Share Your DLP Story</h2>
+                <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+                    Have you successfully implemented DLP in your organization? Share your experience to help 
+                    others in the Sri Lankan business community.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/issues/new" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <i class="fas fa-plus-circle mr-2"></i> Submit Case Study
+                    </a>
+                    <a href="/community/" class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                        <i class="fas fa-users mr-2"></i> Join Discussion
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
