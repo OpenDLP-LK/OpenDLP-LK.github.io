@@ -38,19 +38,647 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive Policy Templates resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">DLP Policy Templates</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Ready-to-use policy templates and documentation to accelerate your DLP implementation. 
+                All templates are designed to align with Sri Lanka's Personal Data Protection Act (PDPA) No. 9 of 2022 
+                and industry best practices.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <div class="flex items-start">
+                    <i class="fas fa-info-circle text-blue-600 mt-1 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-blue-900 mb-1">Customization Required</p>
+                        <p class="text-blue-800">These templates are starting points. Customize them to match your organization's specific requirements, industry, and risk profile.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Template Categories -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Template Categories</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#dlp-policy" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition hover:border-blue-400">
+                    <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">DLP Policy</h3>
+                    <p class="text-gray-700 text-sm mb-3">Comprehensive data loss prevention policy template</p>
+                    <span class="inline-flex items-center text-blue-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="#incident-response" class="border border-red-200 rounded-lg p-6 hover:shadow-xl transition hover:border-red-400">
+                    <i class="fas fa-exclamation-triangle text-red-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Incident Response</h3>
+                    <p class="text-gray-700 text-sm mb-3">Data breach incident response plan template</p>
+                    <span class="inline-flex items-center text-red-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="#data-classification" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition hover:border-purple-400">
+                    <i class="fas fa-tags text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Data Classification</h3>
+                    <p class="text-gray-700 text-sm mb-3">Data classification framework and guidelines</p>
+                    <span class="inline-flex items-center text-purple-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="#acceptable-use" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition hover:border-green-400">
+                    <i class="fas fa-user-check text-green-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Acceptable Use Policy</h3>
+                    <p class="text-gray-700 text-sm mb-3">Employee acceptable use policy for data handling</p>
+                    <span class="inline-flex items-center text-green-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="#user-training" class="border border-orange-200 rounded-lg p-6 hover:shadow-xl transition hover:border-orange-400">
+                    <i class="fas fa-graduation-cap text-orange-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Training Materials</h3>
+                    <p class="text-gray-700 text-sm mb-3">User awareness and training content templates</p>
+                    <span class="inline-flex items-center text-orange-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+                
+                <a href="#risk-assessment" class="border border-pink-200 rounded-lg p-6 hover:shadow-xl transition hover:border-pink-400">
+                    <i class="fas fa-chart-line text-pink-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Risk Assessment</h3>
+                    <p class="text-gray-700 text-sm mb-3">DLP risk assessment framework template</p>
+                    <span class="inline-flex items-center text-pink-600 font-semibold text-sm">
+                        View Template <i class="fas fa-arrow-down ml-2"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- DLP Policy Template -->
+        <section id="dlp-policy" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-shield-alt text-4xl text-blue-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Data Loss Prevention Policy</h3>
+                    <p class="text-gray-600">Comprehensive DLP policy aligned with PDPA requirements</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-blue-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Policy Overview</h4>
+                <div class="prose max-w-none text-gray-700">
+                    <p class="mb-4"><strong>Purpose:</strong> To establish a framework for protecting sensitive data from unauthorized access, use, disclosure, or loss, ensuring compliance with Sri Lanka's PDPA.</p>
+                    
+                    <p class="mb-4"><strong>Scope:</strong> This policy applies to all employees, contractors, and third parties who handle organizational data.</p>
+                    
+                    <h5 class="font-semibold mt-4 mb-2">Key Policy Components:</h5>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li><strong>Data Classification:</strong> Categorize data as Public, Internal, Confidential, or Restricted</li>
+                        <li><strong>Access Controls:</strong> Implement role-based access controls (RBAC) for sensitive data</li>
+                        <li><strong>Data in Transit:</strong> Encrypt data transmitted over networks using TLS 1.2+</li>
+                        <li><strong>Data at Rest:</strong> Encrypt sensitive data stored on devices and servers</li>
+                        <li><strong>Removable Media:</strong> Control and monitor use of USB drives and external storage</li>
+                        <li><strong>Email Security:</strong> Monitor and control sensitive data in email communications</li>
+                        <li><strong>Cloud Services:</strong> Approve and monitor cloud storage services for data handling</li>
+                        <li><strong>Mobile Devices:</strong> Implement MDM solutions for BYOD and corporate devices</li>
+                        <li><strong>Monitoring & Auditing:</strong> Regular DLP system audits and compliance reviews</li>
+                        <li><strong>Incident Response:</strong> Procedures for handling DLP policy violations</li>
+                    </ul>
+
+                    <h5 class="font-semibold mt-4 mb-2">PDPA Compliance Requirements:</h5>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li>Lawful processing of personal data (Section 5)</li>
+                        <li>Purpose limitation and data minimization (Section 6)</li>
+                        <li>Accuracy and retention (Section 7)</li>
+                        <li>Security safeguards (Section 8)</li>
+                        <li>Breach notification procedures (Section 16)</li>
+                        <li>Data subject rights (Sections 17-22)</li>
+                    </ul>
+
+                    <h5 class="font-semibold mt-4 mb-2">Enforcement:</h5>
+                    <p class="mb-2">Violations of this policy may result in:</p>
+                    <ul class="list-disc list-inside space-y-1 ml-4">
+                        <li>Verbal or written warning</li>
+                        <li>Mandatory retraining</li>
+                        <li>Suspension of system access</li>
+                        <li>Termination of employment or contract</li>
+                        <li>Legal action if required by PDPA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download Full Template</p>
+                    <p class="text-sm text-gray-600">Customizable Word/PDF document with detailed policy sections</p>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- Incident Response Template -->
+        <section id="incident-response" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-exclamation-triangle text-4xl text-red-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Data Breach Incident Response Plan</h3>
+                    <p class="text-gray-600">Step-by-step response procedures for data incidents</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-red-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Incident Response Framework</h4>
+                <div class="space-y-6">
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">1. Detection & Identification (0-2 hours)</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Monitor DLP alerts and security systems</li>
+                            <li>Identify type and scope of incident</li>
+                            <li>Document initial findings</li>
+                            <li>Classify incident severity (Critical/High/Medium/Low)</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">2. Containment (2-4 hours)</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Isolate affected systems</li>
+                            <li>Prevent further data loss</li>
+                            <li>Preserve evidence for investigation</li>
+                            <li>Activate incident response team</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">3. Investigation (4-24 hours)</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Determine root cause</li>
+                            <li>Identify compromised data</li>
+                            <li>Assess impact on data subjects</li>
+                            <li>Document findings comprehensively</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">4. Notification (24-72 hours)</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Notify Data Protection Authority if required (within 72 hours per PDPA Section 16)</li>
+                            <li>Inform affected data subjects</li>
+                            <li>Communicate with stakeholders</li>
+                            <li>Prepare public statement if necessary</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">5. Recovery & Remediation</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Restore normal operations</li>
+                            <li>Implement corrective measures</li>
+                            <li>Update security controls</li>
+                            <li>Conduct post-incident review</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">6. Lessons Learned</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4 text-gray-700">
+                            <li>Document incident timeline</li>
+                            <li>Identify process improvements</li>
+                            <li>Update policies and procedures</li>
+                            <li>Conduct team training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-red-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download Response Template</p>
+                    <p class="text-sm text-gray-600">Includes incident forms, checklists, and communication templates</p>
+                </div>
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- Data Classification Template -->
+        <section id="data-classification" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-tags text-4xl text-purple-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Data Classification Framework</h3>
+                    <p class="text-gray-600">Categorize and protect data based on sensitivity</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-purple-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Classification Levels</h4>
+                
+                <div class="space-y-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-red-600 text-white px-3 py-1 rounded font-bold text-sm mr-3">RESTRICTED</span>
+                            <h5 class="font-semibold text-lg">Highly Sensitive Data</h5>
+                        </div>
+                        <p class="text-gray-700 mb-2">Unauthorized disclosure could cause severe damage to the organization or individuals.</p>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Examples:</strong> NIC numbers, passport numbers, financial data, health records, authentication credentials</p>
+                        <p class="text-sm font-semibold mb-1">Protection Requirements:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Encryption at rest and in transit (AES-256)</li>
+                            <li>Multi-factor authentication required</li>
+                            <li>Strict access controls and logging</li>
+                            <li>Cannot be shared externally without approval</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-orange-600 text-white px-3 py-1 rounded font-bold text-sm mr-3">CONFIDENTIAL</span>
+                            <h5 class="font-semibold text-lg">Sensitive Data</h5>
+                        </div>
+                        <p class="text-gray-700 mb-2">Unauthorized disclosure could harm the organization or individuals.</p>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Examples:</strong> Employee records, customer lists, contracts, strategic plans, proprietary information</p>
+                        <p class="text-sm font-semibold mb-1">Protection Requirements:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Encryption for transmission</li>
+                            <li>Role-based access controls</li>
+                            <li>Access logging and monitoring</li>
+                            <li>Approval required for external sharing</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-yellow-600 text-white px-3 py-1 rounded font-bold text-sm mr-3">INTERNAL</span>
+                            <h5 class="font-semibold text-lg">Internal Use Only</h5>
+                        </div>
+                        <p class="text-gray-700 mb-2">Data intended for internal business use only.</p>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Examples:</strong> Internal memos, operational procedures, organizational charts, meeting minutes</p>
+                        <p class="text-sm font-semibold mb-1">Protection Requirements:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Standard access controls</li>
+                            <li>Internal network only</li>
+                            <li>Basic monitoring</li>
+                            <li>Not for public distribution</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-green-600 text-white px-3 py-1 rounded font-bold text-sm mr-3">PUBLIC</span>
+                            <h5 class="font-semibold text-lg">Public Information</h5>
+                        </div>
+                        <p class="text-gray-700 mb-2">Data approved for public disclosure.</p>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Examples:</strong> Marketing materials, published reports, public website content, press releases</p>
+                        <p class="text-sm font-semibold mb-1">Protection Requirements:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>No special protection required</li>
+                            <li>Maintain integrity</li>
+                            <li>Version control</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-purple-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download Classification Guide</p>
+                    <p class="text-sm text-gray-600">Complete framework with labeling guidelines and examples</p>
+                </div>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- Acceptable Use Policy Template -->
+        <section id="acceptable-use" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-user-check text-4xl text-green-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Acceptable Use Policy</h3>
+                    <p class="text-gray-600">Guidelines for employee data handling and system usage</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-green-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Policy Guidelines</h4>
+                <div class="prose max-w-none text-gray-700 space-y-4">
+                    <div>
+                        <h5 class="font-semibold mb-2">Acceptable Use:</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Access only data required for job responsibilities</li>
+                            <li>Use approved communication channels for sensitive data</li>
+                            <li>Follow data classification and handling procedures</li>
+                            <li>Report security incidents immediately</li>
+                            <li>Use strong passwords and enable MFA</li>
+                            <li>Lock devices when unattended</li>
+                            <li>Encrypt sensitive data before transmission</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold mb-2">Prohibited Activities:</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Sharing sensitive data via personal email or messaging apps</li>
+                            <li>Storing organizational data on unapproved cloud services</li>
+                            <li>Using unauthorized USB drives or external storage</li>
+                            <li>Taking screenshots of sensitive data without authorization</li>
+                            <li>Forwarding confidential emails to external parties</li>
+                            <li>Printing sensitive documents without secure release</li>
+                            <li>Sharing login credentials or access tokens</li>
+                            <li>Circumventing DLP controls or security measures</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold mb-2">Remote Work Requirements:</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Use company-provided VPN for accessing organizational resources</li>
+                            <li>Ensure home network security (strong WiFi password, updated router firmware)</li>
+                            <li>Maintain physical security of devices and documents</li>
+                            <li>Use privacy screens in public locations</li>
+                            <li>Secure disposal of printed materials</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold mb-2">BYOD (Bring Your Own Device) Requirements:</h5>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Register personal devices with IT before accessing company data</li>
+                            <li>Install required MDM/MAM software</li>
+                            <li>Keep device OS and apps updated</li>
+                            <li>Enable device encryption and screen lock</li>
+                            <li>Separate personal and business data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-green-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download AUP Template</p>
+                    <p class="text-sm text-gray-600">Employee acknowledgment form included</p>
+                </div>
+                <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- User Training Materials Template -->
+        <section id="user-training" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-graduation-cap text-4xl text-orange-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">User Awareness & Training</h3>
+                    <p class="text-gray-600">Comprehensive training materials for DLP awareness</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-orange-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Training Program Components</h4>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">1. New Employee Onboarding</h5>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <li>Introduction to DLP program</li>
+                            <li>Data classification overview</li>
+                            <li>Acceptable use policy review</li>
+                            <li>Account setup and security basics</li>
+                            <li>Quiz and acknowledgment form</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">2. Annual Refresher Training</h5>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <li>Policy updates and changes</li>
+                            <li>Recent incident case studies</li>
+                            <li>Emerging threats and trends</li>
+                            <li>Best practices reinforcement</li>
+                            <li>Compliance certification</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">3. Role-Specific Training</h5>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <li>Developers: Secure coding practices</li>
+                            <li>HR: Handling personnel data</li>
+                            <li>Finance: Financial data protection</li>
+                            <li>Executives: Strategic data handling</li>
+                            <li>IT Admin: DLP system management</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">4. Incident Response Training</h5>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 ml-4">
+                            <li>Recognizing security incidents</li>
+                            <li>Reporting procedures</li>
+                            <li>Tabletop exercises</li>
+                            <li>Communication protocols</li>
+                            <li>Post-incident reviews</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h5 class="font-semibold text-gray-900 mt-6 mb-2">Training Topics:</h5>
+                <div class="grid md:grid-cols-3 gap-3">
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-envelope text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Email Security</span>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-key text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Password Management</span>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-fish text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Phishing Awareness</span>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-mobile-alt text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Mobile Security</span>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-cloud text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Cloud Data Safety</span>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-gray-200">
+                        <i class="fas fa-laptop text-orange-600 mr-2"></i>
+                        <span class="text-sm font-semibold">Device Security</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-orange-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download Training Package</p>
+                    <p class="text-sm text-gray-600">Includes presentations, videos scripts, quizzes, and certificates</p>
+                </div>
+                <button class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- Risk Assessment Template -->
+        <section id="risk-assessment" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-chart-line text-4xl text-pink-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">DLP Risk Assessment Framework</h3>
+                    <p class="text-gray-600">Identify and evaluate data loss risks</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-pink-500 pl-6 py-4 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Risk Assessment Process</h4>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">Step 1: Asset Identification</h5>
+                        <p class="text-sm text-gray-700 mb-2">Identify all data assets and their locations:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Databases and file servers</li>
+                            <li>Endpoint devices (laptops, desktops, mobile)</li>
+                            <li>Cloud storage and SaaS applications</li>
+                            <li>Email systems and collaboration tools</li>
+                            <li>Backup and archive systems</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">Step 2: Threat Identification</h5>
+                        <p class="text-sm text-gray-700 mb-2">Common DLP threats to consider:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Insider threats (malicious or accidental)</li>
+                            <li>External cyberattacks</li>
+                            <li>Lost or stolen devices</li>
+                            <li>Unauthorized cloud uploads</li>
+                            <li>Email misdirection</li>
+                            <li>Third-party data breaches</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">Step 3: Vulnerability Assessment</h5>
+                        <p class="text-sm text-gray-700 mb-2">Evaluate weaknesses in current controls:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li>Missing or weak encryption</li>
+                            <li>Insufficient access controls</li>
+                            <li>Lack of monitoring and alerting</li>
+                            <li>Inadequate employee training</li>
+                            <li>Unmanaged devices and applications</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">Step 4: Risk Evaluation</h5>
+                        <p class="text-sm text-gray-700 mb-2">Calculate risk using this matrix:</p>
+                        <div class="bg-white border border-gray-300 rounded p-4 mt-2">
+                            <table class="min-w-full text-sm">
+                                <thead>
+                                    <tr class="border-b">
+                                        <th class="text-left py-2">Impact</th>
+                                        <th class="text-center py-2">Low Probability</th>
+                                        <th class="text-center py-2">Medium Probability</th>
+                                        <th class="text-center py-2">High Probability</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="py-2 font-semibold">Critical</td>
+                                        <td class="text-center py-2 bg-yellow-100">Medium</td>
+                                        <td class="text-center py-2 bg-orange-100">High</td>
+                                        <td class="text-center py-2 bg-red-100">Critical</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="py-2 font-semibold">High</td>
+                                        <td class="text-center py-2 bg-green-100">Low</td>
+                                        <td class="text-center py-2 bg-yellow-100">Medium</td>
+                                        <td class="text-center py-2 bg-orange-100">High</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 font-semibold">Medium</td>
+                                        <td class="text-center py-2 bg-green-100">Low</td>
+                                        <td class="text-center py-2 bg-green-100">Low</td>
+                                        <td class="text-center py-2 bg-yellow-100">Medium</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5 class="font-semibold text-gray-900 mb-2">Step 5: Risk Treatment</h5>
+                        <p class="text-sm text-gray-700 mb-2">Develop mitigation strategies:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 ml-4">
+                            <li><strong>Avoid:</strong> Eliminate the activity causing the risk</li>
+                            <li><strong>Reduce:</strong> Implement controls to minimize likelihood or impact</li>
+                            <li><strong>Transfer:</strong> Share risk through insurance or third parties</li>
+                            <li><strong>Accept:</strong> Acknowledge low-level risks with documented justification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-pink-50 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                    <p class="font-semibold text-gray-900">Download Assessment Template</p>
+                    <p class="text-sm text-gray-600">Excel workbook with automated risk calculations</p>
+                </div>
+                <button class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                    <i class="fas fa-download mr-2"></i>Download
+                </button>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white">
+            <h3 class="text-2xl font-bold mb-4">Implementation Support</h3>
+            <p class="text-blue-100 mb-6">Need help implementing these templates?</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/implementation/" class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur hover:bg-opacity-20 transition">
+                    <i class="fas fa-tasks text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Implementation Guide</h4>
+                    <p class="text-blue-100 text-sm">Step-by-step DLP deployment guide</p>
+                </a>
+                <a href="/resources/patterns.html" class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur hover:bg-opacity-20 transition">
+                    <i class="fas fa-fingerprint text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Data Patterns</h4>
+                    <p class="text-blue-100 text-sm">Sri Lankan data detection patterns</p>
+                </a>
+                <a href="/community/" class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur hover:bg-opacity-20 transition">
+                    <i class="fas fa-users text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Community Support</h4>
+                    <p class="text-blue-100 text-sm">Connect with DLP practitioners</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contribution Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mt-8">
+            <div class="text-center">
+                <i class="fas fa-code-branch text-5xl text-blue-600 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Contribute Templates</h3>
+                <p class="text-gray-600 mb-6">Have a template to share? Help the Sri Lankan DLP community by contributing your templates and best practices.</p>
+                <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/issues" target="_blank" class="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition">
+                    <i class="fab fa-github mr-2"></i> Contribute on GitHub
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
