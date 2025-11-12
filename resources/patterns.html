@@ -38,17 +38,525 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive Sri Lankan Data Patterns resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Sri Lankan Data Patterns</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                This page provides comprehensive regex patterns for detecting sensitive Sri Lankan data types. 
+                These patterns are essential for implementing Data Loss Prevention (DLP) solutions and ensuring 
+                PDPA compliance.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <div class="flex items-start">
+                    <i class="fas fa-info-circle text-blue-600 mt-1 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-blue-900 mb-1">How to Use</p>
+                        <p class="text-blue-800">Click the <i class="fas fa-copy text-xs"></i> Copy button next to any regex pattern to copy it to your clipboard.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- NIC Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-id-card text-4xl text-blue-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">National Identity Card (NIC) Numbers</h3>
+                    <p class="text-gray-600">Sri Lankan NIC numbers in old and new formats</p>
+                </div>
+            </div>
+
+            <!-- Old NIC Format -->
+            <div class="mb-6 border-l-4 border-purple-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Old NIC Format (Pre-2016)</h4>
+                <p class="text-gray-600 mb-3">Format: 9 digits followed by 'V' or 'X' (e.g., 123456789V)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{9}[VvXx]$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{9}[VvXx]$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>123456789V</li>
+                            <li>987654321X</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New NIC Format -->
+            <div class="border-l-4 border-purple-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">New NIC Format (2016 onwards)</h4>
+                <p class="text-gray-600 mb-3">Format: 12 digits (e.g., 199812345678)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{12}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{12}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>199812345678</li>
+                            <li>200056789012</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combined NIC Pattern -->
+            <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Combined Pattern (Both Formats)</h4>
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                    <button class="copy-pattern-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^(\d{9}[VvXx]|\d{12})$">
+                        <i class="fas fa-copy mr-1"></i> Copy
+                    </button>
+                </div>
+                <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^(\d{9}[VvXx]|\d{12})$</code>
+            </div>
+        </section>
+
+        <!-- Passport Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-passport text-4xl text-green-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Passport Numbers</h3>
+                    <p class="text-gray-600">Sri Lankan passport number format</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-green-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Sri Lankan Passport</h4>
+                <p class="text-gray-600 mb-3">Format: 1 letter followed by 7 digits (e.g., N1234567)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^[A-Z]\d{7}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^[A-Z]\d{7}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>N1234567</li>
+                            <li>P9876543</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-mobile-alt text-4xl text-indigo-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Mobile Numbers</h3>
+                    <p class="text-gray-600">Sri Lankan mobile phone numbers</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-indigo-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Standard Format</h4>
+                <p class="text-gray-600 mb-3">Format: 07X followed by 8 digits (e.g., 0771234567)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^0[7][0-9]{8}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^0[7][0-9]{8}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>0771234567</li>
+                            <li>0761234567</li>
+                            <li>0701234567</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-indigo-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">International Format</h4>
+                <p class="text-gray-600 mb-3">Format: +94 followed by 9 digits (e.g., +94771234567)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\+94[7][0-9]{8}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\+94[7][0-9]{8}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>+94771234567</li>
+                            <li>+94761234567</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bank Account Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-university text-4xl text-yellow-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Bank Account Numbers</h3>
+                    <p class="text-gray-600">Sri Lankan bank account number formats</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-yellow-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Standard Account Number</h4>
+                <p class="text-gray-600 mb-3">Format: 10-16 digits (varies by bank)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{10,16}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{10,16}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>1234567890</li>
+                            <li>12345678901234</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-yellow-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">IBAN Format (Sri Lanka)</h4>
+                <p class="text-gray-600 mb-3">Format: LK followed by 2 check digits and bank code</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^LK\d{2}[A-Z0-9]{4}\d{16}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^LK\d{2}[A-Z0-9]{4}\d{16}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Example:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>LK12BANK1234567890123456</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIN Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-file-invoice-dollar text-4xl text-red-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Tax Identification Number (TIN)</h3>
+                    <p class="text-gray-600">Sri Lankan TIN format</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-red-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">TIN Format</h4>
+                <p class="text-gray-600 mb-3">Format: 9 digits (e.g., 123456789)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{9}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{9}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>123456789</li>
+                            <li>987654321</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credit/Debit Card Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-credit-card text-4xl text-pink-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Credit and Debit Card Numbers</h3>
+                    <p class="text-gray-600">International card number formats</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-pink-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Visa Card</h4>
+                <p class="text-gray-600 mb-3">Format: Starts with 4, 13 or 16 digits</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^4\d{12}(?:\d{3})?$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^4\d{12}(?:\d{3})?$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Example:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>4532015112345678</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-pink-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Mastercard</h4>
+                <p class="text-gray-600 mb-3">Format: Starts with 51-55 or 2221-2720, 16 digits</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^(?:5[1-5]\d{2}|222[1-9]|22[3-9]\d|2[3-6]\d{2}|27[01]\d|2720)\d{12}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^(?:5[1-5]\d{2}|222[1-9]|22[3-9]\d|2[3-6]\d{2}|27[01]\d|2720)\d{12}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Example:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>5425233430109903</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-pink-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">American Express</h4>
+                <p class="text-gray-600 mb-3">Format: Starts with 34 or 37, 15 digits</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^3[47]\d{13}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^3[47]\d{13}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Example:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>371449635398431</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-pink-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">General Card Pattern</h4>
+                <p class="text-gray-600 mb-3">Format: 13-19 digits, with optional spaces or hyphens</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4,7}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4,7}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>1234 5678 9012 3456</li>
+                            <li>1234-5678-9012-3456</li>
+                            <li>1234567890123456</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email Addresses Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-envelope text-4xl text-teal-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Email Addresses</h3>
+                    <p class="text-gray-600">Standard email address format</p>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-teal-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Email Format</h4>
+                <p class="text-gray-600 mb-3">Standard email address pattern</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>user@example.com</li>
+                            <li>john.doe@company.lk</li>
+                            <li>info@opendlp-lk.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Patterns Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-th-list text-4xl text-orange-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Additional Data Patterns</h3>
+                    <p class="text-gray-600">Other common Sri Lankan data patterns</p>
+                </div>
+            </div>
+
+            <!-- Landline Numbers -->
+            <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Landline Phone Numbers</h4>
+                <p class="text-gray-600 mb-3">Format: Area code (2-3 digits) + 7 digits (e.g., 0112345678)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^0[1-9]\d{8}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^0[1-9]\d{8}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>0112345678 (Colombo)</li>
+                            <li>0812345678 (Kandy)</li>
+                            <li>0912345678 (Galle)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postal Codes -->
+            <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Postal Codes</h4>
+                <p class="text-gray-600 mb-3">Format: 5 digits (e.g., 10100)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^\d{5}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^\d{5}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>10100 (Colombo Fort)</li>
+                            <li>20000 (Kandy)</li>
+                            <li>80000 (Galle)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle Registration Numbers -->
+            <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Vehicle Registration Numbers</h4>
+                <p class="text-gray-600 mb-3">Format: Province code + letters + numbers (e.g., WP CAB-1234)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^[A-Z]{2,3}[\s-]?[A-Z]{2,3}[\s-]?\d{4}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^[A-Z]{2,3}[\s-]?[A-Z]{2,3}[\s-]?\d{4}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>WP CAB-1234</li>
+                            <li>CP ABC-5678</li>
+                            <li>NP XYZ-9012</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Registration Numbers -->
+            <div class="border-l-4 border-orange-500 pl-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Business Registration Number (BRN)</h4>
+                <p class="text-gray-600 mb-3">Format: PV followed by numbers (e.g., PV00123456)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="^PV\d{8}$">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">^PV\d{8}$</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Example:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>PV00123456</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Guidelines Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white">
+            <h3 class="text-2xl font-bold mb-4">Implementation Guidelines</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <i class="fas fa-shield-alt text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">DLP Integration</h4>
+                    <p class="text-blue-100">Use these patterns in your DLP solution to detect and protect sensitive Sri Lankan data in transit and at rest.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <i class="fas fa-check-circle text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">PDPA Compliance</h4>
+                    <p class="text-blue-100">These patterns help ensure compliance with Sri Lanka's Personal Data Protection Act (PDPA) No. 9 of 2022.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <i class="fas fa-code text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Testing Required</h4>
+                    <p class="text-blue-100">Always test regex patterns with your specific data sets to ensure accuracy and reduce false positives.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur">
+                    <i class="fas fa-sync-alt text-3xl mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Regular Updates</h4>
+                    <p class="text-blue-100">Keep patterns updated as data formats evolve. Contribute improvements via our GitHub repository.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mt-8">
+            <div class="text-center">
+                <i class="fas fa-comments text-5xl text-blue-600 mb-4"></i>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Found an Issue or Have a Suggestion?</h3>
+                <p class="text-gray-600 mb-6">Help us improve these patterns! Contribute or report issues on our GitHub repository.</p>
+                <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/issues" target="_blank" class="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition">
+                    <i class="fab fa-github mr-2"></i> Report on GitHub
+                </a>
             </div>
         </section>
     </main>
@@ -63,5 +571,72 @@
 
     <script src="/assets/js/main.js"></script>
     <script>document.getElementById('mobile-menu-btn')?.addEventListener('click', () => document.getElementById('mobile-menu')?.classList.toggle('hidden'));</script>
+    
+    <!-- Custom Pattern Copy Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize copy buttons for patterns
+            const copyButtons = document.querySelectorAll('.copy-pattern-btn');
+            
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const pattern = this.getAttribute('data-pattern');
+                    
+                    // Copy to clipboard
+                    if (navigator.clipboard) {
+                        navigator.clipboard.writeText(pattern).then(() => {
+                            showCopyFeedback(this);
+                        }).catch(err => {
+                            console.error('Failed to copy:', err);
+                            fallbackCopy(pattern);
+                            showCopyFeedback(this);
+                        });
+                    } else {
+                        fallbackCopy(pattern);
+                        showCopyFeedback(this);
+                    }
+                });
+            });
+            
+            function fallbackCopy(text) {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                } catch (err) {
+                    console.error('Fallback copy failed:', err);
+                }
+                document.body.removeChild(textarea);
+            }
+            
+            function showCopyFeedback(button) {
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-1"></i> Copied!';
+                button.classList.add('bg-green-600', 'hover:bg-green-700');
+                button.classList.remove('bg-blue-600', 'hover:bg-blue-700', 'bg-green-600', 'hover:bg-green-700', 'bg-indigo-600', 'hover:bg-indigo-700', 'bg-yellow-600', 'hover:bg-yellow-700', 'bg-red-600', 'hover:bg-red-700', 'bg-pink-600', 'hover:bg-pink-700', 'bg-teal-600', 'hover:bg-teal-700', 'bg-orange-600', 'hover:bg-orange-700');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('bg-green-600', 'hover:bg-green-700');
+                    // Restore original color based on parent section
+                    const section = button.closest('section');
+                    if (section) {
+                        const icon = section.querySelector('i[class*="text-"]');
+                        if (icon) {
+                            const colorClass = icon.className.match(/text-(\w+)-\d+/);
+                            if (colorClass) {
+                                const color = colorClass[1];
+                                button.classList.add(`bg-${color}-600`, `hover:bg-${color}-700`);
+                            }
+                        }
+                    }
+                }, 2000);
+            }
+        });
+    </script>
 </body>
 </html>
