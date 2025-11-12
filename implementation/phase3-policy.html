@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phase 3: Policy & Controls - Develop DLP policies and configure detection rules">
+    <title>Phase 3: Policy & Controls - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold border-b-2 border-blue-600">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-6">
+                <a href="/implementation/" class="text-pink-100 hover:text-white transition">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Implementation Guide
+                </a>
+                <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-semibold">Phase 3 of 5</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Phase 3: Policy & Controls</h1>
+            <p class="text-xl text-pink-100 mb-6">
+                Develop comprehensive DLP policies, configure detection rules, and establish incident response procedures
+            </p>
+            <div class="flex items-center gap-6 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-clock mr-2"></i>
+                    <span>Duration: 4-6 months</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-users mr-2"></i>
+                    <span>Team: 5-7 members</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Overview -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Overview</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                The Policy & Controls phase translates your data discovery findings into actionable protection measures. 
+                This phase involves creating comprehensive DLP policies, configuring detection rules aligned with PDPA 
+                requirements, establishing incident response procedures, and developing user training programs.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-pink-50 p-6 rounded-lg">
+                    <i class="fas fa-file-contract text-pink-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Key Objective</h3>
+                    <p class="text-sm text-gray-700">Create enforceable policies and technical controls to prevent data loss</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <i class="fas fa-shield-alt text-purple-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Success Criteria</h3>
+                    <p class="text-sm text-gray-700">Approved policies, configured DLP rules, and trained user community</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <i class="fas fa-cogs text-blue-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Deliverables</h3>
+                    <p class="text-sm text-gray-700">Policy documents, DLP rules, incident response playbook, training materials</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Activities -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Key Activities</h2>
+            
+            <!-- Activity 1 -->
+            <div class="border-l-4 border-pink-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">1. Develop DLP Policies</h3>
+                <p class="text-gray-700 mb-4">
+                    Create comprehensive data protection policies aligned with PDPA and business requirements.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Define acceptable use policies for sensitive data</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Create data sharing and transfer policies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Document data retention and disposal policies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Establish email and removable media policies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Get legal and compliance review and approval</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        <strong class="text-blue-900">Policy Templates:</strong> Access ready-to-use 
+                        <a href="/resources/templates.html" class="text-blue-600 hover:underline">Policy Templates</a> 
+                        aligned with PDPA requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="border-l-4 border-purple-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">2. Configure Detection Rules</h3>
+                <p class="text-gray-700 mb-4">
+                    Set up technical controls using data patterns and classification rules.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Configure content inspection rules using Sri Lankan data patterns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Set up context-based rules (sender, receiver, classification)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Define actions (block, alert, encrypt, quarantine)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Configure exception handling and workflow approvals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Test rules thoroughly in monitor mode before enforcement</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="border-l-4 border-blue-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">3. Establish Incident Response</h3>
+                <p class="text-gray-700 mb-4">
+                    Create processes for responding to and managing DLP incidents.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Define incident severity levels and escalation procedures</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Create incident response playbooks for common scenarios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Establish incident investigation and remediation workflow</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Set up PDPA breach notification procedures</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Define roles and responsibilities for incident response team</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 4 -->
+            <div class="border-l-4 border-green-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">4. Develop User Training</h3>
+                <p class="text-gray-700 mb-4">
+                    Create comprehensive training program to educate users on data protection.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Create awareness materials on data protection and PDPA</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Develop role-specific training modules</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Create quick reference guides and FAQs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Set up Data Champions program for departmental support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Schedule initial training sessions for all staff</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        <strong class="text-green-900">Data Champions:</strong> Learn about our 
+                        <a href="/data-champions/" class="text-green-600 hover:underline">Data Champions Program</a> 
+                        to build internal expertise.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 5 -->
+            <div class="border-l-4 border-indigo-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">5. Deploy Endpoint Controls</h3>
+                <p class="text-gray-700 mb-4">
+                    Implement DLP agents on user endpoints to monitor and control data.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Configure endpoint DLP agents for laptops and desktops</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Set up USB/removable media controls</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Configure clipboard and screen capture controls</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Deploy cloud application controls (CASB integration)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Test endpoint controls in pilot group</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 6 -->
+            <div class="border-l-4 border-orange-600 pl-6 pb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">6. Configure Network Controls</h3>
+                <p class="text-gray-700 mb-4">
+                    Set up network-level DLP controls to monitor data in transit.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Deploy email DLP gateway for outbound scanning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Configure web gateway DLP for HTTP/HTTPS traffic</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Set up FTP and file transfer monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Configure SSL/TLS inspection where appropriate</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Integrate with SIEM for centralized logging</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Policy Framework -->
+        <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">DLP Policy Framework</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-pink-200">
+                    <h3 class="font-bold text-lg mb-3 text-pink-900">
+                        <i class="fas fa-user-shield text-pink-600 mr-2"></i>Data Handling Policy
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Guidelines for creating, storing, sharing, and disposing of sensitive data</p>
+                    <a href="/resources/templates.html" class="text-pink-600 text-sm hover:underline">Download Template →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-lg mb-3 text-purple-900">
+                        <i class="fas fa-envelope text-purple-600 mr-2"></i>Email Security Policy
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Rules for sending sensitive data via email, including encryption requirements</p>
+                    <a href="/resources/templates.html" class="text-purple-600 text-sm hover:underline">Download Template →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-lg mb-3 text-blue-900">
+                        <i class="fas fa-usb text-blue-600 mr-2"></i>Removable Media Policy
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Controls for USB drives and external storage devices</p>
+                    <a href="/resources/templates.html" class="text-blue-600 text-sm hover:underline">Download Template →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg border border-green-200">
+                    <h3 class="font-bold text-lg mb-3 text-green-900">
+                        <i class="fas fa-exclamation-triangle text-green-600 mr-2"></i>Incident Response Policy
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Procedures for reporting and handling data loss incidents</p>
+                    <a href="/resources/templates.html" class="text-green-600 text-sm hover:underline">Download Template →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deliverables -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Deliverables</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-file-contract text-pink-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">DLP Policy Suite</h3>
+                            <p class="text-sm text-gray-700">Complete set of approved data protection policies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-cogs text-purple-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Configured DLP Rules</h3>
+                            <p class="text-sm text-gray-700">Technical controls deployed and tested in monitor mode</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-book-medical text-blue-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Incident Response Playbook</h3>
+                            <p class="text-sm text-gray-700">Step-by-step procedures for handling DLP incidents</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-graduation-cap text-green-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Training Materials</h3>
+                            <p class="text-sm text-gray-700">User awareness and training content for all roles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-users text-indigo-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Data Champions Network</h3>
+                            <p class="text-sm text-gray-700">Trained departmental representatives ready to support rollout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-chart-line text-orange-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Baseline Metrics</h3>
+                            <p class="text-sm text-gray-700">Initial data loss risk metrics for measuring improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Resources & Templates</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/resources/templates.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-file-download text-pink-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Policy Templates</h3>
+                    <p class="text-sm text-gray-700">PDPA-compliant policy templates ready for customization</p>
+                </a>
+                <a href="/data-champions/" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-users-cog text-purple-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Champions Program</h3>
+                    <p class="text-sm text-gray-700">Build your Data Champions network</p>
+                </a>
+                <a href="/pdpa-compliance/requirements.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-balance-scale text-blue-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">PDPA Requirements</h3>
+                    <p class="text-sm text-gray-700">Map policies to PDPA obligations</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-xl p-8">
+            <h2 class="text-3xl font-bold mb-6">Ready for Phase 4?</h2>
+            <p class="text-xl text-pink-100 mb-8">
+                With policies approved and controls configured, you're ready to begin pilot deployment.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/implementation/phase4-pilot.html" class="bg-white text-pink-700 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition text-center">
+                    <i class="fas fa-arrow-right mr-2"></i>Continue to Phase 4
+                </a>
+                <a href="/implementation/phase2-discovery.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Phase 2
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
