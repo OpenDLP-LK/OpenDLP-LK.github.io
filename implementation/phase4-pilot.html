@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phase 4: Pilot & Rollout - Testing and deploying DLP solution organization-wide">
+    <title>Phase 4: Pilot - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold border-b-2 border-blue-600">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-4">
+                <a href="/implementation/" class="text-green-200 hover:text-white transition">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Implementation Guide
+                </a>
+            </div>
+            <div class="flex items-center mb-6">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-green-600 font-bold text-3xl mr-6">4</div>
+                <div>
+                    <h1 class="text-5xl font-bold mb-2">Phase 4: Pilot & Rollout</h1>
+                    <p class="text-xl text-green-100">Testing & Deployment | Months 6-9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Overview</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Phase 4 moves your DLP solution from planning to production. Start with a controlled pilot to validate 
+                policies, tune detection accuracy, and gather user feedback. Then gradually roll out to the entire 
+                organization while monitoring performance and making adjustments.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <i class="fas fa-clock text-green-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Duration</h3>
+                    <p class="text-gray-700">3 months</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <i class="fas fa-users text-green-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Key Stakeholders</h3>
+                    <p class="text-gray-700">IT Operations, Help Desk, All Departments</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <i class="fas fa-check-circle text-green-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Success Criteria</h3>
+                    <p class="text-gray-700">100% deployment, &lt;5% false positive rate, user adoption</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Pilot Program Structure</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3">Pilot Group Selection</h3>
+                    <p class="text-gray-700 mb-3">Choose 50-100 users representing diverse roles and use cases:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-3 mt-1"></i>Mix of technical and non-technical users</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-3 mt-1"></i>Departments with high data sensitivity (HR, Finance)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-3 mt-1"></i>Power users who can provide detailed feedback</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-600 mr-3 mt-1"></i>IT champions who understand technical aspects</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3">Pilot Duration & Phases</h3>
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded">
+                            <strong>Week 1-2: Monitor Mode</strong>
+                            <p class="text-sm text-gray-700">Log all policy violations without blocking. Review patterns and tune rules.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <strong>Week 3-4: Alert Mode</strong>
+                            <p class="text-sm text-gray-700">Notify users of violations. Educate and adjust policies based on feedback.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded">
+                            <strong>Week 5-8: Enforcement Mode</strong>
+                            <p class="text-sm text-gray-700">Enable blocking for critical policies. Monitor user adaptation and support needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Rollout Strategy</h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Department-by-Department</h3>
+                        <p class="text-gray-700">Roll out to one department per week. Start with IT-savvy groups, finish with less technical teams who benefit from refined policies.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Communication Campaign</h3>
+                        <p class="text-gray-700">Email announcements, town halls, training sessions. Explain why DLP matters (PDPA compliance, data protection) and how it affects daily work.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Training & Support</h3>
+                        <p class="text-gray-700">Conduct hands-on training. Establish help desk support for DLP questions. Create FAQs and quick reference guides.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Monitoring & Tuning</h3>
+                        <p class="text-gray-700">Track metrics daily: false positives, user complaints, policy violations. Adjust rules weekly based on data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Success Metrics</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4 text-green-600">Technical Metrics</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• False Positive Rate: &lt;5%</li>
+                        <li>• Policy Coverage: 100% of endpoints</li>
+                        <li>• Detection Accuracy: &gt;95%</li>
+                        <li>• System Performance: &lt;2% CPU overhead</li>
+                        <li>• Incident Response Time: &lt;1 hour</li>
+                    </ul>
+                </div>
+                <div class="border border-gray-200 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4 text-green-600">User Metrics</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• Training Completion: &gt;95%</li>
+                        <li>• User Satisfaction: &gt;4/5</li>
+                        <li>• Support Tickets: Decreasing trend</li>
+                        <li>• Policy Awareness: &gt;90%</li>
+                        <li>• Exception Requests: &lt;10/month</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Common Challenges & Solutions</h2>
+            <div class="space-y-4">
+                <div class="bg-red-50 border border-red-200 p-5 rounded-lg">
+                    <h4 class="font-bold text-lg mb-2 flex items-center">
+                        <i class="fas fa-exclamation-triangle text-red-600 mr-3"></i>Challenge: High False Positive Rate
+                    </h4>
+                    <p class="text-gray-700 mb-2"><strong>Solution:</strong> Review top 10 false positive patterns. Refine regex patterns, add exceptions for legitimate business processes, train ML models with actual data.</p>
+                </div>
+                <div class="bg-yellow-50 border border-yellow-200 p-5 rounded-lg">
+                    <h4 class="font-bold text-lg mb-2 flex items-center">
+                        <i class="fas fa-users text-yellow-600 mr-3"></i>Challenge: User Resistance
+                    </h4>
+                    <p class="text-gray-700 mb-2"><strong>Solution:</strong> Emphasize PDPA legal requirements and personal liability. Show examples of data breaches and consequences. Involve department leaders as champions.</p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 p-5 rounded-lg">
+                    <h4 class="font-bold text-lg mb-2 flex items-center">
+                        <i class="fas fa-tachometer-alt text-blue-600 mr-3"></i>Challenge: Performance Impact
+                    </h4>
+                    <p class="text-gray-700 mb-2"><strong>Solution:</strong> Optimize scan schedules during off-hours. Exclude low-risk areas. Upgrade hardware if necessary. Use cloud-based DLP for better scalability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Practices</h2>
+            <div class="space-y-4">
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Overcommunicate</h4>
+                        <p class="text-gray-700 text-sm">Send weekly updates during rollout. Share success stories. Acknowledge and address concerns publicly.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Celebrate Quick Wins</h4>
+                        <p class="text-gray-700 text-sm">Highlight prevented data breaches, blocked malicious emails, detected insider threats. Build confidence in the system.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Be Flexible</h4>
+                        <p class="text-gray-700 text-sm">If a department needs policy adjustments for legitimate reasons, accommodate them. Rigid enforcement kills adoption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600 mb-2">Previous Phase</p>
+                    <a href="/implementation/phase3-policy.html" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition">
+                        <i class="fas fa-arrow-left mr-2"></i>Phase 3: Policy
+                    </a>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-600 mb-2">Next Phase</p>
+                    <a href="/implementation/phase5-monitoring.html" class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                        Phase 5: Monitoring <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
