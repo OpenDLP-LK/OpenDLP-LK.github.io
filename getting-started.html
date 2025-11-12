@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quick start guide to implement DLP in your Sri Lankan organization - PDPA compliant">
+    <title>Getting Started - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700 hover:text-blue-600 transition">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-blue-600 font-semibold">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4">Getting Started with DLP</h1>
+            <p class="text-xl text-blue-100">Your quick guide to implementing Data Loss Prevention in Sri Lanka</p>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">🚀 Quick Start in 4 Steps</h2>
+            
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
+                    </div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Understand PDPA Requirements</h3>
+                        <p class="text-gray-700 mb-3">
+                            Sri Lanka's Personal Data Protection Act (No. 9 of 2022) requires organizations to protect personal data.
+                            Key obligations include obtaining consent, implementing security measures, and reporting breaches within 72 hours.
+                        </p>
+                        <a href="/pdpa-compliance/" class="text-blue-600 hover:underline font-semibold">
+                            Learn about PDPA →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
+                    </div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Review the Implementation Guide</h3>
+                        <p class="text-gray-700 mb-3">
+                            Our 5-phase implementation guide takes you from planning to continuous monitoring.
+                            Each phase includes detailed tasks, templates, and best practices.
+                        </p>
+                        <a href="/implementation/" class="text-purple-600 hover:underline font-semibold">
+                            View Implementation Guide →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
+                    </div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Download Templates & Tools</h3>
+                        <p class="text-gray-700 mb-3">
+                            Access ready-to-use policy templates, data classification guides, and Sri Lankan data patterns
+                            (NIC, passport, bank account formats).
+                        </p>
+                        <a href="/resources/templates.html" class="text-green-600 hover:underline font-semibold">
+                            Browse Resources →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-xl">4</div>
+                    </div>
+                    <div class="ml-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Start Implementation</h3>
+                        <p class="text-gray-700 mb-3">
+                            Begin with Phase 1 (Planning) to secure stakeholder buy-in, conduct gap analysis,
+                            and build your implementation roadmap.
+                        </p>
+                        <a href="/implementation/phase1-planning.html" class="text-pink-600 hover:underline font-semibold">
+                            Start Phase 1 →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-6 rounded-lg mb-8">
+            <div class="flex items-center mb-3">
+                <i class="fas fa-lightbulb text-yellow-600 text-2xl mr-3"></i>
+                <h3 class="text-xl font-bold text-gray-900">First Time Implementing DLP?</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+                We recommend following our structured approach rather than jumping straight into technical implementation.
+                Start by understanding your data, building stakeholder support, and creating clear policies.
+            </p>
+            <a href="/implementation/checklist.html" class="inline-block bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700 transition">
+                <i class="fas fa-clipboard-check mr-2"></i>View Complete Checklist
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <i class="fas fa-clock text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Timeline</h3>
+                <p class="text-gray-700 mb-4">
+                    Complete implementation typically takes 6-12 months depending on organization size and complexity.
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Phase 1: 0-2 months</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Phase 2: 2-4 months</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Phase 3: 4-6 months</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Phase 4: 6-9 months</li>
+                    <li><i class="fas fa-check text-green-600 mr-2"></i>Phase 5: Ongoing</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <i class="fas fa-users text-purple-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Team Size</h3>
+                <p class="text-gray-700 mb-4">
+                    Recommended team composition for successful DLP implementation.
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-user text-blue-600 mr-2"></i>Project Sponsor (C-level)</li>
+                    <li><i class="fas fa-user text-blue-600 mr-2"></i>Data Protection Officer</li>
+                    <li><i class="fas fa-user text-blue-600 mr-2"></i>IT/Security Lead</li>
+                    <li><i class="fas fa-user text-blue-600 mr-2"></i>Legal/Compliance Officer</li>
+                    <li><i class="fas fa-users text-blue-600 mr-2"></i>Department Champions (3-5)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Essential Resources</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="/implementation/checklist.html" class="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-clipboard-check text-blue-600 text-2xl mb-2"></i>
+                    <h4 class="font-bold mb-1">Checklist</h4>
+                    <p class="text-sm text-gray-600">Task-by-task guide</p>
+                </a>
+                <a href="/resources/templates.html" class="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-file-alt text-purple-600 text-2xl mb-2"></i>
+                    <h4 class="font-bold mb-1">Templates</h4>
+                    <p class="text-sm text-gray-600">Ready-to-use policies</p>
+                </a>
+                <a href="/resources/patterns.html" class="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-fingerprint text-green-600 text-2xl mb-2"></i>
+                    <h4 class="font-bold mb-1">Data Patterns</h4>
+                    <p class="text-sm text-gray-600">Sri Lankan formats</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Begin?</h2>
+            <p class="text-xl text-blue-100 mb-6">
+                Start your DLP implementation journey today
+            </p>
+            <a href="/implementation/phase1-planning.html" class="inline-block bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
+                <i class="fas fa-rocket mr-2"></i>Start Phase 1: Planning
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
