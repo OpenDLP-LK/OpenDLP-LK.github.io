@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenDLP-LK - Open-source Data Loss Prevention implementation guide for Sri Lankan enterprises, aligned with PDPA No. 9 of 2022">
+    <meta name="keywords" content="DLP, Data Loss Prevention, PDPA, Sri Lanka, Data Protection, Cybersecurity, Compliance">
+    <meta name="author" content="OpenDLP-LK Community">
+    <title>OpenDLP-LK - Data Loss Prevention for Sri Lankan Enterprises</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-blue-600 font-semibold border-b-2 border-blue-600">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700 hover:text-blue-600 transition">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-blue-600 font-semibold">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="text-gray-700">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-white/20 rounded-full px-4 py-2 mb-6">
+                        <span class="text-sm font-semibold">🇱🇰 PDPA Act No. 9 of 2022 Aligned</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Open-Source <span class="text-yellow-300">DLP Implementation</span> for Sri Lanka
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8">
+                        Comprehensive, practical resources to implement Data Loss Prevention in your enterprise. 
+                        Free. Open-source. Community-driven.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/getting-started.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition text-center">
+                            <i class="fas fa-rocket mr-2"></i>Get Started
+                        </a>
+                        <a href="/implementation/" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition text-center">
+                            <i class="fas fa-book mr-2"></i>View Guide
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 mt-12">
+                        <div>
+                            <div class="text-3xl font-bold">5</div>
+                            <div class="text-sm text-blue-200">Implementation Phases</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">100%</div>
+                            <div class="text-sm text-blue-200">PDPA Compliant</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">Free</div>
+                            <div class="text-sm text-blue-200">Open Source</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                        <h3 class="text-2xl font-bold mb-4">Quick Access</h3>
+                        <div class="space-y-3">
+                            <a href="/implementation/checklist.html" class="block bg-white/10 hover:bg-white/20 rounded-lg p-4 transition">
+                                <i class="fas fa-clipboard-check text-yellow-300 mr-3"></i>
+                                <span class="font-semibold">Implementation Checklist</span>
+                            </a>
+                            <a href="/pdpa-compliance/" class="block bg-white/10 hover:bg-white/20 rounded-lg p-4 transition">
+                                <i class="fas fa-balance-scale text-green-300 mr-3"></i>
+                                <span class="font-semibold">PDPA Compliance Guide</span>
+                            </a>
+                            <a href="/resources/templates.html" class="block bg-white/10 hover:bg-white/20 rounded-lg p-4 transition">
+                                <i class="fas fa-file-alt text-blue-300 mr-3"></i>
+                                <span class="font-semibold">Policy Templates</span>
+                            </a>
+                            <a href="/data-champions/" class="block bg-white/10 hover:bg-white/20 rounded-lg p-4 transition">
+                                <i class="fas fa-users text-pink-300 mr-3"></i>
+                                <span class="font-semibold">Data Champions Program</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why OpenDLP-LK?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Everything you need to implement enterprise-grade Data Loss Prevention, 
+                    tailored for Sri Lankan organizations and PDPA compliance.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marked-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Step-by-Step Roadmap</h3>
+                    <p class="text-gray-700 mb-4">
+                        Comprehensive 5-phase implementation guide from planning to continuous monitoring. 
+                        No guesswork—just follow the phases.
+                    </p>
+                    <a href="/implementation/" class="text-blue-600 font-semibold hover:underline">
+                        View Roadmap <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border border-purple-200">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">PDPA Aligned</h3>
+                    <p class="text-gray-700 mb-4">
+                        Every resource mapped to Sri Lanka's Personal Data Protection Act No. 9 of 2022. 
+                        Stay compliant with confidence.
+                    </p>
+                    <a href="/pdpa-compliance/" class="text-purple-600 font-semibold hover:underline">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 border border-green-200">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-download text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready-to-Use Templates</h3>
+                    <p class="text-gray-700 mb-4">
+                        Download policy templates, checklists, data patterns, and training materials. 
+                        Customize and deploy instantly.
+                    </p>
+                    <a href="/resources/templates.html" class="text-green-600 font-semibold hover:underline">
+                        Browse Templates <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-8 border border-pink-200">
+                    <div class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-globe-asia text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Sri Lankan Context</h3>
+                    <p class="text-gray-700 mb-4">
+                        NIC patterns, local banking formats, Sinhala/Tamil support, and PDPA-specific guidance. 
+                        Built for LK enterprises.
+                    </p>
+                    <a href="/resources/patterns.html" class="text-pink-600 font-semibold hover:underline">
+                        View Patterns <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-8 border border-yellow-200">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Data Champions Program</h3>
+                    <p class="text-gray-700 mb-4">
+                        Train department leaders to drive DLP adoption. Training materials, certification, 
+                        and ongoing support included.
+                    </p>
+                    <a href="/data-champions/" class="text-yellow-600 font-semibold hover:underline">
+                        Start Training <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-8 border border-indigo-200">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Open Source & Free</h3>
+                    <p class="text-gray-700 mb-4">
+                        MIT Licensed. Fork, customize, contribute. Join hundreds of security professionals 
+                        building together.
+                    </p>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="text-indigo-600 font-semibold hover:underline">
+                        View on GitHub <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Timeline Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">5-Phase Implementation</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From planning to continuous monitoring in 6-12 months. Follow our proven framework.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">1</div>
+                    <h3 class="font-bold text-lg mb-2">Planning</h3>
+                    <p class="text-sm text-gray-600">Months 0-2</p>
+                    <a href="/implementation/phase1-planning.html" class="text-blue-600 text-sm hover:underline mt-2 inline-block">Learn More →</a>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">2</div>
+                    <h3 class="font-bold text-lg mb-2">Discovery</h3>
+                    <p class="text-sm text-gray-600">Months 2-4</p>
+                    <a href="/implementation/phase2-discovery.html" class="text-purple-600 text-sm hover:underline mt-2 inline-block">Learn More →</a>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">3</div>
+                    <h3 class="font-bold text-lg mb-2">Policy</h3>
+                    <p class="text-sm text-gray-600">Months 4-6</p>
+                    <a href="/implementation/phase3-policy.html" class="text-pink-600 text-sm hover:underline mt-2 inline-block">Learn More →</a>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">4</div>
+                    <h3 class="font-bold text-lg mb-2">Pilot</h3>
+                    <p class="text-sm text-gray-600">Months 6-9</p>
+                    <a href="/implementation/phase4-pilot.html" class="text-green-600 text-sm hover:underline mt-2 inline-block">Learn More →</a>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">5</div>
+                    <h3 class="font-bold text-lg mb-2">Monitoring</h3>
+                    <p class="text-sm text-gray-600">Ongoing</p>
+                    <a href="/implementation/phase5-monitoring.html" class="text-indigo-600 text-sm hover:underline mt-2 inline-block">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="/implementation/" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition inline-block">
+                    View Complete Guide <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Protect Your Data?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join organizations across Sri Lanka implementing world-class data protection.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/getting-started.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
+                    <i class="fas fa-play-circle mr-2"></i>Get Started Now
+                </a>
+                <a href="/community/" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">
+                    <i class="fas fa-users mr-2"></i>Join Community
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm mb-4">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/OpenDLP-LK" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation Guide</a></li>
+                        <li><a href="/resources/" class="hover:text-white transition">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/resources/patterns.html" class="hover:text-white transition">Data Patterns</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="/community/discussions.html" class="hover:text-white transition">Discussions</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="/community/events.html" class="hover:text-white transition">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+                <p class="text-gray-500 mt-2">
+                    <a href="/docs/LICENSE.md" class="hover:text-white">License</a> | 
+                    <a href="/docs/CODE_OF_CONDUCT.md" class="hover:text-white">Code of Conduct</a> | 
+                    <a href="/community/contribute.html" class="hover:text-white">Contributing</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/main.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
