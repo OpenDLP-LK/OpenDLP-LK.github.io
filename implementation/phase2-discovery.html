@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phase 2: Discovery - Data discovery and classification for comprehensive DLP coverage">
-    <title>Phase 2: Discovery - OpenDLP-LK</title>
+    <meta name="description" content="Phase 2: Discovery & Classification - Identify and classify sensitive data across your organization">
+    <title>Phase 2: Discovery & Classification - OpenDLP-LK</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -55,309 +55,427 @@
         </div>
     </nav>
 
-    <!-- Phase Header -->
-    <section class="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-16">
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-purple-500 to-purple-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center mb-4">
-                <a href="/implementation/" class="text-purple-200 hover:text-white transition">
+            <div class="flex items-center justify-between mb-6">
+                <a href="/implementation/" class="text-purple-100 hover:text-white transition">
                     <i class="fas fa-arrow-left mr-2"></i>Back to Implementation Guide
                 </a>
+                <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-semibold">Phase 2 of 5</span>
             </div>
-            <div class="flex items-center mb-6">
-                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-purple-600 font-bold text-3xl mr-6">2</div>
-                <div>
-                    <h1 class="text-5xl font-bold mb-2">Phase 2: Discovery</h1>
-                    <p class="text-xl text-purple-100">Data Inventory & Classification | Months 2-4</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Phase 2: Discovery & Classification</h1>
+            <p class="text-xl text-purple-100 mb-6">
+                Identify and classify sensitive information across your organization, including Sri Lankan personal data patterns
+            </p>
+            <div class="flex items-center gap-6 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-clock mr-2"></i>
+                    <span>Duration: 2-4 months</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-users mr-2"></i>
+                    <span>Team: 4-6 members</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <!-- Content -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         <!-- Overview -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Overview</h2>
-            <p class="text-lg text-gray-700 mb-6">
-                The Discovery phase focuses on identifying and classifying all sensitive data across your organization. 
-                This comprehensive inventory ensures your DLP solution protects the right data in the right ways, 
-                meeting PDPA's data processing transparency requirements.
+            <p class="text-lg text-gray-700 mb-4">
+                The Discovery & Classification phase focuses on understanding where sensitive data resides within your 
+                organization. This includes deploying automated discovery tools, identifying Sri Lankan-specific personal 
+                data patterns (NIC, passport numbers, bank details), and establishing a comprehensive data inventory.
             </p>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                    <i class="fas fa-clock text-purple-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Duration</h3>
-                    <p class="text-gray-700">2 months</p>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <i class="fas fa-search text-purple-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Key Objective</h3>
+                    <p class="text-sm text-gray-700">Discover all locations of sensitive and personal data across the enterprise</p>
                 </div>
-                <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                    <i class="fas fa-users text-purple-600 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-lg mb-2">Key Stakeholders</h3>
-                    <p class="text-gray-700">IT, Data Owners, Business Units</p>
-                </div>
-                <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                    <i class="fas fa-check-circle text-purple-600 text-3xl mb-3"></i>
+                <div class="bg-pink-50 p-6 rounded-lg">
+                    <i class="fas fa-tags text-pink-600 text-3xl mb-3"></i>
                     <h3 class="font-bold text-lg mb-2">Success Criteria</h3>
-                    <p class="text-gray-700">Complete data inventory, classification schema</p>
+                    <p class="text-sm text-gray-700">Complete data inventory with accurate classification and ownership mapping</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <i class="fas fa-database text-blue-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Deliverables</h3>
+                    <p class="text-sm text-gray-700">Data inventory, classification schema, and Sri Lankan data pattern library</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Key Objectives -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Objectives</h2>
-            <div class="space-y-4">
-                <div class="flex items-start">
-                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Map Data Landscape</h3>
-                        <p class="text-gray-700">Identify all locations where sensitive data resides: databases, file shares, cloud storage, endpoints, email, collaboration tools.</p>
-                    </div>
+        <!-- Key Activities -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Key Activities</h2>
+            
+            <!-- Activity 1 -->
+            <div class="border-l-4 border-purple-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">1. Deploy Discovery Tools</h3>
+                <p class="text-gray-700 mb-4">
+                    Set up and configure automated data discovery tools to scan your IT environment.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Evaluate and select DLP discovery tools (commercial or open-source)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Configure discovery agents for file servers, databases, and endpoints</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Set up cloud scanning for SaaS applications (Google Workspace, Microsoft 365)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span>Test discovery tools in isolated environment before production deployment</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="flex items-start">
-                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Define Classification Schema</h3>
-                        <p class="text-gray-700">Create data classification framework (Public, Internal, Confidential, Restricted) aligned with PDPA sensitivity levels.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Inventory Sensitive Data Types</h3>
-                        <p class="text-gray-700">Catalog personal data (NIC, names, addresses), financial data (bank accounts), health records, and intellectual property.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Identify Data Flows</h3>
-                        <p class="text-gray-700">Map how data moves: internal transfers, external sharing, cloud uploads, email transmission, mobile device sync.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">5</div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Assess Data Risk</h3>
-                        <p class="text-gray-700">Evaluate exposure risks, access controls, encryption status, and compliance gaps for each data type and location.</p>
-                    </div>
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        <strong class="text-blue-900">Tool Recommendation:</strong> Check our 
+                        <a href="/resources/tools.html" class="text-blue-600 hover:underline">Tools & Scripts</a> 
+                        section for open-source DLP discovery options.
+                    </p>
                 </div>
             </div>
-        </section>
 
-        <!-- Data Classification Framework -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Data Classification Framework</h2>
-            <div class="space-y-4">
-                <div class="border-l-4 border-gray-400 bg-gray-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <span class="bg-gray-400 text-white px-3 py-1 rounded mr-3">Level 0</span>
-                        Public
-                    </h3>
-                    <p class="text-gray-700 mb-2">Information approved for public disclosure with no restrictions.</p>
-                    <p class="text-sm text-gray-600">Examples: Marketing materials, press releases, public website content</p>
+            <!-- Activity 2 -->
+            <div class="border-l-4 border-pink-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">2. Define Classification Schema</h3>
+                <p class="text-gray-700 mb-4">
+                    Establish data classification framework aligned with PDPA requirements and business needs.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Create classification levels (e.g., Public, Internal, Confidential, Restricted)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Define criteria for each classification level</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Map PDPA personal data categories to classification levels</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-pink-600 mt-1 mr-3"></i>
+                            <span>Document handling requirements for each classification level</span>
+                        </li>
+                    </ul>
                 </div>
-                
-                <div class="border-l-4 border-green-400 bg-green-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <span class="bg-green-600 text-white px-3 py-1 rounded mr-3">Level 1</span>
-                        Internal
-                    </h3>
-                    <p class="text-gray-700 mb-2">Information for internal use only, not for external disclosure.</p>
-                    <p class="text-sm text-gray-600">Examples: Internal policies, employee directories, operational procedures</p>
-                </div>
-                
-                <div class="border-l-4 border-yellow-400 bg-yellow-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <span class="bg-yellow-600 text-white px-3 py-1 rounded mr-3">Level 2</span>
-                        Confidential
-                    </h3>
-                    <p class="text-gray-700 mb-2">Sensitive information requiring protection. Unauthorized access may cause moderate harm.</p>
-                    <p class="text-sm text-gray-600">Examples: Financial statements, contracts, employee performance data, business plans</p>
-                </div>
-                
-                <div class="border-l-4 border-red-600 bg-red-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-xl mb-3 flex items-center">
-                        <span class="bg-red-600 text-white px-3 py-1 rounded mr-3">Level 3</span>
-                        Restricted
-                    </h3>
-                    <p class="text-gray-700 mb-2">Highly sensitive data protected by PDPA. Unauthorized access may cause severe harm.</p>
-                    <p class="text-sm text-gray-600">Examples: NIC numbers, bank accounts, health records, biometric data, trade secrets</p>
+                <div class="mt-4 p-4 bg-purple-50 rounded-lg">
+                    <h4 class="font-bold mb-3">Sample Classification Levels:</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full font-semibold mr-3">Restricted</span>
+                            <span class="text-gray-700">Highly sensitive personal data, financial data, trade secrets</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full font-semibold mr-3">Confidential</span>
+                            <span class="text-gray-700">Internal business data, employee information, customer data</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-semibold mr-3">Internal</span>
+                            <span class="text-gray-700">Internal communications, operational documents</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-semibold mr-3">Public</span>
+                            <span class="text-gray-700">Marketing materials, published information</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Activity 3 -->
+            <div class="border-l-4 border-blue-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">3. Create Sri Lankan Data Patterns</h3>
+                <p class="text-gray-700 mb-4">
+                    Develop detection patterns for Sri Lankan-specific personal data types.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Create regex patterns for Sri Lankan NIC numbers (old and new formats)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Develop patterns for Sri Lankan passport numbers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Configure detection for Sri Lankan bank account numbers and SWIFT codes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Add patterns for local phone numbers and addresses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                            <span>Test pattern accuracy and adjust to reduce false positives</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                    <p class="text-sm text-gray-700">
+                        <strong class="text-green-900">Pattern Library:</strong> Access our pre-built 
+                        <a href="/resources/patterns.html" class="text-green-600 hover:underline">Sri Lankan Data Pattern Library</a> 
+                        with ready-to-use regex patterns and test cases.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 4 -->
+            <div class="border-l-4 border-green-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">4. Conduct Discovery Scans</h3>
+                <p class="text-gray-700 mb-4">
+                    Execute comprehensive scans across all data repositories and systems.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Scan file servers and network shares</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Scan databases (structured data repositories)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Scan endpoint devices (laptops, desktops)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Scan cloud storage and SaaS applications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Scan email systems and archives</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 5 -->
+            <div class="border-l-4 border-indigo-600 pl-6 pb-8 mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">5. Build Data Inventory</h3>
+                <p class="text-gray-700 mb-4">
+                    Compile comprehensive inventory of sensitive data locations and classifications.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Document all locations where sensitive data was discovered</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Record data volumes, types, and classification levels</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Identify data owners and custodians for each repository</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Map data flows and sharing patterns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-indigo-600 mt-1 mr-3"></i>
+                            <span>Create visual data maps showing data distribution</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Activity 6 -->
+            <div class="border-l-4 border-orange-600 pl-6 pb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">6. Remediate Discovery Findings</h3>
+                <p class="text-gray-700 mb-4">
+                    Address immediate risks identified during discovery phase.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                    <h4 class="font-bold text-lg mb-3">Tasks:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Identify high-risk data exposures requiring immediate action</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Remove or secure orphaned sensitive data</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Apply appropriate access controls to exposed data</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                            <span>Notify data owners of compliance issues</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Sri Lankan Data Patterns -->
-        <section class="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl shadow-lg p-8 mb-12 border border-pink-200">
-            <div class="flex items-center mb-6">
-                <i class="fas fa-globe-asia text-pink-600 text-4xl mr-4"></i>
-                <h2 class="text-3xl font-bold text-gray-900">Sri Lankan Data Patterns</h2>
-            </div>
-            <p class="text-lg text-gray-700 mb-6">
-                Configure DLP detection for Sri Lankan-specific sensitive data patterns:
-            </p>
+        <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Sri Lankan Personal Data Types</h2>
+            <p class="text-gray-700 mb-6">Key data types to detect for PDPA compliance:</p>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-lg mb-3 flex items-center">
-                        <i class="fas fa-id-card text-pink-600 mr-2"></i>
-                        National Identity Card (NIC)
-                    </h4>
-                    <p class="text-sm text-gray-700 mb-2">Old Format: 9 digits + V (e.g., 923456789V)</p>
-                    <p class="text-sm text-gray-700">New Format: 12 digits (e.g., 199212345678)</p>
+                <div class="bg-white p-6 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-lg mb-3 text-purple-900">
+                        <i class="fas fa-id-card text-purple-600 mr-2"></i>National Identity Card (NIC)
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Old format: 9 digits + V/X | New format: 12 digits</p>
+                    <code class="text-xs bg-gray-100 px-2 py-1 rounded">Example: 199912345678</code>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-lg mb-3 flex items-center">
-                        <i class="fas fa-passport text-pink-600 mr-2"></i>
-                        Passport Numbers
-                    </h4>
-                    <p class="text-sm text-gray-700">Format: N followed by 7 digits (e.g., N1234567)</p>
+                <div class="bg-white p-6 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-lg mb-3 text-blue-900">
+                        <i class="fas fa-passport text-blue-600 mr-2"></i>Passport Numbers
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Format: Letter followed by 7 digits</p>
+                    <code class="text-xs bg-gray-100 px-2 py-1 rounded">Example: N1234567</code>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-lg mb-3 flex items-center">
-                        <i class="fas fa-university text-pink-600 mr-2"></i>
-                        Bank Account Numbers
-                    </h4>
-                    <p class="text-sm text-gray-700">Varies by bank (typically 10-16 digits)</p>
-                    <p class="text-sm text-gray-700">Include SWIFT codes for international transfers</p>
+                <div class="bg-white p-6 rounded-lg border border-green-200">
+                    <h3 class="font-bold text-lg mb-3 text-green-900">
+                        <i class="fas fa-university text-green-600 mr-2"></i>Bank Account Details
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Account numbers and SWIFT codes for Sri Lankan banks</p>
+                    <code class="text-xs bg-gray-100 px-2 py-1 rounded">SWIFT: BCEYLKLX</code>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-lg mb-3 flex items-center">
-                        <i class="fas fa-phone text-pink-600 mr-2"></i>
-                        Mobile Numbers
-                    </h4>
-                    <p class="text-sm text-gray-700">Format: +94 followed by 9 digits</p>
-                    <p class="text-sm text-gray-700">Example: +94 77 123 4567</p>
+                <div class="bg-white p-6 rounded-lg border border-pink-200">
+                    <h3 class="font-bold text-lg mb-3 text-pink-900">
+                        <i class="fas fa-phone text-pink-600 mr-2"></i>Phone Numbers
+                    </h3>
+                    <p class="text-sm text-gray-700 mb-3">Mobile and landline numbers in Sri Lankan format</p>
+                    <code class="text-xs bg-gray-100 px-2 py-1 rounded">+94771234567</code>
                 </div>
             </div>
-            <div class="mt-6">
-                <a href="/resources/patterns.html" class="inline-flex items-center bg-pink-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-pink-700 transition">
-                    View Complete Pattern Library <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- Discovery Tools & Methods -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Discovery Tools & Methods</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="border border-purple-200 rounded-lg p-6">
-                    <i class="fas fa-robot text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-3">Automated Scanning</h3>
-                    <p class="text-gray-700 text-sm mb-4">Use DLP discovery tools to scan file shares, databases, SharePoint sites, and cloud storage for sensitive data patterns.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Regular expression matching</li>
-                        <li>• Keyword searches</li>
-                        <li>• Machine learning classification</li>
-                    </ul>
-                </div>
-                <div class="border border-purple-200 rounded-lg p-6">
-                    <i class="fas fa-users text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-3">Data Owner Interviews</h3>
-                    <p class="text-gray-700 text-sm mb-4">Engage business unit leaders to identify critical data assets, understand workflows, and document handling requirements.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Department interviews</li>
-                        <li>• Process mapping sessions</li>
-                        <li>• Risk assessments</li>
-                    </ul>
-                </div>
-                <div class="border border-purple-200 rounded-lg p-6">
-                    <i class="fas fa-clipboard-check text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-3">Manual Audits</h3>
-                    <p class="text-gray-700 text-sm mb-4">Review high-risk areas manually: HR files, finance records, customer databases, executive communications.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Sample file reviews</li>
-                        <li>• Email audits</li>
-                        <li>• Access log analysis</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <!-- Deliverables -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Deliverables</h2>
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Deliverables</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <i class="fas fa-database text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">Data Inventory Report</h3>
-                    <p class="text-gray-700 mb-4">Complete catalog of sensitive data locations, types, volumes, and risk levels.</p>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-book text-purple-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Comprehensive Data Inventory</h3>
+                            <p class="text-sm text-gray-700">Complete catalog of sensitive data locations, volumes, and classifications</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <i class="fas fa-sitemap text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">Data Classification Schema</h3>
-                    <p class="text-gray-700 mb-4">Approved framework with clear definitions, examples, and handling requirements.</p>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-sitemap text-blue-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Data Flow Maps</h3>
+                            <p class="text-sm text-gray-700">Visual representation of how data moves through your organization</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <i class="fas fa-route text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">Data Flow Diagrams</h3>
-                    <p class="text-gray-700 mb-4">Visual maps showing how sensitive data moves within and outside the organization.</p>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-layer-group text-pink-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Classification Schema</h3>
+                            <p class="text-sm text-gray-700">Documented classification framework with handling procedures</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-                    <i class="fas fa-exclamation-triangle text-purple-600 text-3xl mb-4"></i>
-                    <h3 class="font-bold text-lg mb-2">Risk Assessment</h3>
-                    <p class="text-gray-700 mb-4">Prioritized list of data protection risks with recommendations for Phase 3 policy development.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Best Practices -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Practices</h2>
-            <div class="space-y-4">
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Start with High-Risk Areas</h4>
-                        <p class="text-gray-700 text-sm">Prioritize HR, Finance, Customer Service departments where sensitive data concentration is highest.</p>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-code text-green-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Sri Lankan Pattern Library</h3>
+                            <p class="text-sm text-gray-700">Custom detection patterns for Sri Lankan personal data types</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Test Detection Patterns</h4>
-                        <p class="text-gray-700 text-sm">Validate that your NIC, passport, and bank account patterns work correctly before full deployment. Test with sample data.</p>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-chart-pie text-indigo-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Discovery Reports</h3>
+                            <p class="text-sm text-gray-700">Detailed scan results with statistics and risk analysis</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Document Data Owners</h4>
-                        <p class="text-gray-700 text-sm">PDPA requires clear data ownership. Assign responsible parties for each data category discovered.</p>
-                    </div>
-                </div>
-                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
-                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Address Shadow IT</h4>
-                        <p class="text-gray-700 text-sm">Don't forget unsanctioned cloud services (personal Dropbox, Gmail) where employees may store company data.</p>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-clipboard-list text-orange-600 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">Remediation Action Plan</h3>
+                            <p class="text-sm text-gray-700">Prioritized list of immediate actions to address high-risk findings</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Phase Navigation -->
-        <section class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-sm text-gray-600 mb-2">Previous Phase</p>
-                    <a href="/implementation/phase1-planning.html" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition">
-                        <i class="fas fa-arrow-left mr-2"></i>Phase 1: Planning
-                    </a>
-                </div>
-                <div class="text-right">
-                    <p class="text-sm text-gray-600 mb-2">Next Phase</p>
-                    <a href="/implementation/phase3-policy.html" class="inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">
-                        Phase 3: Policy <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
+        <!-- Resources & Templates -->
+        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Resources & Templates</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/resources/patterns.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-code text-purple-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Pattern Library</h3>
+                    <p class="text-sm text-gray-700">Pre-built regex patterns for Sri Lankan data types</p>
+                </a>
+                <a href="/resources/templates.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-file-excel text-green-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Data Inventory Template</h3>
+                    <p class="text-sm text-gray-700">Spreadsheet template for documenting data inventory</p>
+                </a>
+                <a href="/resources/tools.html" class="bg-white p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-tools text-blue-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Discovery Tools</h3>
+                    <p class="text-sm text-gray-700">Open-source data discovery tool recommendations</p>
+                </a>
             </div>
-        </section>
+        </div>
 
-    </main>
+        <!-- Next Steps -->
+        <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-8">
+            <h2 class="text-3xl font-bold mb-6">Ready for Phase 3?</h2>
+            <p class="text-xl text-purple-100 mb-8">
+                Once you've completed data discovery and built your inventory, move to Policy & Controls development.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/implementation/phase3-policy.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition text-center">
+                    <i class="fas fa-arrow-right mr-2"></i>Continue to Phase 3
+                </a>
+                <a href="/implementation/phase1-planning.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Phase 1
+                </a>
+            </div>
+        </div>
+
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+    <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
