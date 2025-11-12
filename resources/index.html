@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div><span class="font-bold text-xl text-gray-900">OpenDLP-LK</span><p class="text-xs text-gray-500">PDPA Compliant</p></div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/implementation/" class="text-gray-700 hover:text-blue-600 transition">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg"><i class="fab fa-github mr-2"></i>GitHub</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+    </nav>
 
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4">Resources</h1>
+            <p class="text-xl text-blue-100">Templates, patterns, tools and guides for DLP implementation</p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">DLP Implementation Resources</h2>
+            <p class="text-lg text-gray-700 mb-8">Comprehensive collection of templates, patterns, tools, and guides to accelerate your DLP deployment.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/resources/templates.html" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-file-alt text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Policy Templates</h3>
+                    <p class="text-gray-700 text-sm">Ready-to-use DLP policies, procedures, and documentation templates.</p>
+                </a>
+                
+                <a href="/resources/patterns.html" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-fingerprint text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Data Patterns</h3>
+                    <p class="text-gray-700 text-sm">Sri Lankan data patterns: NIC, passports, bank accounts, and more.</p>
+                </a>
+                
+                <a href="/resources/tools.html" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-wrench text-green-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">DLP Tools</h3>
+                    <p class="text-gray-700 text-sm">Open-source and commercial DLP solutions evaluation guide.</p>
+                </a>
+                
+                <a href="/resources/case-studies.html" class="border border-pink-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-book-open text-pink-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Case Studies</h3>
+                    <p class="text-gray-700 text-sm">Real-world DLP implementation stories from Sri Lankan enterprises.</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>document.getElementById('mobile-menu-btn')?.addEventListener('click', () => document.getElementById('mobile-menu')?.classList.toggle('hidden'));</script>
+</body>
+</html>

@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PDPA Compliance Guide - Aligning DLP implementation with Sri Lanka's Personal Data Protection Act">
+    <title>PDPA Compliance - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700 hover:text-blue-600 transition">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-gray-700">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-balance-scale text-6xl mr-6"></i>
+                <div>
+                    <h1 class="text-5xl font-bold mb-2">PDPA Compliance Guide</h1>
+                    <p class="text-xl text-purple-100">Aligning DLP with Sri Lanka's Personal Data Protection Act No. 9 of 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                The Personal Data Protection Act No. 9 of 2022 (PDPA) establishes Sri Lanka's framework for protecting 
+                personal data. Data Loss Prevention (DLP) is a critical technical control for meeting PDPA requirements, 
+                particularly for preventing unauthorized access, use, and disclosure of personal data.
+            </p>
+            <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-200">
+                <h3 class="font-bold text-xl mb-3">Key PDPA Facts</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-3 mt-1"></i><strong>Enacted:</strong> March 2022</li>
+                    <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-3 mt-1"></i><strong>Applies to:</strong> All organizations processing personal data in or from Sri Lanka</li>
+                    <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-3 mt-1"></i><strong>Penalties:</strong> Fines up to 5% of annual turnover or LKR 5 million, whichever is higher</li>
+                    <li class="flex items-start"><i class="fas fa-check text-purple-600 mr-3 mt-1"></i><strong>Authority:</strong> Personal Data Protection Commission (PDPC)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">PDPA Principles Supported by DLP</h2>
+            <div class="space-y-4">
+                <div class="border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-2">1. Purpose Limitation (Section 5)</h3>
+                    <p class="text-gray-700 mb-3">Personal data must be collected for specified, explicit, and legitimate purposes.</p>
+                    <p class="text-sm text-gray-600"><strong>DLP Role:</strong> Detect and prevent use of personal data beyond stated purposes. Alert when data is accessed by unauthorized departments.</p>
+                </div>
+                
+                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-2">2. Data Minimization (Section 6)</h3>
+                    <p class="text-gray-700 mb-3">Collect only data that is adequate, relevant, and necessary.</p>
+                    <p class="text-sm text-gray-600"><strong>DLP Role:</strong> Identify excessive data collection. Flag unnecessarily stored personal data for review and deletion.</p>
+                </div>
+                
+                <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-2">3. Security Safeguards (Section 7)</h3>
+                    <p class="text-gray-700 mb-3">Implement appropriate technical and organizational measures to protect personal data.</p>
+                    <p class="text-sm text-gray-600"><strong>DLP Role:</strong> Core technical control. Prevent unauthorized access, use, disclosure, alteration, or destruction of personal data.</p>
+                </div>
+                
+                <div class="border-l-4 border-yellow-600 bg-yellow-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-2">4. Transfer Restrictions (Section 9)</h3>
+                    <p class="text-gray-700 mb-3">Personal data transfers outside Sri Lanka require adequate safeguards.</p>
+                    <p class="text-sm text-gray-600"><strong>DLP Role:</strong> Block or require approval for cross-border data transfers. Enforce encryption for international transmissions.</p>
+                </div>
+                
+                <div class="border-l-4 border-red-600 bg-red-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-2">5. Data Breach Notification (Section 11)</h3>
+                    <p class="text-gray-700 mb-3">Notify PDPC within 72 hours of becoming aware of a data breach.</p>
+                    <p class="text-sm text-gray-600"><strong>DLP Role:</strong> Early detection of data breaches. Provide forensic logs for breach investigation and notification.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">PDPA Compliance Resources</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/pdpa-compliance/requirements.html" class="border border-purple-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-clipboard-list text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">PDPA Requirements</h3>
+                    <p class="text-gray-700 text-sm">Detailed breakdown of PDPA sections and how DLP addresses each requirement.</p>
+                    <span class="text-purple-600 font-semibold mt-4 inline-block">View Requirements <i class="fas fa-arrow-right ml-2"></i></span>
+                </a>
+                
+                <a href="/pdpa-compliance/gap-analysis.html" class="border border-blue-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-search text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Gap Analysis Tool</h3>
+                    <p class="text-gray-700 text-sm">Assess your current compliance posture and identify areas for improvement.</p>
+                    <span class="text-blue-600 font-semibold mt-4 inline-block">Start Assessment <i class="fas fa-arrow-right ml-2"></i></span>
+                </a>
+                
+                <a href="/pdpa-compliance/reporting.html" class="border border-green-200 rounded-lg p-6 hover:shadow-xl transition">
+                    <i class="fas fa-chart-line text-green-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Compliance Reporting</h3>
+                    <p class="text-gray-700 text-sm">Templates and guidance for demonstrating PDPA compliance to authorities.</p>
+                    <span class="text-green-600 font-semibold mt-4 inline-block">View Templates <i class="fas fa-arrow-right ml-2"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl shadow-lg p-8 mb-12 border border-red-200">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <i class="fas fa-exclamation-triangle text-red-600 mr-4"></i>
+                Penalties for Non-Compliance
+            </h2>
+            <p class="text-lg text-gray-700 mb-6">
+                PDPA violations carry serious consequences. Understanding penalties helps justify DLP investment and prioritize compliance efforts.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-3 text-red-600">Financial Penalties</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Up to <strong>LKR 5 million</strong> or <strong>5% of annual turnover</strong> (whichever is higher)</li>
+                        <li>• Additional fines for repeat violations</li>
+                        <li>• Daily penalties for ongoing non-compliance</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-3 text-orange-600">Other Consequences</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Suspension of data processing activities</li>
+                        <li>• Criminal liability for responsible individuals</li>
+                        <li>• Reputational damage and loss of customer trust</li>
+                        <li>• Civil lawsuits from affected data subjects</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">PDPA Timeline & Key Dates</h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="w-32 flex-shrink-0 font-bold text-purple-600">March 2022</div>
+                    <div class="flex-1">
+                        <h4 class="font-bold mb-1">PDPA Enacted</h4>
+                        <p class="text-gray-700 text-sm">Personal Data Protection Act No. 9 of 2022 passed by Parliament</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-32 flex-shrink-0 font-bold text-purple-600">Ongoing</div>
+                    <div class="flex-1">
+                        <h4 class="font-bold mb-1">Gradual Implementation</h4>
+                        <p class="text-gray-700 text-sm">PDPC issues regulations, guidelines, and codes of practice. Organizations expected to implement compliance measures.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-32 flex-shrink-0 font-bold text-red-600">Immediate</div>
+                    <div class="flex-1">
+                        <h4 class="font-bold mb-1">Compliance Required</h4>
+                        <p class="text-gray-700 text-sm">All organizations should begin PDPA compliance efforts now. Don't wait for full enforcement—penalties apply once regulations are in effect.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl p-8">
+            <h2 class="text-3xl font-bold mb-4">Ready to Ensure PDPA Compliance?</h2>
+            <p class="text-xl text-purple-100 mb-6">
+                Use our comprehensive tools and resources to align your DLP implementation with PDPA requirements.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/pdpa-compliance/requirements.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition text-center">
+                    <i class="fas fa-clipboard-list mr-2"></i>Review Requirements
+                </a>
+                <a href="/pdpa-compliance/gap-analysis.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-search mr-2"></i>Start Gap Analysis
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
