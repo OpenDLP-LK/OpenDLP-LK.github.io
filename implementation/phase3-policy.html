@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phase 3: Policy Development - Creating comprehensive DLP policies and rules">
+    <title>Phase 3: Policy - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold border-b-2 border-blue-600">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Phase Header -->
+    <section class="bg-gradient-to-r from-pink-600 to-pink-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center mb-4">
+                <a href="/implementation/" class="text-pink-200 hover:text-white transition">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Implementation Guide
+                </a>
+            </div>
+            <div class="flex items-center mb-6">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-pink-600 font-bold text-3xl mr-6">3</div>
+                <div>
+                    <h1 class="text-5xl font-bold mb-2">Phase 3: Policy Development</h1>
+                    <p class="text-xl text-pink-100">Rules & Controls | Months 4-6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Overview -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase Overview</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Phase 3 translates your data discovery findings into actionable DLP policies and rules. 
+                You'll create comprehensive policies covering data handling, acceptable use, incident response, 
+                and enforcement actions—all aligned with PDPA requirements and business needs.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <i class="fas fa-clock text-pink-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Duration</h3>
+                    <p class="text-gray-700">2 months</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <i class="fas fa-users text-pink-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Key Stakeholders</h3>
+                    <p class="text-gray-700">Legal, Compliance, IT Security, HR</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <i class="fas fa-check-circle text-pink-600 text-3xl mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Success Criteria</h3>
+                    <p class="text-gray-700">Approved policies, configured rules, user training plan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy Types -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">DLP Policy Categories</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-pink-600 bg-pink-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-shield-alt text-pink-600 mr-3"></i>
+                        Data Protection Policies
+                    </h3>
+                    <p class="text-gray-700 mb-3">Core policies defining how sensitive data must be handled, stored, and transmitted.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 ml-6">
+                        <li>• Encryption requirements for data at rest and in transit</li>
+                        <li>• Access control and authentication requirements</li>
+                        <li>• Data retention and disposal procedures</li>
+                        <li>• Backup and recovery requirements</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-laptop text-blue-600 mr-3"></i>
+                        Acceptable Use Policies
+                    </h3>
+                    <p class="text-gray-700 mb-3">Rules governing employee use of company systems, data, and resources.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 ml-6">
+                        <li>• Approved communication channels for sensitive data</li>
+                        <li>• Personal device usage (BYOD) guidelines</li>
+                        <li>• Cloud service and file sharing restrictions</li>
+                        <li>• Social media and external communication policies</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-exchange-alt text-green-600 mr-3"></i>
+                        Data Transfer Policies
+                    </h3>
+                    <p class="text-gray-700 mb-3">Controls for moving data internally and externally.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 ml-6">
+                        <li>• Email attachment restrictions and encryption</li>
+                        <li>• USB and removable media controls</li>
+                        <li>• Cloud upload policies (Dropbox, Google Drive, etc.)</li>
+                        <li>• Print and screen capture restrictions</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-exclamation-triangle text-purple-600 mr-3"></i>
+                        Incident Response Policies
+                    </h3>
+                    <p class="text-gray-700 mb-3">Procedures for detecting, responding to, and reporting data loss incidents.</p>
+                    <ul class="text-sm text-gray-600 space-y-1 ml-6">
+                        <li>• Alert escalation procedures</li>
+                        <li>• Investigation and forensics processes</li>
+                        <li>• PDPA breach notification requirements (72 hours)</li>
+                        <li>• Remediation and corrective actions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- DLP Rules -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Sample DLP Rules</h2>
+            <div class="space-y-4">
+                <div class="border border-red-300 bg-red-50 p-5 rounded-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="font-bold text-lg">Block NIC Numbers via Email</h4>
+                        <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">BLOCK</span>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-2">Prevent emails containing Sri Lankan NIC numbers from being sent to external recipients.</p>
+                    <div class="bg-white p-3 rounded border border-red-200 text-sm">
+                        <strong>Condition:</strong> Email contains pattern matching NIC (old or new format) AND recipient domain is external<br>
+                        <strong>Action:</strong> Block and notify sender + security team
+                    </div>
+                </div>
+
+                <div class="border border-yellow-300 bg-yellow-50 p-5 rounded-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="font-bold text-lg">Encrypt Financial Reports</h4>
+                        <span class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-bold">ENCRYPT</span>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-2">Automatically encrypt emails containing financial reports before external transmission.</p>
+                    <div class="bg-white p-3 rounded border border-yellow-200 text-sm">
+                        <strong>Condition:</strong> Email contains keywords "financial report" OR "P&L statement" AND has external recipient<br>
+                        <strong>Action:</strong> Encrypt email + require password
+                    </div>
+                </div>
+
+                <div class="border border-blue-300 bg-blue-50 p-5 rounded-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="font-bold text-lg">Alert on Large Data Upload</h4>
+                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">ALERT</span>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-2">Monitor and alert when users upload large volumes of data to cloud services.</p>
+                    <div class="bg-white p-3 rounded border border-blue-200 text-sm">
+                        <strong>Condition:</strong> Upload to cloud service (Dropbox, OneDrive) > 100MB with Confidential classification<br>
+                        <strong>Action:</strong> Allow but alert security team for review
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy Development Process -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Policy Development Process</h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Draft Initial Policies</h3>
+                        <p class="text-gray-700">Use Phase 2 discovery findings and PDPA requirements to create first drafts. Start with templates and customize.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Stakeholder Review</h3>
+                        <p class="text-gray-700">Circulate to Legal, HR, Business Units, and IT for feedback. Ensure policies are enforceable and practical.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Technical Implementation Design</h3>
+                        <p class="text-gray-700">Translate policies into specific DLP rules, patterns, and actions. Configure detection logic and enforcement.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Executive Approval</h3>
+                        <p class="text-gray-700">Obtain formal sign-off from executive sponsors and legal counsel before deployment.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">5</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">User Communication Plan</h3>
+                        <p class="text-gray-700">Develop training materials, FAQs, and communication strategy to prepare employees for policy rollout.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDPA Alignment -->
+        <section class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl shadow-lg p-8 mb-12 border border-purple-200">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-balance-scale text-purple-600 text-4xl mr-4"></i>
+                <h2 class="text-3xl font-bold text-gray-900">PDPA Compliance Integration</h2>
+            </div>
+            <p class="text-lg text-gray-700 mb-6">
+                Ensure your DLP policies address these critical PDPA requirements:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-900 mb-2">Purpose Limitation (Section 5)</h4>
+                    <p class="text-sm text-gray-700">Policies must prevent data use beyond stated purposes. Restrict access based on role and need.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-900 mb-2">Data Minimization (Section 6)</h4>
+                    <p class="text-sm text-gray-700">Rules should encourage collecting only necessary data. Flag excessive data collection.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-900 mb-2">Security Safeguards (Section 7)</h4>
+                    <p class="text-sm text-gray-700">Enforce encryption, access controls, and secure transmission for personal data.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-900 mb-2">Transfer Restrictions (Section 9)</h4>
+                    <p class="text-sm text-gray-700">Control cross-border data transfers. Require approvals and safeguards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deliverables -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Deliverables</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <i class="fas fa-file-contract text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">DLP Policy Document</h3>
+                    <p class="text-gray-700 mb-4">Comprehensive policy covering all data types, handling requirements, and enforcement actions.</p>
+                    <a href="/resources/templates.html" class="text-pink-600 font-semibold hover:underline">
+                        Download Template <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <i class="fas fa-cogs text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Technical Rule Specifications</h3>
+                    <p class="text-gray-700 mb-4">Detailed DLP rules configuration with patterns, conditions, and actions.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <i class="fas fa-chalkboard-teacher text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">User Training Materials</h3>
+                    <p class="text-gray-700 mb-4">Presentations, videos, and documentation to educate employees on new policies.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <i class="fas fa-ambulance text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Incident Response Playbook</h3>
+                    <p class="text-gray-700 mb-4">Step-by-step procedures for handling DLP alerts and data breach incidents.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Practices</h2>
+            <div class="space-y-4">
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Start with Monitor Mode</h4>
+                        <p class="text-gray-700 text-sm">Begin with alert-only policies before blocking actions. Tune rules based on false positives to avoid disrupting business.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Keep Policies Clear and Simple</h4>
+                        <p class="text-gray-700 text-sm">Use plain language employees can understand. Complex, technical policies lead to confusion and violations.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Include Business Justification</h4>
+                        <p class="text-gray-700 text-sm">Explain *why* each policy exists (PDPA compliance, IP protection). Understanding drives adoption.</p>
+                    </div>
+                </div>
+                <div class="flex items-start bg-green-50 p-4 rounded-lg border border-green-200">
+                    <i class="fas fa-lightbulb text-green-600 text-xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">Plan for Exceptions</h4>
+                        <p class="text-gray-700 text-sm">Establish exception request process for legitimate business needs. Don't make policies so rigid they force workarounds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase Navigation -->
+        <section class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600 mb-2">Previous Phase</p>
+                    <a href="/implementation/phase2-discovery.html" class="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition">
+                        <i class="fas fa-arrow-left mr-2"></i>Phase 2: Discovery
+                    </a>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-600 mb-2">Next Phase</p>
+                    <a href="/implementation/phase4-pilot.html" class="inline-flex items-center bg-pink-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-pink-700 transition">
+                        Phase 4: Pilot <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
