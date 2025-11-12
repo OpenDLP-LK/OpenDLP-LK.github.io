@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive DLP Implementation Checklist for Sri Lankan enterprises - PDPA compliant">
+    <title>DLP Implementation Checklist - OpenDLP-LK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        .checklist-item {
+            transition: all 0.3s ease;
+        }
+        .checklist-item:hover {
+            background-color: #f9fafb;
+        }
+        .phase-section {
+            border-left: 4px solid;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                        <div>
+                            <span class="font-bold text-xl text-gray-900">OpenDLP-LK</span>
+                            <p class="text-xs text-gray-500">PDPA Compliant</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="/getting-started.html" class="text-gray-700 hover:text-blue-600 transition">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold border-b-2 border-blue-600">Implementation</a>
+                    <a href="/resources/" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                    <a href="/community/" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="/" class="text-gray-700">Home</a>
+                    <a href="/about.html" class="text-gray-700">About</a>
+                    <a href="/getting-started.html" class="text-gray-700">Get Started</a>
+                    <a href="/implementation/" class="text-blue-600 font-semibold">Implementation</a>
+                    <a href="/resources/" class="text-gray-700">Resources</a>
+                    <a href="/community/" class="text-gray-700">Community</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <i class="fas fa-clipboard-check mr-3"></i>DLP Implementation Checklist
+            </h1>
+            <p class="text-xl text-blue-100">Complete guide to implementing Data Loss Prevention in your organization</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Overview -->
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Implementation Overview</h2>
+            <p class="text-gray-700 mb-4">
+                This comprehensive checklist covers all essential tasks for implementing a PDPA-compliant DLP solution in your organization. 
+                Follow these phases sequentially to ensure successful deployment.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">3</div>
+                    <div class="text-sm text-gray-700">Implementation Phases</div>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">6-12</div>
+                    <div class="text-sm text-gray-700">Months Timeline</div>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <div class="text-3xl font-bold text-green-600 mb-2">100%</div>
+                    <div class="text-sm text-gray-700">PDPA Aligned</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 1: Preparation -->
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 phase-section border-blue-600">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Phase 1: Preparation</h2>
+                    <p class="text-gray-600">Timeline: Months 0-2</p>
+                </div>
+            </div>
+
+            <!-- Stakeholder Engagement -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-users text-blue-600 mr-3"></i>
+                    Stakeholder Engagement
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Secure executive sponsorship</div>
+                            <div class="text-sm text-gray-600">Obtain C-level support and budget approval for DLP initiative</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Form steering committee</div>
+                            <div class="text-sm text-gray-600">Include IT, Legal, HR, Compliance, and Business representatives</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Appoint Data Protection Officer (DPO)</div>
+                            <div class="text-sm text-gray-600">As required under PDPA Section 11 for organizations processing personal data</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Identify department champions</div>
+                            <div class="text-sm text-gray-600">Select representatives from each department to drive DLP adoption</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Current State Assessment -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-search text-blue-600 mr-3"></i>
+                    Current State Assessment
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Document existing data protection measures</div>
+                            <div class="text-sm text-gray-600">Inventory current security controls, policies, and technologies</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Conduct PDPA gap analysis</div>
+                            <div class="text-sm text-gray-600">Compare current practices against PDPA requirements (Sections 6-20)</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Map data flows</div>
+                            <div class="text-sm text-gray-600">Identify how personal and sensitive data moves through your organization</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Assess risk exposure</div>
+                            <div class="text-sm text-gray-600">Evaluate potential data breach scenarios and impact</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Project Planning -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-project-diagram text-blue-600 mr-3"></i>
+                    Project Planning
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Define project scope and objectives</div>
+                            <div class="text-sm text-gray-600">Clarify what data, systems, and users will be covered</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Create implementation timeline</div>
+                            <div class="text-sm text-gray-600">Develop detailed project schedule with milestones</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Allocate budget and resources</div>
+                            <div class="text-sm text-gray-600">Secure funding for tools, training, and personnel</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Establish success metrics</div>
+                            <div class="text-sm text-gray-600">Define KPIs to measure DLP effectiveness</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <div class="flex items-center">
+                    <i class="fas fa-info-circle text-blue-600 text-xl mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-blue-900">Phase 1 Deliverable</div>
+                        <div class="text-sm text-blue-800">Project charter, gap analysis report, and implementation roadmap approved by steering committee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 2: Execution -->
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 phase-section border-purple-600">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Phase 2: Execution</h2>
+                    <p class="text-gray-600">Timeline: Months 2-8</p>
+                </div>
+            </div>
+
+            <!-- Data Discovery & Classification -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-fingerprint text-purple-600 mr-3"></i>
+                    Data Discovery & Classification
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Deploy data discovery tools</div>
+                            <div class="text-sm text-gray-600">Scan file shares, databases, cloud storage, and endpoints</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Identify Sri Lankan personal data types</div>
+                            <div class="text-sm text-gray-600">NIC numbers, passport numbers, bank account numbers, mobile numbers</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Create data classification scheme</div>
+                            <div class="text-sm text-gray-600">Public, Internal, Confidential, Restricted levels</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Build data inventory</div>
+                            <div class="text-sm text-gray-600">Document location, volume, and ownership of sensitive data</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Identify high-risk data stores</div>
+                            <div class="text-sm text-gray-600">Prioritize systems with large volumes of personal data</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Policy Development -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-file-contract text-purple-600 mr-3"></i>
+                    Policy Development
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Draft DLP policy document</div>
+                            <div class="text-sm text-gray-600">Define acceptable use, prohibited actions, and consequences</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Create data handling procedures</div>
+                            <div class="text-sm text-gray-600">Document proper handling of personal data per PDPA requirements</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Define incident response plan</div>
+                            <div class="text-sm text-gray-600">Establish procedures for data breach notification per PDPA Section 21</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Develop enforcement procedures</div>
+                            <div class="text-sm text-gray-600">Outline disciplinary actions for policy violations</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Obtain legal and executive approval</div>
+                            <div class="text-sm text-gray-600">Review policies with legal counsel and get sign-off</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- DLP Solution Deployment -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-cogs text-purple-600 mr-3"></i>
+                    DLP Solution Deployment
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Select DLP solution</div>
+                            <div class="text-sm text-gray-600">Evaluate and choose DLP platform (commercial or open-source)</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Install DLP infrastructure</div>
+                            <div class="text-sm text-gray-600">Deploy servers, agents, and network components</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Configure Sri Lankan data patterns</div>
+                            <div class="text-sm text-gray-600">Create detection rules for NIC, passport, bank account formats</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Set up monitoring channels</div>
+                            <div class="text-sm text-gray-600">Configure monitoring for email, web, cloud, USB, print</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Run pilot deployment</div>
+                            <div class="text-sm text-gray-600">Test with small user group before full rollout</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Configure enforcement actions</div>
+                            <div class="text-sm text-gray-600">Set up alerts, blocks, encryption, and quarantine</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- User Training -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-graduation-cap text-purple-600 mr-3"></i>
+                    User Training
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Develop training materials</div>
+                            <div class="text-sm text-gray-600">Create presentations, videos, and quick reference guides</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Train Data Champions</div>
+                            <div class="text-sm text-gray-600">Provide in-depth training to department representatives</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Conduct organization-wide training</div>
+                            <div class="text-sm text-gray-600">Roll out training to all employees handling personal data</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-purple-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Launch awareness campaign</div>
+                            <div class="text-sm text-gray-600">Use posters, emails, and intranet to promote data protection</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-purple-50 border-l-4 border-purple-600 p-4 rounded">
+                <div class="flex items-center">
+                    <i class="fas fa-info-circle text-purple-600 text-xl mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-purple-900">Phase 2 Deliverable</div>
+                        <div class="text-sm text-purple-800">Fully deployed DLP solution in monitor mode, trained users, and documented policies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3: Monitoring -->
+        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 phase-section border-green-600">
+            <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Phase 3: Monitoring</h2>
+                    <p class="text-gray-600">Timeline: Ongoing (Months 8+)</p>
+                </div>
+            </div>
+
+            <!-- Continuous Monitoring -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-chart-line text-green-600 mr-3"></i>
+                    Continuous Monitoring
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Enable enforcement mode</div>
+                            <div class="text-sm text-gray-600">Transition from monitor-only to active blocking of violations</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Review DLP alerts daily</div>
+                            <div class="text-sm text-gray-600">Investigate and respond to policy violations promptly</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Generate monthly reports</div>
+                            <div class="text-sm text-gray-600">Track incidents, trends, and compliance metrics</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Tune detection rules</div>
+                            <div class="text-sm text-gray-600">Reduce false positives and improve accuracy</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Compliance Management -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-balance-scale text-green-600 mr-3"></i>
+                    Compliance Management
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Conduct quarterly PDPA audits</div>
+                            <div class="text-sm text-gray-600">Verify compliance with data protection requirements</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Maintain data processing records</div>
+                            <div class="text-sm text-gray-600">As required by PDPA Section 12</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Update data inventory annually</div>
+                            <div class="text-sm text-gray-600">Reflect changes in systems and data flows</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Prepare for regulatory inspections</div>
+                            <div class="text-sm text-gray-600">Maintain documentation ready for PDPA Authority review</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Incident Response -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-green-600 mr-3"></i>
+                    Incident Response
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Investigate data breach incidents</div>
+                            <div class="text-sm text-gray-600">Follow documented incident response procedures</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Notify PDPA Authority within 72 hours</div>
+                            <div class="text-sm text-gray-600">If breach affects personal data (PDPA Section 21)</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Inform affected data subjects</div>
+                            <div class="text-sm text-gray-600">Notify individuals if their data was compromised</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Conduct post-incident review</div>
+                            <div class="text-sm text-gray-600">Document lessons learned and improve controls</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Continuous Improvement -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <i class="fas fa-sync-alt text-green-600 mr-3"></i>
+                    Continuous Improvement
+                </h3>
+                <div class="space-y-3">
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Update policies annually</div>
+                            <div class="text-sm text-gray-600">Revise based on lessons learned and new threats</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Expand DLP coverage</div>
+                            <div class="text-sm text-gray-600">Add new systems, channels, and data types</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Refresh user training</div>
+                            <div class="text-sm text-gray-600">Conduct annual refresher training for all staff</div>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-start p-4 border border-gray-200 rounded-lg cursor-pointer">
+                        <input type="checkbox" class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
+                        <div>
+                            <div class="font-semibold text-gray-900">Stay updated on PDPA changes</div>
+                            <div class="text-sm text-gray-600">Monitor regulatory updates and adjust controls accordingly</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded">
+                <div class="flex items-center">
+                    <i class="fas fa-info-circle text-green-600 text-xl mr-3"></i>
+                    <div>
+                        <div class="font-semibold text-green-900">Phase 3 Deliverable</div>
+                        <div class="text-sm text-green-800">Mature DLP program with continuous monitoring, compliance reporting, and regular improvements</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">
+                <i class="fas fa-download mr-3"></i>Download Checklist
+            </h2>
+            <p class="text-xl text-blue-100 mb-6">
+                Get the complete checklist as a PDF or Excel file
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/assets/downloads/dlp-checklist.pdf" class="bg-white text-purple-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
+                    <i class="fas fa-file-pdf mr-2"></i>Download PDF
+                </a>
+                <a href="/assets/downloads/dlp-checklist.xlsx" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition">
+                    <i class="fas fa-file-excel mr-2"></i>Download Excel
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-white">OpenDLP-LK</span>
+                    </div>
+                    <p class="text-sm">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition">Home</a></li>
+                        <li><a href="/getting-started.html" class="hover:text-white transition">Getting Started</a></li>
+                        <li><a href="/implementation/" class="hover:text-white transition">Implementation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pdpa-compliance/" class="hover:text-white transition">PDPA Compliance</a></li>
+                        <li><a href="/resources/templates.html" class="hover:text-white transition">Templates</a></li>
+                        <li><a href="/data-champions/" class="hover:text-white transition">Data Champions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Community</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/community/contribute.html" class="hover:text-white transition">Contribute</a></li>
+                        <li><a href="https://github.com/OpenDLP-LK" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 OpenDLP-LK. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Save checklist state to localStorage
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        // Load saved state
+        checkboxes.forEach((checkbox, index) => {
+            const saved = localStorage.getItem(`checklist-${index}`);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+        });
+
+        // Save state on change
+        checkboxes.forEach((checkbox, index) => {
+            checkbox.addEventListener('change', function() {
+                localStorage.setItem(`checklist-${index}`, this.checked);
+            });
+        });
+
+        // Calculate and display progress
+        function updateProgress() {
+            const total = checkboxes.length;
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const percentage = Math.round((checked / total) * 100);
+            console.log(`Progress: ${checked}/${total} (${percentage}%)`);
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+    </script>
+</body>
+</html>
