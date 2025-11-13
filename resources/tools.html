@@ -38,19 +38,561 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive DLP Tools & Solutions resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+        
+        <!-- Introduction Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">DLP Tools & Solutions</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                This comprehensive guide evaluates Data Loss Prevention (DLP) tools and solutions suitable for 
+                Sri Lankan organizations. We cover both open-source and commercial options to help you make 
+                informed decisions for PDPA compliance.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <div class="flex items-start">
+                    <i class="fas fa-info-circle text-blue-600 mt-1 mr-3"></i>
+                    <div>
+                        <p class="font-semibold text-blue-900 mb-1">Selection Guidance</p>
+                        <p class="text-blue-800">Consider your organization's size, budget, technical expertise, and specific data protection requirements when choosing a DLP solution.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Tool Categories Overview -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">DLP Tool Categories</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-blue-200 rounded-lg p-6 bg-blue-50">
+                    <i class="fas fa-network-wired text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network DLP</h3>
+                    <p class="text-gray-700">Monitor and control data in transit across network boundaries, email, web traffic, and file transfers.</p>
+                </div>
+                <div class="border border-green-200 rounded-lg p-6 bg-green-50">
+                    <i class="fas fa-hdd text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Endpoint DLP</h3>
+                    <p class="text-gray-700">Protect data on endpoints (laptops, desktops, mobile devices) by monitoring file operations and removable media.</p>
+                </div>
+                <div class="border border-purple-200 rounded-lg p-6 bg-purple-50">
+                    <i class="fas fa-database text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Data Discovery</h3>
+                    <p class="text-gray-700">Scan and classify sensitive data at rest in databases, file servers, and cloud storage.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source DLP Tools -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-code text-4xl text-green-600 mr-4"></i>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Open Source DLP Tools</h2>
+                    <p class="text-gray-600">Free and open-source solutions for budget-conscious organizations</p>
+                </div>
+            </div>
+
+            <!-- OpenDLP -->
+            <div class="mb-6 border-l-4 border-green-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">OpenDLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Open Source</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Data Discovery</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    A free, open-source data loss prevention tool that performs centralized, agent-less scanning of 
+                    Windows and Linux file systems for sensitive data.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Agentless scanning of network file systems</li>
+                        <li>Support for custom regex patterns (including Sri Lankan data types)</li>
+                        <li>Web-based management console</li>
+                        <li>Windows and Linux support</li>
+                        <li>MySQL database backend</li>
+                    </ul>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/adulau/OpenDLP" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                        <i class="fab fa-github mr-1"></i> GitHub Repository
+                    </a>
+                    <span class="text-gray-400 text-sm">License: GPL-3.0</span>
+                </div>
+            </div>
+
+            <!-- MyDLP -->
+            <div class="mb-6 border-l-4 border-green-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">MyDLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Open Source</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    An enterprise-ready, open-source DLP solution with network and endpoint protection capabilities.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Network traffic monitoring (HTTP, SMTP, FTP)</li>
+                        <li>Endpoint agents for Windows</li>
+                        <li>Content fingerprinting</li>
+                        <li>File type detection</li>
+                        <li>Central management console</li>
+                    </ul>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/mydlp/mydlp" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                        <i class="fab fa-github mr-1"></i> GitHub Repository
+                    </a>
+                    <span class="text-gray-400 text-sm">License: GPL-3.0</span>
+                </div>
+            </div>
+
+            <!-- YARA -->
+            <div class="mb-6 border-l-4 border-green-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">YARA</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Open Source</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Pattern Matching</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    A powerful pattern matching tool primarily used for malware research but excellent for identifying 
+                    and classifying sensitive data based on custom rules.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Flexible rule-based pattern matching</li>
+                        <li>Can integrate with other DLP solutions</li>
+                        <li>Excellent for custom Sri Lankan data patterns</li>
+                        <li>Fast scanning capabilities</li>
+                        <li>Cross-platform support</li>
+                    </ul>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/VirusTotal/yara" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                        <i class="fab fa-github mr-1"></i> GitHub Repository
+                    </a>
+                    <span class="text-gray-400 text-sm">License: BSD-3-Clause</span>
+                </div>
+            </div>
+
+            <!-- GRR Rapid Response -->
+            <div class="border-l-4 border-green-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">GRR Rapid Response</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Open Source</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Forensics</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    Google's incident response framework that can be used for data discovery and endpoint monitoring 
+                    at scale.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Large-scale endpoint monitoring</li>
+                        <li>Remote data collection</li>
+                        <li>File system searches</li>
+                        <li>Memory analysis capabilities</li>
+                        <li>Python-based agent</li>
+                    </ul>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/google/grr" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                        <i class="fab fa-github mr-1"></i> GitHub Repository
+                    </a>
+                    <span class="text-gray-400 text-sm">License: Apache-2.0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commercial DLP Tools -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-building text-4xl text-blue-600 mr-4"></i>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Commercial DLP Solutions</h2>
+                    <p class="text-gray-600">Enterprise-grade solutions with professional support</p>
+                </div>
+            </div>
+
+            <!-- Symantec DLP -->
+            <div class="mb-6 border-l-4 border-blue-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Broadcom (Symantec) DLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2.5 py-0.5 rounded">Commercial</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Data Discovery</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    One of the market leaders in DLP solutions with comprehensive data protection across network, 
+                    endpoint, and cloud environments.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Complete DLP coverage (network, endpoint, cloud)</li>
+                        <li>Advanced content analysis and classification</li>
+                        <li>Machine learning for data detection</li>
+                        <li>Integration with cloud services (O365, G Suite, etc.)</li>
+                        <li>Comprehensive policy management</li>
+                        <li>Detailed incident response workflows</li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                    <p class="text-sm text-yellow-800"><i class="fas fa-star mr-1"></i> <strong>Best for:</strong> Large enterprises needing comprehensive DLP with strong vendor support</p>
+                </div>
+            </div>
+
+            <!-- Microsoft Purview -->
+            <div class="mb-6 border-l-4 border-blue-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Microsoft Purview DLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2.5 py-0.5 rounded">Commercial</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cloud DLP</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    Native DLP solution integrated with Microsoft 365, providing data protection across Microsoft 
+                    services and Windows endpoints.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Native integration with Microsoft 365 apps</li>
+                        <li>Endpoint DLP for Windows devices</li>
+                        <li>Pre-built sensitive information types</li>
+                        <li>Custom trainable classifiers using AI</li>
+                        <li>Data loss prevention policies across Teams, SharePoint, Exchange</li>
+                        <li>Unified compliance center</li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                    <p class="text-sm text-yellow-800"><i class="fas fa-star mr-1"></i> <strong>Best for:</strong> Organizations already using Microsoft 365 ecosystem</p>
+                </div>
+            </div>
+
+            <!-- McAfee Total Protection -->
+            <div class="mb-6 border-l-4 border-blue-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Trellix (McAfee) DLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2.5 py-0.5 rounded">Commercial</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Data Discovery</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    Comprehensive DLP platform with strong endpoint protection and centralized management.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Unified DLP management console</li>
+                        <li>Device control and encryption</li>
+                        <li>Content-aware protection</li>
+                        <li>Cloud DLP support</li>
+                        <li>Advanced classification engine</li>
+                        <li>Integration with SIEM solutions</li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                    <p class="text-sm text-yellow-800"><i class="fas fa-star mr-1"></i> <strong>Best for:</strong> Mid to large enterprises seeking unified endpoint and network protection</p>
+                </div>
+            </div>
+
+            <!-- Forcepoint DLP -->
+            <div class="mb-6 border-l-4 border-blue-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Forcepoint DLP</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2.5 py-0.5 rounded">Commercial</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cloud DLP</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    Advanced DLP solution with behavioral analytics and user-centric protection approach.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>User and Entity Behavior Analytics (UEBA)</li>
+                        <li>Risk-adaptive protection</li>
+                        <li>OCR for image-based data detection</li>
+                        <li>Cloud Access Security Broker (CASB) integration</li>
+                        <li>Advanced policy engine</li>
+                        <li>Fingerprinting and pattern matching</li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                    <p class="text-sm text-yellow-800"><i class="fas fa-star mr-1"></i> <strong>Best for:</strong> Organizations needing behavioral analytics and advanced threat detection</p>
+                </div>
+            </div>
+
+            <!-- Digital Guardian -->
+            <div class="border-l-4 border-blue-500 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Digital Guardian</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-gray-800 text-white text-xs font-semibold px-2.5 py-0.5 rounded">Commercial</span>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Endpoint DLP</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Network DLP</span>
+                </div>
+                <p class="text-gray-700 mb-3">
+                    Data protection platform with strong focus on visibility and control of sensitive data across 
+                    the enterprise.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                    <h4 class="font-semibold text-gray-900 mb-2">Key Features:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Deep visibility into data movement</li>
+                        <li>Managed services available</li>
+                        <li>Analytics and threat detection</li>
+                        <li>Flexible deployment options (on-premise, cloud, hybrid)</li>
+                        <li>Automated classification</li>
+                        <li>Integration with security ecosystem</li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                    <p class="text-sm text-yellow-800"><i class="fas fa-star mr-1"></i> <strong>Best for:</strong> Organizations needing detailed visibility and managed DLP services</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Comparison -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Quick Comparison Guide</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Solution</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Deployment</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Best For</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Complexity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">OpenDLP</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Open Source</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">On-Premise</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Small to medium organizations</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Medium</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">MyDLP</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Open Source</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">On-Premise</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Medium organizations</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Medium-High</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">Symantec DLP</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-800 text-white">Commercial</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Hybrid</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Large enterprises</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">High</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">Microsoft Purview</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-800 text-white">Commercial</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Cloud</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Microsoft 365 users</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Low-Medium</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">Trellix DLP</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-800 text-white">Commercial</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Hybrid</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Mid-large enterprises</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Medium-High</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-gray-900">Forcepoint DLP</td>
+                            <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-800 text-white">Commercial</span></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Hybrid</td>
+                            <td class="px-6 py-4 text-sm text-gray-700">Large enterprises</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">High</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Selection Criteria -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Selection Criteria for Sri Lankan Organizations</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-check-circle text-2xl text-green-600 mr-3 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">PDPA Compliance Requirements</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Support for Sri Lankan data patterns (NIC, passport, etc.)</li>
+                                <li>Data classification capabilities</li>
+                                <li>Audit trail and reporting features</li>
+                                <li>Incident response workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-dollar-sign text-2xl text-blue-600 mr-3 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Budget Considerations</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Initial licensing or setup costs</li>
+                                <li>Ongoing maintenance and support fees</li>
+                                <li>Training requirements</li>
+                                <li>Total cost of ownership (TCO)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-users text-2xl text-purple-600 mr-3 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Technical Expertise</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>In-house IT team capabilities</li>
+                                <li>Vendor support availability in Sri Lanka</li>
+                                <li>Training and documentation quality</li>
+                                <li>Ease of deployment and management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-start mb-3">
+                        <i class="fas fa-expand-arrows-alt text-2xl text-orange-600 mr-3 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Scalability & Integration</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Ability to scale with organization growth</li>
+                                <li>Integration with existing security tools</li>
+                                <li>Cloud and on-premise support</li>
+                                <li>Multi-platform compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
+                <h3 class="font-bold text-xl text-gray-900 mb-3">Decision Framework</h3>
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div>
+                        <h4 class="font-semibold text-blue-900 mb-2">Small Organizations (10-50 employees)</h4>
+                        <p class="text-gray-700">Consider: OpenDLP, YARA, or Microsoft Purview (if using M365)</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-purple-900 mb-2">Medium Organizations (50-500 employees)</h4>
+                        <p class="text-gray-700">Consider: MyDLP, Microsoft Purview, or Trellix DLP</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-indigo-900 mb-2">Large Enterprises (500+ employees)</h4>
+                        <p class="text-gray-700">Consider: Symantec DLP, Forcepoint DLP, or Digital Guardian</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Best Practices -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Implementation Best Practices</h2>
+            
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                        <span class="text-blue-600 font-bold text-xl">1</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">Start with Data Discovery</h3>
+                        <p class="text-gray-700">Identify where sensitive data resides before implementing blocking policies. Use discovery mode to understand data flows.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-green-100 rounded-full p-3 mr-4">
+                        <span class="text-green-600 font-bold text-xl">2</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">Implement Sri Lankan Data Patterns</h3>
+                        <p class="text-gray-700">Configure custom patterns for NIC, passport, bank accounts, and other Sri Lankan-specific identifiers. See our <a href="/resources/patterns.html" class="text-blue-600 hover:underline">Data Patterns page</a> for regex examples.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-purple-100 rounded-full p-3 mr-4">
+                        <span class="text-purple-600 font-bold text-xl">3</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">Start in Monitor Mode</h3>
+                        <p class="text-gray-700">Begin with monitoring and alerting only. Move to blocking gradually after understanding false positive rates and refining policies.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3 mr-4">
+                        <span class="text-yellow-600 font-bold text-xl">4</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">Train Your Team</h3>
+                        <p class="text-gray-700">Provide comprehensive training to IT staff and end users. DLP effectiveness depends on user awareness and cooperation.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-red-100 rounded-full p-3 mr-4">
+                        <span class="text-red-600 font-bold text-xl">5</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-900 mb-2">Regular Policy Reviews</h3>
+                        <p class="text-gray-700">Schedule quarterly reviews of DLP policies and patterns. Update rules based on new data types, business processes, and regulatory changes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl shadow-lg p-8 text-white">
+            <div class="text-center">
+                <i class="fas fa-link text-5xl mb-4"></i>
+                <h2 class="text-3xl font-bold mb-4">Related Resources</h2>
+                <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+                    Explore additional resources to help you implement DLP effectively in your organization.
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                    <a href="/resources/patterns.html" class="bg-white bg-opacity-10 backdrop-blur rounded-lg p-4 hover:bg-opacity-20 transition">
+                        <i class="fas fa-fingerprint text-3xl mb-2"></i>
+                        <h3 class="font-bold mb-1">Data Patterns</h3>
+                        <p class="text-sm text-gray-300">Sri Lankan regex patterns</p>
+                    </a>
+                    <a href="/implementation/" class="bg-white bg-opacity-10 backdrop-blur rounded-lg p-4 hover:bg-opacity-20 transition">
+                        <i class="fas fa-tasks text-3xl mb-2"></i>
+                        <h3 class="font-bold mb-1">Implementation Guide</h3>
+                        <p class="text-sm text-gray-300">Step-by-step deployment</p>
+                    </a>
+                    <a href="/pdpa-compliance/" class="bg-white bg-opacity-10 backdrop-blur rounded-lg p-4 hover:bg-opacity-20 transition">
+                        <i class="fas fa-gavel text-3xl mb-2"></i>
+                        <h3 class="font-bold mb-1">PDPA Compliance</h3>
+                        <p class="text-sm text-gray-300">Legal requirements</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
