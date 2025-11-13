@@ -64,16 +64,241 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Introduction -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive Community Events resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Community Events</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Join our workshops, webinars, and community meetups to learn, network, and advance 
+                your DLP expertise alongside other data protection professionals in Sri Lanka.
+            </p>
+            <p class="text-gray-700">
+                All events are free and open to the community. Stay connected to learn about upcoming events!
+            </p>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg mb-6">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-calendar-check text-blue-600 text-2xl mr-3"></i>
+                    <h3 class="font-bold text-xl text-gray-900">No events scheduled at this time</h3>
+                </div>
+                <p class="text-gray-700">
+                    We're planning exciting events for the community. Check back soon or 
+                    <a href="https://github.com/OpenDLP-LK" target="_blank" class="text-blue-600 hover:underline font-semibold">watch our GitHub repository</a> 
+                    for announcements!
+                </p>
+            </div>
+            
+            <!-- Example Event Template (commented out for future use) -->
+            <!-- 
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                <div class="flex flex-col md:flex-row md:items-start">
+                    <div class="md:w-32 mb-4 md:mb-0 md:mr-6">
+                        <div class="bg-blue-600 text-white text-center p-4 rounded-lg">
+                            <div class="text-3xl font-bold">15</div>
+                            <div class="text-sm">DEC 2025</div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-2">Webinar</span>
+                            <span class="text-gray-600 text-sm"><i class="fas fa-clock mr-1"></i>2:00 PM - 4:00 PM</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">DLP Implementation Workshop</h3>
+                        <p class="text-gray-700 mb-4">
+                            Learn practical approaches to implementing DLP in Sri Lankan organizations, including 
+                            PDPA compliance strategies and local data pattern development.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-sm text-gray-600"><i class="fas fa-user mr-1"></i>Speaker: John Doe</span>
+                            <span class="text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-1"></i>Online</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-700 transition">
+                            Register Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            -->
+        </section>
+
+        <!-- Event Types -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Types of Events</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Workshops</h3>
+                    <p class="text-gray-700 mb-4">
+                        Hands-on sessions covering DLP implementation, configuration, and best practices 
+                        with practical exercises.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> 2-4 hours<br>
+                        <strong>Format:</strong> Interactive, hands-on
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-video text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Webinars</h3>
+                    <p class="text-gray-700 mb-4">
+                        Online presentations by experts covering specific topics, trends, and advanced 
+                        DLP concepts with Q&A sessions.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> 1-2 hours<br>
+                        <strong>Format:</strong> Presentation + Q&A
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Meetups</h3>
+                    <p class="text-gray-700 mb-4">
+                        In-person or virtual gatherings for networking, knowledge sharing, and 
+                        community building among DLP practitioners.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> 2-3 hours<br>
+                        <strong>Format:</strong> Networking + talks
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-trophy text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hackathons</h3>
+                    <p class="text-gray-700 mb-4">
+                        Collaborative coding events focused on developing DLP tools, patterns, 
+                        and solutions for Sri Lankan organizations.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> 1-2 days<br>
+                        <strong>Format:</strong> Team collaboration
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Training Sessions</h3>
+                    <p class="text-gray-700 mb-4">
+                        Structured learning programs covering comprehensive DLP topics, from 
+                        beginner to advanced levels.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> Multi-session<br>
+                        <strong>Format:</strong> Course-based learning
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Panel Discussions</h3>
+                    <p class="text-gray-700 mb-4">
+                        Expert panels discussing industry trends, challenges, and best practices 
+                        in data protection and DLP.
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Duration:</strong> 1-2 hours<br>
+                        <strong>Format:</strong> Panel + audience Q&A
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Past Events</h2>
+            <p class="text-gray-700 mb-4">
+                Our community is just getting started! As we host events, recordings and materials 
+                will be archived here for the benefit of the entire community.
+            </p>
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <i class="fas fa-archive text-4xl text-gray-400 mb-3"></i>
+                <p class="text-gray-600">No past events yet. Check back after our first event!</p>
+            </div>
+        </section>
+
+        <!-- Propose an Event -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white mb-12">
+            <h2 class="text-3xl font-bold mb-4">Propose an Event</h2>
+            <p class="text-lg mb-6">
+                Have an idea for a workshop, webinar, or community event? We'd love to hear from you! 
+                Community-led events are a great way to share expertise and strengthen our network.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-3">What You Can Propose</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-check-circle mr-2"></i>Technical workshops or tutorials</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Industry experience sharing sessions</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>PDPA compliance discussions</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Tool demonstrations</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Panel discussions or Q&A sessions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-3">Event Proposal Guidelines</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-check-circle mr-2"></i>Relevant to DLP or data protection</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Accessible to community members</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Clear learning objectives</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Realistic time commitment</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Follows code of conduct</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/discussions/new?category=ideas" target="_blank" class="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                <i class="fas fa-lightbulb mr-2"></i>
+                Propose an Event
+            </a>
+        </section>
+
+        <!-- Stay Informed -->
+        <section class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Stay Informed</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Never Miss an Event</h3>
+                    <p class="text-gray-700 mb-4">
+                        Get notified about upcoming events, workshops, and community activities:
+                    </p>
+                    <div class="space-y-3">
+                        <a href="https://github.com/OpenDLP-LK" target="_blank" class="flex items-center text-blue-600 hover:underline">
+                            <i class="fab fa-github mr-2"></i>
+                            Watch our GitHub repository
+                        </a>
+                        <a href="https://github.com/OpenDLP-LK/OpenDLP-LK.github.io/discussions" target="_blank" class="flex items-center text-blue-600 hover:underline">
+                            <i class="fas fa-comments mr-2"></i>
+                            Follow GitHub Discussions
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Event Resources</h3>
+                    <p class="text-gray-700 mb-4">
+                        Access materials from past events and workshops:
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-file-powerpoint text-red-600 mr-2"></i>Presentation slides</li>
+                        <li><i class="fas fa-video text-purple-600 mr-2"></i>Video recordings</li>
+                        <li><i class="fas fa-code text-blue-600 mr-2"></i>Code samples and demos</li>
+                        <li><i class="fas fa-book text-green-600 mr-2"></i>Reference materials</li>
+                    </ul>
                 </div>
             </div>
         </section>
