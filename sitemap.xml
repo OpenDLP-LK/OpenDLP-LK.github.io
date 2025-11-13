@@ -1,141 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
     <url>
         <loc>https://opendlp-lk.github.io/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/about.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/getting-started.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/checklist.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- Implementation Section -->
     <url>
         <loc>https://opendlp-lk.github.io/implementation/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/phase1-planning.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/phase2-discovery.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/phase3-policy.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/phase4-pilot.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/phase5-monitoring.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/implementation/checklist.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- PDPA Compliance Section -->
     <url>
         <loc>https://opendlp-lk.github.io/pdpa-compliance/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/pdpa-compliance/gap-analysis.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/pdpa-compliance/requirements.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/pdpa-compliance/reporting.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+    <!-- Resources Section -->
     <url>
         <loc>https://opendlp-lk.github.io/resources/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/resources/templates.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/resources/patterns.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/resources/tools.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/resources/case-studies.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    
+    <!-- Data Champions Section -->
     <url>
         <loc>https://opendlp-lk.github.io/data-champions/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://opendlp-lk.github.io/data-champions/roles.html</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://opendlp-lk.github.io/data-champions/training.html</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://opendlp-lk.github.io/data-champions/certification.html</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Community Section -->
+    <url>
         <loc>https://opendlp-lk.github.io/community/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://opendlp-lk.github.io/community/contribute.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://opendlp-lk.github.io/community/discussions.html</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://opendlp-lk.github.io/community/events.html</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 </urlset>
