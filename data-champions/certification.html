@@ -99,17 +99,433 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Breadcrumb -->
+        <nav class="mb-8 text-sm text-gray-600">
+            <a href="/" class="hover:text-blue-600">Home</a>
+            <span class="mx-2">/</span>
+            <a href="/data-champions/" class="hover:text-blue-600">Data Champions</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-semibold">Certification</span>
+        </nav>
+
+        <!-- Overview -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive Champion Certification resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">OpenDLP-LK Data Champion Certification</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                The OpenDLP-LK Data Champion Certification validates your expertise in Data Loss Prevention and PDPA 
+                compliance. This recognized credential demonstrates your ability to lead DLP initiatives, train end users, 
+                and maintain compliance within your organization.
+            </p>
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border border-blue-200">
+                <h3 class="font-bold text-xl mb-3">Certification Value</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-award text-blue-600 text-2xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Professional Recognition</div>
+                            <div class="text-sm text-gray-600">Industry-recognized credential for DLP expertise</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-briefcase text-purple-600 text-2xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Career Advancement</div>
+                            <div class="text-sm text-gray-600">Differentiate yourself in security roles</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-certificate text-green-600 text-2xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Compliance Assurance</div>
+                            <div class="text-sm text-gray-600">Demonstrate PDPA knowledge to stakeholders</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Certification Levels -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Certification Levels</h2>
+            <p class="text-gray-700 mb-6">
+                Choose the certification level that matches your role and experience.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Associate Level -->
+                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 flex items-center text-blue-900">
+                                <i class="fas fa-certificate text-blue-600 mr-3"></i>
+                                Associate Data Champion
+                            </h3>
+                            <p class="text-gray-700">Entry-level certification for new champions</p>
+                        </div>
+                        <span class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Level 1</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Prerequisites:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• Completion of Foundation training path</li>
+                                <li>• 6+ months employment in current organization</li>
+                                <li>• Manager recommendation</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Exam Format:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• 60 multiple-choice questions</li>
+                                <li>• 2 practical scenario exercises</li>
+                                <li>• 90 minutes duration</li>
+                                <li>• 75% passing score</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Level -->
+                <div class="border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 flex items-center text-purple-900">
+                                <i class="fas fa-award text-purple-600 mr-3"></i>
+                                Professional Data Champion
+                            </h3>
+                            <p class="text-gray-700">Advanced certification for experienced champions</p>
+                        </div>
+                        <span class="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Level 2</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Prerequisites:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• Associate certification OR 1+ year as champion</li>
+                                <li>• Completion of Advanced or Leadership path</li>
+                                <li>• Documented champion activities (portfolio)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Exam Format:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• 80 multiple-choice questions</li>
+                                <li>• 4 complex scenario exercises</li>
+                                <li>• 120 minutes duration</li>
+                                <li>• 80% passing score</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Master Level -->
+                <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2 flex items-center text-green-900">
+                                <i class="fas fa-crown text-green-600 mr-3"></i>
+                                Master Data Champion
+                            </h3>
+                            <p class="text-gray-700">Elite certification for program leaders</p>
+                        </div>
+                        <span class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Level 3</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Prerequisites:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• Professional certification</li>
+                                <li>• 2+ years as Senior/Lead Champion</li>
+                                <li>• Case study submission</li>
+                                <li>• Peer review endorsement</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold mb-2 text-sm">Exam Format:</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• Comprehensive case study analysis</li>
+                                <li>• Oral examination (45 minutes)</li>
+                                <li>• Program implementation plan</li>
+                                <li>• Panel review</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Process -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Certification Process</h2>
+            
+            <div class="relative">
+                <div class="space-y-6">
+                    <!-- Step 1 -->
+                    <div class="relative pl-12 pb-6 border-l-2 border-blue-300">
+                        <div class="absolute -left-5 top-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+                        <h3 class="font-bold text-xl mb-2">Complete Required Training</h3>
+                        <p class="text-gray-700 mb-3">
+                            Finish your chosen learning path (Foundation, Advanced, or Leadership) with all modules and labs.
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg text-sm">
+                            <strong>Timeline:</strong> 8-12 weeks depending on path
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative pl-12 pb-6 border-l-2 border-purple-300">
+                        <div class="absolute -left-5 top-0 w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+                        <h3 class="font-bold text-xl mb-2">Submit Application</h3>
+                        <p class="text-gray-700 mb-3">
+                            Complete the certification application with required documentation (manager approval, portfolio, etc.).
+                        </p>
+                        <div class="bg-purple-50 p-4 rounded-lg text-sm">
+                            <strong>Processing:</strong> 1-2 weeks for application review
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative pl-12 pb-6 border-l-2 border-green-300">
+                        <div class="absolute -left-5 top-0 w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+                        <h3 class="font-bold text-xl mb-2">Schedule Examination</h3>
+                        <p class="text-gray-700 mb-3">
+                            Choose your exam date and format (online proctored or in-person testing center).
+                        </p>
+                        <div class="bg-green-50 p-4 rounded-lg text-sm">
+                            <strong>Availability:</strong> Monthly exam windows
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative pl-12 pb-6 border-l-2 border-yellow-300">
+                        <div class="absolute -left-5 top-0 w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+                        <h3 class="font-bold text-xl mb-2">Pass Examination</h3>
+                        <p class="text-gray-700 mb-3">
+                            Successfully complete the written exam and practical scenarios with the required passing score.
+                        </p>
+                        <div class="bg-yellow-50 p-4 rounded-lg text-sm">
+                            <strong>Results:</strong> Immediate preliminary score; official results within 5 business days
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative pl-12">
+                        <div class="absolute -left-5 top-0 w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg">5</div>
+                        <h3 class="font-bold text-xl mb-2">Receive Certification</h3>
+                        <p class="text-gray-700 mb-3">
+                            Get your official certificate, digital badge, and access to the champion alumni network.
+                        </p>
+                        <div class="bg-indigo-50 p-4 rounded-lg text-sm">
+                            <strong>Deliverables:</strong> Certificate (PDF + physical), LinkedIn badge, champion toolkit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Topics -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Exam Content Areas (Associate Level)</h2>
+            <p class="text-gray-700 mb-6">The certification exam covers the following domains:</p>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-bold text-lg">Domain 1: DLP Fundamentals</h3>
+                        <span class="text-sm text-gray-600 font-semibold">25%</span>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• DLP concepts, terminology, and architecture</li>
+                        <li>• Data classification and sensitivity levels</li>
+                        <li>• Common data types and patterns (NIC, banking, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-bold text-lg">Domain 2: PDPA Compliance</h3>
+                        <span class="text-sm text-gray-600 font-semibold">20%</span>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• PDPA requirements and principles</li>
+                        <li>• Data subject rights and organization obligations</li>
+                        <li>• Breach notification procedures</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-bold text-lg">Domain 3: Policy Management</h3>
+                        <span class="text-sm text-gray-600 font-semibold">25%</span>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Creating and maintaining DLP policies</li>
+                        <li>• Detection rules and content inspection</li>
+                        <li>• Policy actions and response mechanisms</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-bold text-lg">Domain 4: Incident Response</h3>
+                        <span class="text-sm text-gray-600 font-semibold">20%</span>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Incident classification and severity assessment</li>
+                        <li>• Investigation and evidence collection</li>
+                        <li>• Remediation and escalation procedures</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-bold text-lg">Domain 5: Training & Communication</h3>
+                        <span class="text-sm text-gray-600 font-semibold">10%</span>
+                    </div>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Adult learning principles and training techniques</li>
+                        <li>• Creating effective training materials</li>
+                        <li>• Stakeholder communication strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance & Renewal -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Certification Maintenance</h2>
+            <p class="text-gray-700 mb-6">
+                Keep your certification current and demonstrate ongoing professional development.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-sync text-blue-600 mr-3"></i>
+                        Renewal Requirements
+                    </h3>
+                    <p class="text-gray-700 mb-4">Certifications are valid for 2 years. To renew:</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                            Earn 20 Continuing Education Units (CEUs)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                            Submit annual champion activity report
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                            Pay renewal fee (LKR 5,000 / USD 25)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                            Maintain active champion status
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-graduation-cap text-purple-600 mr-3"></i>
+                        Earning CEUs
+                    </h3>
+                    <p class="text-gray-700 mb-4">Approved activities for continuing education:</p>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mr-2 mt-1"></i>
+                            Advanced training courses (1 CEU per hour)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mr-2 mt-1"></i>
+                            Security conferences and webinars (1 CEU per hour)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mr-2 mt-1"></i>
+                            Published articles or case studies (5 CEUs each)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mr-2 mt-1"></i>
+                            Mentoring new champions (10 CEUs per year)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Certification Benefits</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                    <i class="fas fa-network-wired text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Alumni Network</h3>
+                    <p class="text-sm text-gray-700">
+                        Join 500+ certified champions across Sri Lankan enterprises for networking and knowledge sharing.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                    <i class="fas fa-bolt text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Early Access</h3>
+                    <p class="text-sm text-gray-700">
+                        Get early access to new templates, patterns, and tools before public release.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                    <i class="fas fa-headset text-green-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Priority Support</h3>
+                    <p class="text-sm text-gray-700">
+                        Receive priority support from OpenDLP-LK community maintainers and experts.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl">
+                    <i class="fas fa-badge-check text-yellow-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Digital Badge</h3>
+                    <p class="text-sm text-gray-700">
+                        Showcase your credential on LinkedIn, email signatures, and professional profiles.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl">
+                    <i class="fas fa-microphone text-pink-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Speaking Opportunities</h3>
+                    <p class="text-sm text-gray-700">
+                        Present at community events, webinars, and contribute to OpenDLP-LK resources.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl">
+                    <i class="fas fa-percent text-indigo-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-3">Discounts</h3>
+                    <p class="text-sm text-gray-700">
+                        Special pricing on partner tools, training, and security conferences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
+            <h2 class="text-3xl font-bold mb-4">Ready to Get Certified?</h2>
+            <p class="text-xl text-blue-100 mb-6">
+                Start your journey to becoming an OpenDLP-LK Certified Data Champion.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/data-champions/training.html" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition text-center">
+                    <i class="fas fa-graduation-cap mr-2"></i>Start Training
+                </a>
+                <a href="/data-champions/roles.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-user-tie mr-2"></i>View Roles
+                </a>
+                <a href="/data-champions/" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-home mr-2"></i>Program Overview
+                </a>
             </div>
         </section>
     </main>

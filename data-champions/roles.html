@@ -98,17 +98,331 @@
     </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Breadcrumb -->
+        <nav class="mb-8 text-sm text-gray-600">
+            <a href="/" class="hover:text-blue-600">Home</a>
+            <span class="mx-2">/</span>
+            <a href="/data-champions/" class="hover:text-blue-600">Data Champions</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-semibold">Roles & Responsibilities</span>
+        </nav>
+
+        <!-- Overview Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">This page is under development. Check back soon for comprehensive Data Champion Roles resources.</p>
-            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <h3 class="font-bold text-xl mb-3">In the Meantime</h3>
-                <p class="text-gray-700 mb-4">Explore our other resources:</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="/implementation/" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Implementation Guide</a>
-                    <a href="/pdpa-compliance/" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700 transition">PDPA Compliance</a>
-                    <a href="https://github.com/OpenDLP-LK" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition">GitHub Repository</a>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Champion Roles Overview</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                A successful Data Champions program requires clearly defined roles and responsibilities. Champions serve as 
+                the critical link between IT security, management, and end users, ensuring DLP policies are understood, 
+                implemented, and maintained across the organization.
+            </p>
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border border-blue-200">
+                <h3 class="font-bold text-xl mb-3">Key Success Factors</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Clear Accountability</div>
+                            <div class="text-sm text-gray-600">Well-defined ownership and KPIs</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-purple-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Adequate Authority</div>
+                            <div class="text-sm text-gray-600">Empowered to make decisions</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <div class="font-bold">Ongoing Support</div>
+                            <div class="text-sm text-gray-600">Resources and time allocation</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Primary Champion Roles -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Primary Champion Roles</h2>
+            
+            <!-- Department Champion -->
+            <div class="mb-8 border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-lg">
+                <h3 class="font-bold text-2xl mb-3 flex items-center text-blue-900">
+                    <i class="fas fa-user-tie text-blue-600 mr-3"></i>
+                    Department Data Champion
+                </h3>
+                <p class="text-gray-700 mb-4">
+                    The primary champion role within each department. Responsible for DLP implementation, monitoring, and 
+                    end-user training within their functional area.
+                </p>
+                
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Core Responsibilities:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Serve as primary point of contact for DLP questions within the department
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Conduct monthly training sessions for department staff (min. 1 hour)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Review and investigate DLP incidents affecting the department
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Maintain department-specific data inventory and classification
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Report compliance metrics to IT security team quarterly
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-blue-600 mr-3 mt-1"></i>
+                            Identify and escalate data protection risks
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Time Commitment:</h4>
+                    <p class="text-gray-700">4-6 hours per week (10-15% of work time)</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-4">
+                    <h4 class="font-bold mb-3">Ideal Candidates:</h4>
+                    <p class="text-gray-700">Mid-level managers or senior staff with strong communication skills, 
+                    technical aptitude, and respect within the department. Should have 2+ years tenure.</p>
+                </div>
+            </div>
+
+            <!-- Senior Champion -->
+            <div class="mb-8 border-l-4 border-purple-600 bg-purple-50 p-6 rounded-r-lg">
+                <h3 class="font-bold text-2xl mb-3 flex items-center text-purple-900">
+                    <i class="fas fa-crown text-purple-600 mr-3"></i>
+                    Senior Data Champion (Lead Champion)
+                </h3>
+                <p class="text-gray-700 mb-4">
+                    Organization-wide champion coordinator. Oversees the entire champion network, coordinates with IT 
+                    security, and ensures program consistency across departments.
+                </p>
+                
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Core Responsibilities:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Lead monthly champion network meetings
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Coordinate with IT security on policy updates and rollouts
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Consolidate and present compliance metrics to executive leadership
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Mentor and support department champions
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Develop and maintain champion program documentation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-purple-600 mr-3 mt-1"></i>
+                            Lead annual PDPA compliance reviews
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Time Commitment:</h4>
+                    <p class="text-gray-700">8-12 hours per week (20-30% of work time)</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-4">
+                    <h4 class="font-bold mb-3">Ideal Candidates:</h4>
+                    <p class="text-gray-700">Senior manager or director level with cross-departmental influence, 
+                    strong leadership skills, and executive presence. Prior data protection or compliance experience preferred.</p>
+                </div>
+            </div>
+
+            <!-- Technical Champion -->
+            <div class="border-l-4 border-green-600 bg-green-50 p-6 rounded-r-lg">
+                <h3 class="font-bold text-2xl mb-3 flex items-center text-green-900">
+                    <i class="fas fa-laptop-code text-green-600 mr-3"></i>
+                    Technical Data Champion
+                </h3>
+                <p class="text-gray-700 mb-4">
+                    Specialized role for IT and technical departments. Focuses on DLP tool configuration, integration, 
+                    and advanced technical troubleshooting.
+                </p>
+                
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Core Responsibilities:</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Configure and maintain DLP policies in technical systems
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Develop custom data patterns and detection rules
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Provide technical support to department champions
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Conduct advanced incident forensics
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Integrate DLP with other security tools (SIEM, IAM, etc.)
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-angle-right text-green-600 mr-3 mt-1"></i>
+                            Monitor system performance and optimize configurations
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <h4 class="font-bold mb-3">Time Commitment:</h4>
+                    <p class="text-gray-700">10-15 hours per week (25-40% of work time)</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-4">
+                    <h4 class="font-bold mb-3">Ideal Candidates:</h4>
+                    <p class="text-gray-700">IT security professionals, system administrators, or security engineers with 
+                    DLP platform experience and strong technical troubleshooting skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizational Models -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Organizational Models</h2>
+            <p class="text-gray-700 mb-6">
+                Choose a champion structure that aligns with your organization's size and complexity.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Small Organization -->
+                <div class="border border-blue-200 rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-building text-blue-600 mr-3"></i>
+                        Small Organization (&lt;100 employees)
+                    </h3>
+                    <p class="text-gray-700 mb-4">Single champion model with IT support.</p>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="font-bold mb-2">Structure:</p>
+                        <ul class="space-y-1 text-sm text-gray-700">
+                            <li>• 1 Senior Champion (organization-wide)</li>
+                            <li>• IT security provides technical support</li>
+                            <li>• Department heads act as informal champions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Medium Organization -->
+                <div class="border border-purple-200 rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-building text-purple-600 mr-3"></i>
+                        Medium Organization (100-500 employees)
+                    </h3>
+                    <p class="text-gray-700 mb-4">Department-based champion network.</p>
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <p class="font-bold mb-2">Structure:</p>
+                        <ul class="space-y-1 text-sm text-gray-700">
+                            <li>• 1 Senior Champion (coordinator)</li>
+                            <li>• 1 Department Champion per major department (5-8 total)</li>
+                            <li>• 1 Technical Champion from IT security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Large Organization -->
+                <div class="border border-green-200 rounded-lg p-6">
+                    <h3 class="font-bold text-xl mb-3 flex items-center">
+                        <i class="fas fa-building text-green-600 mr-3"></i>
+                        Large Organization (&gt;500 employees)
+                    </h3>
+                    <p class="text-gray-700 mb-4">Multi-tier champion hierarchy.</p>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="font-bold mb-2">Structure:</p>
+                        <ul class="space-y-1 text-sm text-gray-700">
+                            <li>• 1 Senior Champion (program lead)</li>
+                            <li>• 1 Department Champion per department (10-20 total)</li>
+                            <li>• 2-3 Technical Champions in IT security</li>
+                            <li>• Optional: Regional champions for multi-location organizations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Criteria -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Success Criteria & KPIs</h2>
+            <p class="text-gray-700 mb-6">
+                Measure champion effectiveness using these key performance indicators.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-lg mb-4 flex items-center">
+                        <i class="fas fa-chart-line text-blue-600 mr-3"></i>
+                        Quantitative Metrics
+                    </h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• <strong>Incident Reduction:</strong> 30%+ decrease in DLP incidents quarter-over-quarter</li>
+                        <li>• <strong>Training Completion:</strong> 95%+ of department staff trained annually</li>
+                        <li>• <strong>Response Time:</strong> Average incident resolution &lt;24 hours</li>
+                        <li>• <strong>Policy Compliance:</strong> 90%+ adherence to DLP policies</li>
+                        <li>• <strong>Data Classification:</strong> 100% of sensitive data inventoried and classified</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-lg mb-4 flex items-center">
+                        <i class="fas fa-tasks text-purple-600 mr-3"></i>
+                        Qualitative Metrics
+                    </h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>• <strong>User Satisfaction:</strong> Positive feedback on champion support</li>
+                        <li>• <strong>Cultural Impact:</strong> Increased data awareness in surveys</li>
+                        <li>• <strong>Proactive Engagement:</strong> Champions identify risks before incidents</li>
+                        <li>• <strong>Knowledge Transfer:</strong> Effective communication of policy changes</li>
+                        <li>• <strong>Leadership Recognition:</strong> Executive acknowledgment of program value</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
+            <h2 class="text-3xl font-bold mb-4">Next Steps</h2>
+            <p class="text-xl text-blue-100 mb-6">
+                Now that you understand champion roles, explore the training program and certification process.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/data-champions/" class="bg-white text-purple-700 px-8 py-4 rounded-lg font-bold hover:bg-purple-50 transition text-center">
+                    <i class="fas fa-arrow-left mr-2"></i>Program Overview
+                </a>
+                <a href="/data-champions/training.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-graduation-cap mr-2"></i>View Training
+                </a>
+                <a href="/data-champions/certification.html" class="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition text-center">
+                    <i class="fas fa-certificate mr-2"></i>Get Certified
+                </a>
             </div>
         </section>
     </main>
