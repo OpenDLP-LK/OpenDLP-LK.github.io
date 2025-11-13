@@ -51,6 +51,91 @@
         .phase-section {
             border-left: 4px solid;
         }
+        
+        /* Floating Progress Indicator */
+        .floating-progress {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 24px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            z-index: 1000;
+            min-width: 200px;
+            transition: all 0.3s ease;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        .floating-progress:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.5);
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .floating-progress-title {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            opacity: 0.9;
+        }
+        
+        .floating-progress-percentage {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .floating-progress-count {
+            font-size: 13px;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+        
+        .floating-progress-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .floating-progress-bar-fill {
+            height: 100%;
+            background: white;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .floating-progress {
+                top: auto;
+                bottom: 20px;
+                right: 20px;
+                left: 20px;
+                padding: 16px 20px;
+                min-width: auto;
+            }
+            
+            .floating-progress-percentage {
+                font-size: 36px;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -102,6 +187,18 @@
             </div>
         </div>
     </nav>
+
+    <!-- Floating Progress Indicator -->
+    <div class="floating-progress" id="floating-progress">
+        <div class="floating-progress-title">
+            <i class="fas fa-tasks mr-2"></i>Progress
+        </div>
+        <div class="floating-progress-percentage" id="floating-percentage">0%</div>
+        <div class="floating-progress-count" id="floating-count">0 of 0 tasks</div>
+        <div class="floating-progress-bar">
+            <div class="floating-progress-bar-fill" id="floating-bar-fill" style="width: 0%"></div>
+        </div>
+    </div>
 
     <!-- Hero -->
     <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
@@ -963,8 +1060,14 @@
             const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
             const percentage = Math.round((checked / total) * 100);
             
+            // Update original progress display
             document.getElementById('progress-percentage').textContent = percentage + '%';
             document.getElementById('progress-count').textContent = `${checked} of ${total} tasks`;
+            
+            // Update floating progress indicator
+            document.getElementById('floating-percentage').textContent = percentage + '%';
+            document.getElementById('floating-count').textContent = `${checked} of ${total} tasks`;
+            document.getElementById('floating-bar-fill').style.width = percentage + '%';
         }
 
         // Save state on change and update progress
