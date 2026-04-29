@@ -581,6 +581,73 @@
             </div>
         </section>
 
+        <!-- Passport and Driving License Numbers Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-id-badge text-4xl text-cyan-600 mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Old and New Driving License Numbers</h3>
+                    <p class="text-gray-600">Combined pattern for Sri Lankan Old and New driving license numbers</p>
+                </div>
+            </div>
+
+            <!-- Old Driving License Number -->
+            <div class="border-l-4 border-cyan-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">Old Driving License Number</h4>
+                <p class="text-gray-600 mb-3">Format: 1 uppercase letter followed by 7 digits (e.g., N1234567)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="\b[A-Z]\d{7}\b">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">\b[A-Z]\d{7}\b</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>N1234567</li>
+                            <li>P9876543</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--New Driving License Format -->
+            <div class="border-l-4 border-cyan-500 pl-6 mb-6">
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">New Driving License Number</h4>
+                <p class="text-gray-600 mb-3">Format: 8 or 9 digits (e.g., 12345678 or 123456789)</p>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                        <button class="copy-pattern-btn bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="\b\d{8,9}\b">
+                            <i class="fas fa-copy mr-1"></i> Copy
+                        </button>
+                    </div>
+                    <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">\b\d{8,9}\b</code>
+                    <div class="mt-3 text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Examples:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-2">
+                            <li>12345678</li>
+                            <li>123456789</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combined Pattern -->
+            <div class="mt-6 bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Combined Pattern (Old &amp; New Driving License Numbers)</h4>
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-semibold text-gray-700">Regular Expression:</span>
+                    <button class="copy-pattern-btn bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded text-sm transition" data-pattern="\b([A-Z]\d{7}|\d{8,9})\b">
+                        <i class="fas fa-copy mr-1"></i> Copy
+                    </button>
+                </div>
+                <code class="block bg-gray-900 text-green-400 p-3 rounded font-mono text-sm overflow-x-auto">\b([A-Z]\d{7}|\d{8,9})\b</code>
+            </div>
+        </section>
+
         <!-- Usage Guidelines Section -->
         <section class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-lg p-8 text-white">
             <h3 class="text-2xl font-bold mb-4">Implementation Guidelines</h3>
