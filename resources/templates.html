@@ -234,11 +234,11 @@
             <div class="bg-blue-50 rounded-lg p-4 flex items-center justify-between">
                 <div>
                     <p class="font-semibold text-gray-900">Download Full Template</p>
-                    <p class="text-sm text-gray-600">Customizable PDF document with detailed policy sections</p>
+                    <p class="text-sm text-gray-600">Customizable PDF or Word document with detailed policy sections</p>
                 </div>
-                <a href="/assets/downloads/templates/dlp-policy-template.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="dlp-policy-template" data-title="Data Loss Prevention Policy" class="download-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -322,9 +322,9 @@
                     <p class="font-semibold text-gray-900">Download Response Template</p>
                     <p class="text-sm text-gray-600">Includes incident forms, checklists, and communication templates</p>
                 </div>
-                <a href="/assets/downloads/templates/incident-response-plan-template.pdf" download class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="incident-response-plan-template" data-title="Data Breach Incident Response Plan" class="download-btn bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -412,9 +412,9 @@
                     <p class="font-semibold text-gray-900">Download Classification Guide</p>
                     <p class="text-sm text-gray-600">Complete framework with labeling guidelines and examples</p>
                 </div>
-                <a href="/assets/downloads/templates/data-classification-framework.pdf" download class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="data-classification-framework" data-title="Data Classification Framework" class="download-btn bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -487,9 +487,9 @@
                     <p class="font-semibold text-gray-900">Download AUP Template</p>
                     <p class="text-sm text-gray-600">Employee acknowledgment form included</p>
                 </div>
-                <a href="/assets/downloads/templates/acceptable-use-policy-template.pdf" download class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="acceptable-use-policy-template" data-title="Acceptable Use Policy" class="download-btn bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -586,9 +586,9 @@
                     <p class="font-semibold text-gray-900">Download Training Package</p>
                     <p class="text-sm text-gray-600">Includes session outlines, presenter scripts, quizzes, and a certificate template</p>
                 </div>
-                <a href="/assets/downloads/templates/dlp-training-package.pdf" download class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="dlp-training-package" data-title="User Awareness & Training Package" class="download-btn bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -698,9 +698,9 @@
                     <p class="font-semibold text-gray-900">Download Assessment Template</p>
                     <p class="text-sm text-gray-600">Includes scoring worksheets and a ready-to-fill risk register</p>
                 </div>
-                <a href="/assets/downloads/templates/dlp-risk-assessment-template.pdf" download class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-bold transition">
+                <button type="button" data-template="dlp-risk-assessment-template" data-title="DLP Risk Assessment Framework" class="download-btn bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-bold transition">
                     <i class="fas fa-download mr-2"></i>Download
-                </a>
+                </button>
             </div>
         </section>
 
@@ -805,7 +805,71 @@
         </div>
     </footer>
 
+    <!-- Download Format Modal -->
+    <div id="download-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="download-modal-title">
+        <div id="download-modal-backdrop" class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative bg-white rounded-xl shadow-2xl p-8 max-w-md w-full mx-4">
+            <button type="button" id="download-modal-close" aria-label="Close" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <i class="fas fa-file-download text-4xl text-blue-600 mb-3"></i>
+                <h3 id="download-modal-title" class="text-2xl font-bold text-gray-900">Choose Format</h3>
+                <p id="download-modal-name" class="text-gray-600 mt-2"></p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <button type="button" id="download-format-pdf" class="border-2 border-red-200 hover:border-red-500 hover:bg-red-50 rounded-lg p-6 text-center transition">
+                    <i class="fas fa-file-pdf text-4xl text-red-600 mb-3"></i>
+                    <p class="font-bold text-gray-900">PDF</p>
+                    <p class="text-xs text-gray-500 mt-1">Ready to print &amp; share</p>
+                </button>
+                <button type="button" id="download-format-word" class="border-2 border-blue-200 hover:border-blue-500 hover:bg-blue-50 rounded-lg p-6 text-center transition">
+                    <i class="fas fa-file-word text-4xl text-blue-600 mb-3"></i>
+                    <p class="font-bold text-gray-900">Word</p>
+                    <p class="text-xs text-gray-500 mt-1">Fully editable .docx</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="/assets/js/main.js"></script>
     <script>document.getElementById('mobile-menu-btn')?.addEventListener('click', () => document.getElementById('mobile-menu')?.classList.toggle('hidden'));</script>
+    <script>
+    (function () {
+        const modal = document.getElementById('download-modal');
+        const nameEl = document.getElementById('download-modal-name');
+        let currentTemplate = null;
+
+        function openModal(template, title) {
+            currentTemplate = template;
+            nameEl.textContent = title;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+            currentTemplate = null;
+        }
+        function startDownload(ext) {
+            if (!currentTemplate) return;
+            const a = document.createElement('a');
+            a.href = '/assets/downloads/templates/' + currentTemplate + '.' + ext;
+            a.download = currentTemplate + '.' + ext;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            closeModal();
+        }
+
+        document.querySelectorAll('.download-btn').forEach(btn =>
+            btn.addEventListener('click', () => openModal(btn.dataset.template, btn.dataset.title)));
+        document.getElementById('download-format-pdf').addEventListener('click', () => startDownload('pdf'));
+        document.getElementById('download-format-word').addEventListener('click', () => startDownload('docx'));
+        document.getElementById('download-modal-close').addEventListener('click', closeModal);
+        document.getElementById('download-modal-backdrop').addEventListener('click', closeModal);
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+    })();
+    </script>
 </body>
 </html>
