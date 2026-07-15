@@ -1,0 +1,7 @@
+# robots.txt for OpenDLP-LK — PDPA, DPMP & DLP compliance resources for Sri Lanka
+# https://opendlp-lk.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://opendlp-lk.github.io/sitemap.xml

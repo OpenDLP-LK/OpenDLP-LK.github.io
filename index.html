@@ -3,52 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OpenDLP-LK - Open-source Data Loss Prevention implementation guide for Sri Lankan enterprises, aligned with PDPA No. 9 of 2022">
-    <meta name="keywords" content="DLP, Data Loss Prevention, PDPA, Sri Lanka, Data Protection, Cybersecurity, Compliance, PDPA Act 2022, Data Security, Privacy, NIC Protection, Banking Security">
+    <meta name="description" content="OpenDLP-LK: free open-source PDPA compliance and Data Loss Prevention (DLP) guide for Sri Lanka. Build your Data Protection Management Programme (DPMP) under Section 12(2) of the Personal Data Protection Act No. 9 of 2022 with checklists, templates and a 5-phase roadmap.">
+    <meta name="keywords" content="PDPA, PDPA Sri Lanka, Personal Data Protection Act No. 9 of 2022, DPMP, Data Protection Management Programme, Section 12(2), DLP, Data Loss Prevention, DLP Sri Lanka, PDPA compliance, Data Protection Authority Sri Lanka, data protection officer, DPO, Cybersecurity, Compliance, Data Security, Privacy, NIC Protection, Banking Security, PDPA enforcement, PDPA checklist, DPMP template">
     <meta name="author" content="OpenDLP-LK Community">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="LK">
+    <meta name="geo.placename" content="Sri Lanka">
+    <meta name="theme-color" content="#667eea">
     <link rel="canonical" href="https://opendlp-lk.github.io/">
-    
+    <link rel="sitemap" type="application/xml" href="https://opendlp-lk.github.io/sitemap.xml">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://opendlp-lk.github.io/">
-    <meta property="og:title" content="OpenDLP-LK - Data Loss Prevention for Sri Lankan Enterprises">
-    <meta property="og:description" content="Open-source Data Loss Prevention implementation guide for Sri Lankan enterprises, aligned with PDPA No. 9 of 2022. Free, comprehensive, and community-driven.">
+    <meta property="og:title" content="PDPA Sri Lanka Compliance — DPMP &amp; DLP Implementation Guide | OpenDLP-LK">
+    <meta property="og:description" content="Free, open-source guide to Sri Lanka PDPA (Act No. 9 of 2022) compliance: build your Data Protection Management Programme (DPMP) under Section 12(2) and deploy Data Loss Prevention (DLP) with practical checklists and templates.">
     <meta property="og:site_name" content="OpenDLP-LK">
     <meta property="og:locale" content="en_LK">
-    
+    <meta property="og:image" content="https://res.cloudinary.com/dkj22lm1g/image/upload/v1763008089/Whisk_ba82ad43e08b73b975546bc1c9945dfbe_e93aqv.jpg">
+    <meta property="og:image:alt" content="OpenDLP-LK — PDPA, DPMP and DLP compliance resources for Sri Lanka">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://opendlp-lk.github.io/">
-    <meta name="twitter:title" content="OpenDLP-LK - Data Loss Prevention for Sri Lankan Enterprises">
-    <meta name="twitter:description" content="Open-source Data Loss Prevention implementation guide for Sri Lankan enterprises, aligned with PDPA No. 9 of 2022.">
-    
-    <title>OpenDLP-LK - Data Loss Prevention for Sri Lankan Enterprises</title>
+    <meta name="twitter:title" content="PDPA Sri Lanka Compliance — DPMP &amp; DLP Implementation Guide | OpenDLP-LK">
+    <meta name="twitter:description" content="Free, open-source Sri Lanka PDPA compliance guide: Data Protection Management Programme (DPMP) under Section 12(2) plus Data Loss Prevention (DLP) roadmap, checklists and templates.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dkj22lm1g/image/upload/v1763008089/Whisk_ba82ad43e08b73b975546bc1c9945dfbe_e93aqv.jpg">
+
+    <title>PDPA Sri Lanka Compliance | DPMP & DLP Guide — Personal Data Protection Act No. 9 of 2022 | OpenDLP-LK</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dkj22lm1g/image/upload/v1763008089/Whisk_ba82ad43e08b73b975546bc1c9945dfbe_e93aqv.jpg">
     
-    <!-- Structured Data for GenAI -->
+    <!-- Structured Data (Organization, WebSite, WebPage, FAQ, Breadcrumb) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "OpenDLP-LK",
-      "url": "https://opendlp-lk.github.io/",
-      "description": "Open-source Data Loss Prevention implementation guide for Sri Lankan enterprises, aligned with PDPA No. 9 of 2022",
-      "inLanguage": "en-LK",
-      "publisher": {
-        "@type": "Organization",
-        "name": "OpenDLP-LK Community",
-        "url": "https://github.com/OpenDLP-LK"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://opendlp-lk.github.io/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://opendlp-lk.github.io/#organization",
+          "name": "OpenDLP-LK Community",
+          "url": "https://opendlp-lk.github.io/",
+          "logo": "https://res.cloudinary.com/dkj22lm1g/image/upload/v1763008089/Whisk_ba82ad43e08b73b975546bc1c9945dfbe_e93aqv.jpg",
+          "sameAs": ["https://github.com/OpenDLP-LK"],
+          "areaServed": {
+            "@type": "Country",
+            "name": "Sri Lanka"
+          },
+          "knowsAbout": [
+            "Personal Data Protection Act No. 9 of 2022 (PDPA)",
+            "Data Protection Management Programme (DPMP)",
+            "Data Loss Prevention (DLP)",
+            "PDPA Section 12(2) compliance",
+            "Data privacy and cybersecurity in Sri Lanka"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://opendlp-lk.github.io/#website",
+          "name": "OpenDLP-LK — PDPA, DPMP & DLP Compliance for Sri Lanka",
+          "alternateName": ["OpenDLP-LK", "Open DLP Sri Lanka", "PDPA DPMP Guide Sri Lanka"],
+          "url": "https://opendlp-lk.github.io/",
+          "description": "Open-source guide to Sri Lanka PDPA (Act No. 9 of 2022) compliance, the Data Protection Management Programme (DPMP) under Section 12(2), and Data Loss Prevention (DLP) implementation.",
+          "inLanguage": "en-LK",
+          "publisher": { "@id": "https://opendlp-lk.github.io/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://opendlp-lk.github.io/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://opendlp-lk.github.io/#webpage",
+          "url": "https://opendlp-lk.github.io/",
+          "name": "PDPA Sri Lanka Compliance | DPMP & DLP Guide — Personal Data Protection Act No. 9 of 2022",
+          "isPartOf": { "@id": "https://opendlp-lk.github.io/#website" },
+          "about": [
+            { "@type": "Legislation", "name": "Personal Data Protection Act, No. 9 of 2022 (Sri Lanka)", "legislationJurisdiction": "LK" },
+            { "@type": "Thing", "name": "Data Protection Management Programme (DPMP)" },
+            { "@type": "Thing", "name": "Data Loss Prevention (DLP)" }
+          ],
+          "inLanguage": "en-LK",
+          "datePublished": "2025-11-13",
+          "dateModified": "2026-07-15"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://opendlp-lk.github.io/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://opendlp-lk.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "PDPA Compliance", "item": "https://opendlp-lk.github.io/pdpa-compliance/" },
+            { "@type": "ListItem", "position": 3, "name": "Implementation Guide", "item": "https://opendlp-lk.github.io/implementation/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://opendlp-lk.github.io/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the PDPA in Sri Lanka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The PDPA is Sri Lanka's Personal Data Protection Act, No. 9 of 2022 — the country's first comprehensive data protection law. It regulates how organisations (controllers and processors) collect, use, store and share personal data of individuals in Sri Lanka, and it is enforced by the Data Protection Authority of Sri Lanka as the Act moves toward full enforcement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a Data Protection Management Programme (DPMP)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Data Protection Management Programme (DPMP) is the internal accountability framework that controllers must implement under Section 12(2) of Sri Lanka's PDPA. A DPMP documents your policies, procedures, records of processing, risk assessments, training, breach response and monitoring controls that demonstrate ongoing PDPA compliance. OpenDLP-LK provides free templates, checklists and a phased roadmap to build a technology-led DPMP."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is DLP (Data Loss Prevention) and how does it support PDPA compliance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Data Loss Prevention (DLP) is a set of tools and processes that detect and prevent unauthorised disclosure of sensitive data such as NIC numbers, bank account details and health records. DLP provides the technical safeguards a DPMP needs: data discovery and classification, policy enforcement, monitoring and incident reporting — turning PDPA obligations into enforceable, auditable controls."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who must comply with Sri Lanka's PDPA and by when?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The PDPA applies to controllers and processors that process personal data in Sri Lanka, including public authorities, banks, telecoms, healthcare providers and businesses that offer goods or services to persons in Sri Lanka. The Act is being brought into force in stages, so organisations should establish their DPMP and technical controls such as DLP now, before enforcement and penalties apply."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I start a PDPA-compliant DLP implementation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Follow OpenDLP-LK's free 5-phase roadmap: (1) Planning and governance, (2) Data discovery and classification, (3) Policy development mapped to PDPA sections, (4) Pilot deployment, and (5) Continuous monitoring. Each phase includes checklists, Sri Lankan data patterns (NIC, passport, bank formats) and templates you can adopt into your DPMP."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
     
@@ -133,10 +232,11 @@
                         <span class="text-sm font-semibold">🇱🇰 PDPA Act No. 9 of 2022 Aligned</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        Open-Source <span class="text-yellow-300">DLP Implementation</span> for Sri Lanka
+                        PDPA Compliance &amp; <span class="text-yellow-300">DLP Implementation</span> for Sri Lanka
                     </h1>
                     <p class="text-xl text-blue-100 mb-8">
-                        Comprehensive, practical resources to implement Data Loss Prevention in your enterprise. 
+                        Practical, technology-led resources for Sri Lanka's Personal Data Protection Act (PDPA) No. 9 of 2022 —
+                        build your Data Protection Management Programme (DPMP) and deploy Data Loss Prevention (DLP).
                         Free. Open-source. Community-driven.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
@@ -224,10 +324,10 @@
                     <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-balance-scale text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">PDPA Aligned</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">PDPA &amp; DPMP Aligned</h3>
                     <p class="text-gray-700 mb-4">
-                        Every resource mapped to Sri Lanka's Personal Data Protection Act No. 9 of 2022. 
-                        Stay compliant with confidence.
+                        Every resource mapped to Sri Lanka's Personal Data Protection Act No. 9 of 2022 —
+                        including the Data Protection Management Programme (DPMP) required under Section 12(2).
                     </p>
                     <a href="/pdpa-compliance/" class="text-purple-600 font-semibold hover:underline">
                         Learn More <i class="fas fa-arrow-right ml-2"></i>
@@ -348,6 +448,122 @@
         </div>
     </section>
 
+    <!-- PDPA & DPMP Section -->
+    <section id="pdpa-dpmp" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Sri Lanka PDPA &amp; the Data Protection Management Programme (DPMP)</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Sri Lanka's <strong>Personal Data Protection Act, No. 9 of 2022 (PDPA)</strong> is moving toward full enforcement.
+                    Its core accountability instrument is the <strong>Data Protection Management Programme (DPMP)</strong>,
+                    required of controllers under <strong>Section 12(2)</strong> of the Act.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-gavel text-blue-600 mr-3"></i>What the PDPA Requires
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                        The PDPA is Sri Lanka's first comprehensive data protection law, overseen by the
+                        Data Protection Authority of Sri Lanka. It obliges every controller and processor to
+                        protect personal data — NIC numbers, financial records, health data, contact details —
+                        with demonstrable organisational and technical safeguards.
+                    </p>
+                    <ul class="text-gray-700 space-y-2 mb-4">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Lawful, transparent processing of personal data</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>A Data Protection Management Programme under Section 12(2)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Data breach notification and incident response</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Respecting data subject rights (access, rectification, erasure)</li>
+                    </ul>
+                    <a href="/pdpa-compliance/requirements.html" class="text-blue-600 font-semibold hover:underline">
+                        Full PDPA Requirements <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-cogs text-purple-600 mr-3"></i>Build Your DPMP with DLP
+                    </h3>
+                    <p class="text-gray-700 mb-4">
+                        A DPMP is more than paperwork — it needs working technical controls.
+                        <strong>Data Loss Prevention (DLP)</strong> supplies them: automated discovery and
+                        classification of personal data, policy enforcement at endpoints, email and cloud,
+                        monitoring, and auditable incident reporting your DPMP can evidence.
+                    </p>
+                    <ul class="text-gray-700 space-y-2 mb-4">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Discover &amp; classify Sri Lankan personal data (NIC, passport, bank formats)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Map DLP policies directly to PDPA sections</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Ready-to-use DPMP policy templates and gap analysis</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Continuous monitoring and compliance reporting</li>
+                    </ul>
+                    <a href="/pdpa-compliance/gap-analysis.html" class="text-purple-600 font-semibold hover:underline">
+                        Start a PDPA Gap Analysis <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ (matches FAQPage structured data) -->
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">PDPA, DPMP &amp; DLP — Frequently Asked Questions</h3>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <summary class="font-bold text-lg text-gray-900 cursor-pointer">What is the PDPA in Sri Lanka?</summary>
+                        <p class="text-gray-700 mt-3">
+                            The PDPA is Sri Lanka's Personal Data Protection Act, No. 9 of 2022 — the country's first
+                            comprehensive data protection law. It regulates how organisations (controllers and processors)
+                            collect, use, store and share personal data of individuals in Sri Lanka, and it is enforced by
+                            the Data Protection Authority of Sri Lanka as the Act moves toward full enforcement.
+                        </p>
+                    </details>
+                    <details class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <summary class="font-bold text-lg text-gray-900 cursor-pointer">What is a Data Protection Management Programme (DPMP)?</summary>
+                        <p class="text-gray-700 mt-3">
+                            A Data Protection Management Programme (DPMP) is the internal accountability framework that
+                            controllers must implement under Section 12(2) of Sri Lanka's PDPA. A DPMP documents your
+                            policies, procedures, records of processing, risk assessments, training, breach response and
+                            monitoring controls that demonstrate ongoing PDPA compliance. OpenDLP-LK provides free
+                            templates, checklists and a phased roadmap to build a technology-led DPMP.
+                        </p>
+                    </details>
+                    <details class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <summary class="font-bold text-lg text-gray-900 cursor-pointer">What is DLP (Data Loss Prevention) and how does it support PDPA compliance?</summary>
+                        <p class="text-gray-700 mt-3">
+                            Data Loss Prevention (DLP) is a set of tools and processes that detect and prevent unauthorised
+                            disclosure of sensitive data such as NIC numbers, bank account details and health records.
+                            DLP provides the technical safeguards a DPMP needs: data discovery and classification, policy
+                            enforcement, monitoring and incident reporting — turning PDPA obligations into enforceable,
+                            auditable controls.
+                        </p>
+                    </details>
+                    <details class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <summary class="font-bold text-lg text-gray-900 cursor-pointer">Who must comply with Sri Lanka's PDPA and by when?</summary>
+                        <p class="text-gray-700 mt-3">
+                            The PDPA applies to controllers and processors that process personal data in Sri Lanka,
+                            including public authorities, banks, telecoms, healthcare providers and businesses that offer
+                            goods or services to persons in Sri Lanka. The Act is being brought into force in stages, so
+                            organisations should establish their DPMP and technical controls such as DLP now, before
+                            enforcement and penalties apply.
+                        </p>
+                    </details>
+                    <details class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <summary class="font-bold text-lg text-gray-900 cursor-pointer">How do I start a PDPA-compliant DLP implementation?</summary>
+                        <p class="text-gray-700 mt-3">
+                            Follow OpenDLP-LK's free 5-phase roadmap: (1) <a href="/implementation/phase1-planning.html" class="text-blue-600 hover:underline">Planning and governance</a>,
+                            (2) <a href="/implementation/phase2-discovery.html" class="text-blue-600 hover:underline">Data discovery and classification</a>,
+                            (3) <a href="/implementation/phase3-policy.html" class="text-blue-600 hover:underline">Policy development mapped to PDPA sections</a>,
+                            (4) <a href="/implementation/phase4-pilot.html" class="text-blue-600 hover:underline">Pilot deployment</a>, and
+                            (5) <a href="/implementation/phase5-monitoring.html" class="text-blue-600 hover:underline">Continuous monitoring</a>.
+                            Each phase includes checklists, Sri Lankan data patterns (NIC, passport, bank formats) and
+                            templates you can adopt into your DPMP.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -375,7 +591,7 @@
                         <i class="fas fa-shield-alt text-2xl text-blue-500 mr-2"></i>
                         <span class="font-bold text-xl text-white">OpenDLP-LK</span>
                     </div>
-                    <p class="text-sm mb-4">Open-source Data Loss Prevention for Sri Lankan enterprises.</p>
+                    <p class="text-sm mb-4">Open-source Data Loss Prevention (DLP) and PDPA / DPMP compliance resources for Sri Lankan enterprises — aligned with the Personal Data Protection Act, No. 9 of 2022.</p>
                     <div class="flex space-x-4">
                         <a href="https://github.com/OpenDLP-LK" target="_blank" class="text-gray-400 hover:text-white transition">
                             <i class="fab fa-github text-2xl"></i>
